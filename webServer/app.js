@@ -3,7 +3,7 @@ const queryString = require("query-string");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = 3000;
+const port = 4000;
 
 app.use(cors());
 
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
   const options = {
     host: "localhost",
-    port: 8080,
+    port: 3000,
     path: "/",
     method: "POST",
     headers: {
