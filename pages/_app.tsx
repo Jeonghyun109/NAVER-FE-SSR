@@ -6,7 +6,6 @@ import Head from "next/head";
 import Container from "@components/common/container";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  console.log({ ...pageProps });
   return (
     <div>
       <Container>
