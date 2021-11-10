@@ -1,13 +1,15 @@
 {
   "name": "NAVER-FE-SSR",
   "scripts": {
-    "dev": "concurrently --kill-others \"nodemon ./renderServer/renderServer.js\" \"nodemon ./webServer/webServer.js\""
+    "dev": "concurrently --kill-others \"nodemon ./renderServer/renderServer.jsx\" \"nodemon ./webServer/webServer.js\""
   },
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.15",
-    "query-string": "^7.0.1"
+    "query-string": "^7.0.1",
+    "react-dom": "^17.0.2"
   }
 }
