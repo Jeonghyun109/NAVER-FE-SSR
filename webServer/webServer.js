@@ -1,6 +1,7 @@
 const http = require("http");
 const queryString = require("query-string");
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const port = 3000;
@@ -15,7 +16,7 @@ app.get("/", (req, res) => {
   const options = {
     host: "localhost",
     port: 4000,
-    path: "/handle",
+    path: "/",
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

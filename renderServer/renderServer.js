@@ -6,11 +6,12 @@ const app = express();
 const port = 4000;
 
 app.use(cors());
-app.use("/", router);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use("/", router);
 
-router.post("/handle", (req, res) => {
+router.post("/", (req, res) => {
+  console.log(req.body);
   res.send("aa");
 });
 
