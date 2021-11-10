@@ -10,7 +10,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   const data = queryString.stringify({
-    type: "cultural-asset",
+    color: "red",
   });
 
   const options = {

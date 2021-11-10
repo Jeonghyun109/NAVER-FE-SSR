@@ -1,7 +1,8 @@
 {
   "name": "NAVER-FE-SSR",
   "scripts": {
-    "dev": "concurrently --kill-others \"nodemon ./renderServer/renderServer.jsx\" \"nodemon ./webServer/webServer.js\""
+    "dev": "concurrently --kill-others \"nodemon ./renderServer/renderServer.jsx\" \"nodemon ./webServer/webServer.js\"",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "babel-preset-react": "^6.24.1",
