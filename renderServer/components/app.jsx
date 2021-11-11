@@ -1,11 +1,17 @@
 const React = require("react");
 
-function Hello(data) {
-  console.log("received data: " + data.color);
+const Hello = (props) => {
+  console.log("received data: " + props.color);
 
-  return "Hello, World!";
+  return `
+    <div>
+      <div className = "Header">Header</div>
+      <div className = "Body">Body</div>
+      <div className = "Footer">Footer</div>
+    </div>
+  `;
   // TODO: jsx compile
   //return <p>Hello, World!</p>;
-}
+};
 
 module.exports = Hello;
