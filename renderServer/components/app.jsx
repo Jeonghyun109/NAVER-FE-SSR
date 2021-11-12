@@ -1,17 +1,13 @@
-const React = require("react");
+import React from 'react'
 
-const Hello = (props) => {
-  console.log("received data: " + props.color);
-
-  return `
+function app(props) {
+  return (
     <div>
-      <div className = "Header">Header</div>
-      <div className = "Body">Body</div>
-      <div className = "Footer">Footer</div>
+      <div className = "header">Header</div>
+      <div className = "body">Body</div>
+      <div className = "footer">Footer</div>
     </div>
-  `;
-  // TODO: jsx compile
-  //return <p>Hello, World!</p>;
-};
+  )
+}
 
-module.exports = Hello;
+export default app

@@ -1,8 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const React = require("react");
 const cors = require("cors");
 const ReactDomServer = require("react-dom/server");
-const App = require("./components/app.jsx");
+import App from "./components/app";
 
 const router = express.Router();
 const app = express();
@@ -14,10 +15,7 @@ app.use(bodyParser.json());
 app.use("/", router);
 
 router.post("/", (req, res) => {
-  const temp = ReactDomServer.renderToString(App(req.body))
-    .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">")
-    .replace(/&quot;|&amp;quot;/gi, '"');
+  const temp = ReactDomServer.renderToString(<App body = {req.body} />);
   res.send(`
   <!DOCTYPE html>
   <html lang="ko">

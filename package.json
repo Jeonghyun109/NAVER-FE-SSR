@@ -1,7 +1,7 @@
 {
   "name": "NAVER-FE-SSR",
   "scripts": {
-    "dev": "concurrently --kill-others \"nodemon ./renderServer/renderServer.jsx\" \"nodemon ./webServer/webServer.js\"",
+    "dev": "concurrently --kill-others \"nodemon --exec babel-node --presets @babel/env ./renderServer/renderServer.jsx\" \"nodemon ./webServer/webServer.js\"",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -14,5 +14,15 @@
     "prettier": "^2.4.1",
     "query-string": "^7.0.1",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
   }
 }
