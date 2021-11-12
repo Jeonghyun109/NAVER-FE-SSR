@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use("/", router);
 
 router.post("/", (req, res) => {
-  const temp = ReactDomServer.renderToString(<App body = {req.body} />);
+  const temp = ReactDomServer.renderToString(<App body={req.body} />);
   res.send(`
   <!DOCTYPE html>
   <html lang="ko">
