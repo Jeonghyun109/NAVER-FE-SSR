@@ -1,2 +1,2 @@
-# KAIST-FE-SSR
-repository for KAIST-FE-SSR
+# NAVER-FE-SSR
+repository for NAVER-FE-SSR
