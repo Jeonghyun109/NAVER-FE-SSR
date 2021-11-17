@@ -10,7 +10,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   const data = queryString.stringify({
-    color: "red",
+    color: "blue",
   });
 
   const options = {

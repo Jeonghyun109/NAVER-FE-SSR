@@ -3,10 +3,8 @@ import styled from "styled-components";
 
 function App(props) {
   const Heading = styled.h1`
-    color: red;
-    background-color: grey;
+    color: ${props.body.color};
   `;
-  console.log(props);
 
   return <Heading>Hello, World!</Heading>;
 }

@@ -21,11 +21,7 @@ router.post("/", (req, res) => {
   const jsx = sheet.collectStyles(<App body={req.body} />);
   const stream = sheet.interleaveWithNodeStream(renderToNodeStream(jsx));
 
-  // you'd then pipe the stream into the response object until it's done
   stream.pipe(res, { end: false });
-
-  // and finalize the response with closing HTML
-  stream.on("end", () => res.end("</body></html>"));
 });
 
 app.listen(port, () => {
