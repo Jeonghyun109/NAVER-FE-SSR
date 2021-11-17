@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const React = require("react");
 const cors = require("cors");
 const ReactDomServer = require("react-dom/server");
-import App from "./components/app";
+import App from "./components/common/app";
 import { renderToNodeStream } from "react-dom/server";
 import styled, { ServerStyleSheet } from "styled-components";
 
