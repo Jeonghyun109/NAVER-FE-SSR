@@ -1,13 +1,14 @@
 import React from "react";
+import styled from "styled-components";
 
-function app(props) {
-  return (
-    <div>
-      <div className="header">Header</div>
-      <div className="body">Body</div>
-      <div className="footer">Footer</div>
-    </div>
-  );
+function App(props) {
+  const Heading = styled.h1`
+    color: red;
+    background-color: grey;
+  `;
+  console.log(props);
+
+  return <Heading>Hello, World!</Heading>;
 }
 
-export default app;
+export default App;

@@ -4,6 +4,8 @@ const React = require("react");
 const cors = require("cors");
 const ReactDomServer = require("react-dom/server");
 import App from "./components/app";
+import { renderToNodeStream } from "react-dom/server";
+import styled, { ServerStyleSheet } from "styled-components";
 
 const router = express.Router();
 const app = express();
@@ -15,21 +17,15 @@ app.use(bodyParser.json());
 app.use("/", router);
 
 router.post("/", (req, res) => {
-  const temp = ReactDomServer.renderToString(<App body={req.body} />);
-  res.send(`
-  <!DOCTYPE html>
-  <html lang="ko">
-      <head>
-          <meta charset="utf-8">
-          <title>NAVER-FE-SSR</title>
-      </head>
-      <body>
-          <div id="root">
-              ${temp}
-          </div>
-      </body>
-  </html>
-`);
+  const sheet = new ServerStyleSheet();
+  const jsx = sheet.collectStyles(<App body={req.body} />);
+  const stream = sheet.interleaveWithNodeStream(renderToNodeStream(jsx));
+
+  // you'd then pipe the stream into the response object until it's done
+  stream.pipe(res, { end: false });
+
+  // and finalize the response with closing HTML
+  stream.on("end", () => res.end("</body></html>"));
 });
 
 app.listen(port, () => {
