@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Title from "./title.jsx";
 import SubTap from "./subTap.jsx";
+import CommonContent from "./commonContent.jsx";
 
 function SiameseCat(props) {
   return (
@@ -12,7 +13,7 @@ function SiameseCat(props) {
       </TopWrap>
 
       <ContentWrap>
-        <CommonContentArea>xxx</CommonContentArea>
+        <CommonContent />
         <SimilarContentArea>xy</SimilarContentArea>
       </ContentWrap>
     </CommonModule>
@@ -45,11 +46,6 @@ const ContentWrap = styled.div`
   height: 589px;
   padding-bottom: 20px;
   border: 0 1px 1px 1px;
-`;
-
-const CommonContentArea = styled.div`
-  height: 363px;
-  padding-bottom: 12px;
 `;
 
 const SimilarContentArea = styled.div`
