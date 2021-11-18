@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "./title.jsx";
+import SubTap from "./subTap.jsx";
 
 function SiameseCat(props) {
   return (
     <CommonModule>
       <TopWrap>
-        <TitleArea>
           <Title />
-        </TitleArea>
-        <SubTapArea>abc</SubTapArea>
+<SubTap />
       </TopWrap>
 
       <ContentWrap>
@@ -40,17 +39,6 @@ const TopWrap = styled.div`
     border-radius: 6px 6px 0 0;
     background-color: #e2dad1;
   }
-`;
-
-const TitleArea = styled.div`
-  height: 49px;
-  padding: 18px 38px 15px 18px;
-  margin-top: -1px;
-`;
-
-const SubTapArea = styled.div`
-  height: 49px;
-  margin-top: -17px;
 `;
 
 const ContentWrap = styled.div`

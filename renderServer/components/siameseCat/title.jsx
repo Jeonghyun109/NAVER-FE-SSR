@@ -3,16 +3,22 @@ import styled from "styled-components";
 
 function Title(props) {
   return (
-    <div>
+    <TitleArea>
       <MainTitle>샴(샤미즈)</MainTitle>
       <SubTitle>
         <SubTextSpan>동물</SubTextSpan>
         <SubBarSpan></SubBarSpan>
         <SubTextSpan>Siamese cat</SubTextSpan>
       </SubTitle>
-    </div>
+    </TitleArea>
   );
 }
+
+const TitleArea = styled.div`
+  height: 49px;
+  padding: 18px 38px 15px 18px;
+  margin-top: -1px;
+`;
 
 const MainTitle = styled.h2`
   height: 25px;
