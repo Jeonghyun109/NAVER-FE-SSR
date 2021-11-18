@@ -7,8 +7,8 @@ function SiameseCat(props) {
   return (
     <CommonModule>
       <TopWrap>
-          <Title />
-<SubTap />
+        <Title />
+        <SubTap />
       </TopWrap>
 
       <ContentWrap>
