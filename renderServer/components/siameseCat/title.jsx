@@ -7,7 +7,7 @@ function Title(props) {
       <MainTitle>샴(샤미즈)</MainTitle>
       <SubTitle>
         <SubTextSpan>동물</SubTextSpan>
-        <SubBarSpan></SubBarSpan>
+        <SubBarSpan />
         <SubTextSpan>Siamese cat</SubTextSpan>
       </SubTitle>
     </TitleArea>

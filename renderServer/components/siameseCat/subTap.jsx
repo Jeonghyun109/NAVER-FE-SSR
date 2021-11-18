@@ -8,14 +8,26 @@ function SubTap(props) {
         <TapList>
           <TapEntire>
             <LinkEntire>
-              <TapText>전체</TapText>
+              <SubTapText>전체</SubTapText>
             </LinkEntire>
           </TapEntire>
           <TapBasicInfo>
             <LinkBasicInfo>
-              <TapText>기본정보</TapText>
+              <SubTapText>기본정보</SubTapText>
             </LinkBasicInfo>
           </TapBasicInfo>
+          <TapPhoto>
+            <LinkPhoto>
+              <SubTapBar />
+              <SubTapText>포토</SubTapText>
+            </LinkPhoto>
+          </TapPhoto>
+          <TapSimilar>
+            <LinkSimilar>
+              <SubTapBar />
+              <SubTapText>함께 찾은 품종</SubTapText>
+            </LinkSimilar>
+          </TapSimilar>
         </TapList>
       </ScrollMainTap>
     </SubTapArea>
@@ -41,7 +53,6 @@ const TapList = styled.ul`
 `;
 
 const TapEntire = styled.li`
-  width: 63.32px;
   height: 29px;
   margin-right: 1.5px;
 `;
@@ -57,22 +68,50 @@ const LinkEntire = styled.a`
   cursor: pointer;
 `;
 
-const TapText = styled.span`
+const SubTapText = styled.span`
+  padding: 0 11px;
   font-size: 13px;
   line-height: 28px;
 `;
 
 const TapBasicInfo = styled.li`
-  width: 72.32px;
   height: 29px;
-  margin: 0 1.5px 0 1.5px;
+  margin: 0 1.5px;
 `;
 
 const LinkBasicInfo = styled.a`
-  display: flex;
   margin-top: 1px;
   color: #917659;
-  justify-content: center;
+  cursor: pointer;
+`;
+
+const TapPhoto = styled.li`
+  height: 29px;
+  margin: 0 1.5px;
+`;
+
+const LinkPhoto = styled.a`
+  margin-top: 1px;
+  color: #917659;
+  cursor: pointer;
+`;
+
+const SubTapBar = styled.span`
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 3px 0 1px;
+  background-color: rgba(166, 143, 116, 0.3);
+`;
+
+const TapSimilar = styled.li`
+  height: 29px;
+  margin-left: 1.5px;
+`;
+
+const LinkSimilar = styled.a`
+  margin-top: 1px;
+  color: #917659;
   cursor: pointer;
 `;
 
