@@ -1,21 +1,38 @@
 {
   "name": "NAVER-FE-SSR",
   "scripts": {
-    "dev": "concurrently --kill-others \"nodemon --exec babel-node --presets @babel/env ./renderServer/renderServer.jsx\" \"nodemon ./webServer/webServer.js\"",
+    "dev": "concurrently --kill-others \"nodemon --exec babel-node --presets @babel/env ./renderServer/built/renderServer.js\" \"nodemon ./webServer/webServer.js\"",
+    "build": "webpack",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.19.0",
+    "browser": "^0.2.6",
+    "buffer": "^6.0.3",
     "concurrently": "^6.3.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "isomorphic-fetch": "^3.0.0",
     "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "pirates": "^4.0.1",
     "prettier": "^2.4.1",
     "query-string": "^7.0.1",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "react-transmit": "^3.2.0",
+    "stream": "^0.0.2",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.3",
+    "vary": "^1.1.2",
+    "webpack-node-externals": "^3.0.0",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -23,8 +40,13 @@
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "babel-cli": "^6.26.0",
     "babel-plugin-styled-components": "^1.13.3",
-    "webpack": "^5.64.0",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"
   }
