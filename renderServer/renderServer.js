@@ -4,8 +4,6 @@ const React = require("react");
 const cors = require("cors");
 const ReactDomServer = require("react-dom/server");
 import App from "./components/common/app";
-import { renderToNodeStream } from "react-dom/server";
-import styled, { ServerStyleSheet } from "styled-components";
 
 const router = express.Router();
 const app = express();
@@ -17,11 +15,18 @@ app.use(bodyParser.json());
 app.use("/", router);
 
 router.post("/", (req, res) => {
-  const sheet = new ServerStyleSheet();
-  const jsx = sheet.collectStyles(<App body={req.body} />);
-  const stream = sheet.interleaveWithNodeStream(renderToNodeStream(jsx));
-
-  stream.pipe(res, { end: false });
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="ko">
+        <head>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div id="root">${ReactDomServer.renderToString(App(req.body))}</div>
+            <div>hello from server side</div>
+        </body>
+    </html>
+`);
 });
 
 app.listen(port, () => {

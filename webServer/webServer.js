@@ -4,9 +4,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
+const path = require("path");
 const port = 3000;
 
 app.use(cors());
+app.use(express.static("renderServer/built"));
 
 app.get("/", (req, res) => {
   const data = queryString.stringify({

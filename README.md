@@ -5,6 +5,7 @@
 ### 개발 환경
 
 ```bash
+yarn build
 yarn dev
 ```
 
