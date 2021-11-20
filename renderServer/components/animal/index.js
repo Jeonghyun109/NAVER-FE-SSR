@@ -1,11 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import styles from "./index.module.scss";
 import Title from "./title";
 import SubTap from "./subTap";
 import CommonContent from "./commonContent";
-import styles from "./index.module.scss";
 
-function SiameseCat(props) {
+function Animal(props) {
   return (
     <div className={styles.commonModule}>
       <div className={styles.topWrap}>
@@ -21,4 +20,4 @@ function SiameseCat(props) {
   );
 }
 
-export default SiameseCat;
+export default Animal;
