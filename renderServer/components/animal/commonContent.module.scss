@@ -8,6 +8,7 @@
     height: 261.6px;
     padding: 0;
     border-radius: 8px 8px 0 0;
+    margin: 0;
     background-color: white;
     list-style-type: none;
 
@@ -20,7 +21,14 @@
 
       .linkMainPhoto {
         display: block;
+        height: 260.6px;
         cursor: pointer;
+
+        .mainPhotoImg {
+          width: 260.6px;
+          height: 260.6px;
+          border-radius: 8px 0 0 0;
+        }
       }
     }
 
@@ -28,7 +36,23 @@
       width: 129.8px;
       height: 129.8px;
       margin: 1px 0 0 1px;
-      background-color: red;
+
+      .linkSmallPhoto {
+        display: block;
+        height: 129.8px;
+        cursor: pointer;
+
+        .smallPhotoImg {
+          width: 129.8px;
+          height: 129.8px;
+        }
+
+        .smallPhotoRoundImg {
+          width: 129.8px;
+          height: 129.8px;
+          border-radius: 0 8px 0 0;
+        }
+      }
     }
   }
 }
