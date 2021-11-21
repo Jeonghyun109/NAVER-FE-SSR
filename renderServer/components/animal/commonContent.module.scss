@@ -1,11 +1,9 @@
 .commonContentArea {
-  height: 363px;
   margin: 0 9px 12px 9px;
 
   .photoList {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    height: 261.6px;
     padding: 0;
     border-radius: 8px 8px 0 0;
     margin: 0;
@@ -13,45 +11,78 @@
     list-style-type: none;
 
     .mainPhoto {
-      width: 260.6px;
-      height: 260.6px;
-      margin: 1px 0 0 1px;
+      margin-top: 1px;
       grid-row-start: 1;
       grid-row-end: 3;
 
       .linkMainPhoto {
         display: block;
-        height: 260.6px;
+        height: 260.2px;
         cursor: pointer;
 
         .mainPhotoImg {
-          width: 260.6px;
-          height: 260.6px;
+          width: 260.2px;
+          height: 260.2px;
           border-radius: 8px 0 0 0;
         }
       }
     }
 
     .smallPhoto {
-      width: 129.8px;
-      height: 129.8px;
       margin: 1px 0 0 1px;
 
       .linkSmallPhoto {
         display: block;
-        height: 129.8px;
+        height: 129.6px;
         cursor: pointer;
 
         .smallPhotoImg {
-          width: 129.8px;
-          height: 129.8px;
+          width: 129.6px;
+          height: 129.6px;
         }
 
         .smallPhotoRoundImg {
-          width: 129.8px;
-          height: 129.8px;
+          width: 129.6px;
+          height: 129.6px;
           border-radius: 0 8px 0 0;
         }
+      }
+    }
+  }
+
+  .middleTitle {
+    background-color: white;
+
+    .linkMiddleTitle {
+      display: block;
+      margin: 0 15px;
+      cursor: pointer;
+
+      .h3 {
+        height: 22px;
+        padding-top: 14px;
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .detailInfo {
+    padding: 7px 15px 16px 15px;
+    background-color: white;
+
+    .text {
+      font-size: 12.6px;
+      color: #424242;
+    }
+
+    .a {
+      font-size: 13px;
+      color: #0c43b7;
+      word-break: keep-all;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

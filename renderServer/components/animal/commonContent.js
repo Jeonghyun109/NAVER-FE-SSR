@@ -12,6 +12,10 @@ function CommonContent(props) {
     "https://search.pstatic.net/common?type=f&size=258x260&quality=95&direct=true&src=http%3A%2F%2Fshop1.phinf.naver.net%2F20200107_100%2F1578368791570mWnGL_JPEG%2F14504400424424331_693284119.jpg",
     "https://search.pstatic.net/common?type=f&size=260x260&quality=95&direct=true&src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210722_241%2F1626949212669ih9J4_JPEG%2F63084821814135149_1699451494.jpeg",
   ];
+  const detailInfo =
+    "성격이 독특하면서도 영리하고 애정이 깊다. 감수성도 예민해 공격적이거나 신경질적인 반응을 보이기도 하고, 자기 과시욕을 드러내면서 언제나 주인의 관심을 끌려고 하기 때문에 안아주거나 쓰다듬어 주는 것을 좋아한다. ";
+  const seeMoreDetails =
+    "https://terms.naver.com/entry.naver?docId=1110852&cid=40942&categoryId=32624";
 
   return (
     <div className={styles.commonContentArea}>
@@ -36,6 +40,19 @@ function CommonContent(props) {
           );
         })}
       </ul>
+
+      <div className={styles.middleTitle}>
+        <a className={styles.linkMiddleTitle}>
+          <h3 className={styles.h3}>기본정보</h3>
+        </a>
+      </div>
+
+      <div className={styles.detailInfo}>
+        <span className={styles.text}>{detailInfo}</span>
+        <a href={seeMoreDetails} className={styles.a}>
+          더보기
+        </a>
+      </div>
     </div>
   );
 }
