@@ -47,9 +47,6 @@ app.post("/open-apis/url-shortener", (req, res, next) => {
       })
     })
     .catch(err => {
-      if (err.response) {
-        console.log(err.response.data)
-      }
       next(err)
     })
 })
