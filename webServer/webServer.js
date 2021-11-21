@@ -46,9 +46,7 @@ app.post("/open-apis/url-shortener", (req, res, next) => {
         "url": axiosRes.data.result.url
       })
     })
-    .catch(err => {
-      next(err)
-    })
+    .catch(next)
 })
 
 app.listen(port, () => {
