@@ -14,7 +14,7 @@ class PayloadSelector {
     constructor() { }
 
     randomKey() {
-        return this.payloadKeys[Math.floor(Math.random * this.payloadKeys.length)]
+        return PayloadSelector.payloadKeys[Math.floor(Math.random() * PayloadSelector.payloadKeys.length)]
     }
 
     selectByKeys(keys) {
@@ -24,7 +24,6 @@ class PayloadSelector {
     select(keys) {
         if (!keys || (Array.isArray(keys) && !keys.length)) {
             keys = [this.randomKey()]
-            
         }
         return keys.map(key => this.constructor.payloadMap[key]).filter(o => !!o)
     }
