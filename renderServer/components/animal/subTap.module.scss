@@ -13,11 +13,11 @@
       margin-top: 8px;
       list-style-type: none;
 
-      .tapEntire {
+      .subTap {
         height: 29px;
         margin-right: 1.5px;
 
-        .tapEntireLink {
+        .subTapEntireLink {
           display: flex;
           border-radius: 3px;
           margin: 1px 0 0 18px;
@@ -33,11 +33,6 @@
             line-height: 28px;
           }
         }
-      }
-
-      .subTap {
-        height: 29px;
-        margin-left: 1.5px;
 
         .subTapLink {
           margin-top: 1px;

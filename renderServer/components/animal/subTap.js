@@ -8,8 +8,8 @@ function SubTap(props) {
     <div className={styles.subTapArea}>
       <div className={styles.scrollMainTap}>
         <ul className={styles.tapList}>
-          <li className={styles.tapEntire}>
-            <a className={styles.tapEntireLink}>
+          <li className={styles.subTap}>
+            <a className={styles.subTapEntireLink}>
               <span className={styles.subTapText}>전체</span>
             </a>
           </li>
@@ -17,6 +17,7 @@ function SubTap(props) {
             return (
               <li className={styles.subTap} key={idx}>
                 <a className={styles.subTapLink}>
+                  {idx !== 0 && <span className={styles.subTapBar} />}
                   <span className={styles.subTapText}>{subTapInfo}</span>
                 </a>
               </li>
