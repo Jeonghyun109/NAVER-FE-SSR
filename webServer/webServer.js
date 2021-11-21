@@ -4,14 +4,18 @@ const cors = require("cors")
 const path = require("path")
 const config = require("config")
 const proxy = require("express-http-proxy")
+const bodyParser = require('body-parser')
 
 const port = config.get("webServerPort")
 const renderServerAddress = config.get("renderServerAddress")
 const payloadSelector = require("./payloadSelector")
+const { UrlShortener } = require("./openApi")
+
 
 const app = express()
 app.use(cors())
 app.use("/proxy", proxy(renderServerAddress))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get("/", (req, res, next) => {
   let keys = req.query.keys
@@ -32,6 +36,22 @@ app.get("/", (req, res, next) => {
       res.send(axiosRes.data);
     })
     .catch(next)
+})
+
+app.post("/open-apis/url-shortener", (req, res, next) => {
+  let url = req.body.url
+  UrlShortener.do(url)
+    .then(axiosRes => {
+      res.send({
+        "url": axiosRes.data.result.url
+      })
+    })
+    .catch(err => {
+      if (err.response) {
+        console.log(err.response.data)
+      }
+      next(err)
+    })
 })
 
 app.listen(port, () => {
