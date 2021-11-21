@@ -1,7 +1,7 @@
 {
   "name": "NAVER-FE-SSR",
   "scripts": {
-    "dev": "concurrently --kill-others \"nodemon --exec babel-node --presets @babel/env ./renderServer/built/renderServer.js\" \"nodemon ./webServer/webServer.js\"",
+    "dev": "concurrently --kill-others \"webpack -w\" \"nodemon --exec babel-node --presets @babel/env ./dist/renderServer.js\" \"nodemon ./webServer/webServer.js\"",
     "build": "webpack",
     "format": "prettier --write ."
   },

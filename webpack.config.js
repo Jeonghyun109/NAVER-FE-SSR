@@ -7,9 +7,9 @@ const config = {
   mode: "production",
   entry: ["./renderServer/renderServer.js"],
   output: {
-    path: path.join(__dirname, "renderServer/built/"),
+    path: path.join(__dirname, "dist/"),
     filename: "renderServer.js",
-    publicPath: "renderServer/built/",
+    publicPath: "dist/",
   },
   externals: [nodeExternals()],
   plugins: [new MiniCssExtractPlugin({ filename: "style.css" })],

@@ -22,8 +22,7 @@ router.post("/", (req, res) => {
         <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <div id="root">${ReactDomServer.renderToString(App(req.body))}</div>
-            <div>hello from server side</div>
+            ${ReactDomServer.renderToString(App(req.body))}
         </body>
     </html>
 `);

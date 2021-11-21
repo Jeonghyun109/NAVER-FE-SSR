@@ -8,7 +8,7 @@ const path = require("path");
 const port = 3000;
 
 app.use(cors());
-app.use(express.static("renderServer/built"));
+app.use(express.static("dist"));
 
 app.get("/", (req, res) => {
   const data = queryString.stringify({
