@@ -23,7 +23,7 @@ function CommonContent(props) {
         </li>
         {smallPhotoSrc.map((smallPhoto, idx) => {
           return (
-            <li className={styles.smallPhoto}>
+            <li className={styles.smallPhoto} key={idx}>
               <a className={styles.linkSmallPhoto}>
                 {idx !== 2 && (
                   <img src={smallPhoto} className={styles.smallPhotoImg} />

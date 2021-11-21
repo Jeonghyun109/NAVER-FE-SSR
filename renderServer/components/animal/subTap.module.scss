@@ -1,56 +1,49 @@
 .subTapArea {
-  height: 49px;
   margin-top: -17px;
 
-  .scrollMainTap {
-    height: 49px;
+  .tapList {
+    display: flex;
+    padding: 8px 0 11px 0;
+    margin: 0;
+    list-style-type: none;
 
-    .tapList {
-      display: flex;
-      height: 30px;
-      padding: 8px 0 11px 0;
-      margin: 0;
-      list-style-type: none;
+    .subTap {
+      margin-right: 1.5px;
 
-      .subTap {
-        height: 29px;
-        margin-right: 1.5px;
+      .subTapEntireLink {
+        display: flex;
+        border-radius: 3px;
+        margin: 1px 0 0 18px;
+        color: #fff;
+        font-weight: bold;
+        background-color: #a68f74;
+        justify-content: center;
+        cursor: pointer;
 
-        .subTapEntireLink {
-          display: flex;
-          border-radius: 3px;
-          margin: 1px 0 0 18px;
-          color: #fff;
-          font-weight: bold;
-          background-color: #a68f74;
-          justify-content: center;
-          cursor: pointer;
+        .subTapText {
+          padding: 0 11px;
+          font-size: 13px;
+          line-height: 28px;
+        }
+      }
 
-          .subTapText {
-            padding: 0 11px;
-            font-size: 13px;
-            line-height: 28px;
-          }
+      .subTapLink {
+        margin-top: 1px;
+        color: #917659;
+        cursor: pointer;
+
+        .subTapBar {
+          display: inline-block;
+          width: 1px;
+          height: 11px;
+          margin: 0 3px 0 1px;
+          background-color: rgba(166, 143, 116, 0.3);
         }
 
-        .subTapLink {
-          margin-top: 1px;
-          color: #917659;
-          cursor: pointer;
-
-          .subTapBar {
-            display: inline-block;
-            width: 1px;
-            height: 11px;
-            margin: 0 3px 0 1px;
-            background-color: rgba(166, 143, 116, 0.3);
-          }
-
-          .subTapText {
-            padding: 0 11px;
-            font-size: 13px;
-            line-height: 28px;
-          }
+        .subTapText {
+          padding: 0 11px;
+          font-size: 13px;
+          line-height: 28px;
         }
       }
     }
