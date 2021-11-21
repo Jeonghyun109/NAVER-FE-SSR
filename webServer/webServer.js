@@ -3,12 +3,14 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const path = require("path");
-const config = require("config");
-const port = config.get("webServerPort");
-const payloadSelector = require("./payloadSelector");
+const config = require("config")
+var proxy = require("express-http-proxy")
+const port = config.get("webServerPort")
+const renderServerAddress = config.get("renderServerAddress")
+const payloadSelector = require("./payloadSelector")
 
 app.use(cors());
-app.use(express.static("dist"));
+app.use("/static", proxy(renderServerAddress))
 
 app.get("/", (req, res, next) => {
   let keys = req.query.keys;
@@ -19,9 +21,9 @@ app.get("/", (req, res, next) => {
   payload = payloadSelector.select(keys);
 
   const options = {
-    url: config.get("renderServerAddress"),
-    method: "POST",
-    data: payload,
+    "url": renderServerAddress,
+    "method": "POST",
+    "data": payload
   };
 
   axios(options)
