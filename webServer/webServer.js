@@ -10,7 +10,7 @@ const renderServerAddress = config.get("renderServerAddress")
 const payloadSelector = require("./payloadSelector")
 
 app.use(cors());
-app.use("/static", proxy(renderServerAddress))
+app.use("/proxy", proxy(renderServerAddress))
 
 app.get("/", (req, res, next) => {
   let keys = req.query.keys;
