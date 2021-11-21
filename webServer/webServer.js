@@ -1,41 +1,34 @@
-const http = require("http");
-const queryString = require("query-string");
+const axios = require("axios");
 const express = require("express");
-const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const path = require("path");
-const port = 3000;
+const config = require("config");
+const port = config.get("webServerPort");
+const payloadSelector = require("./payloadSelector");
 
 app.use(cors());
 app.use(express.static("dist"));
 
-app.get("/", (req, res) => {
-  const data = queryString.stringify({
-    color: "blue",
-  });
+app.get("/", (req, res, next) => {
+  let keys = req.query.keys;
+  if (keys !== undefined) {
+    keys = keys.split(",");
+  }
+
+  payload = payloadSelector.select(keys);
 
   const options = {
-    host: "localhost",
-    port: 4000,
-    path: "/",
+    url: config.get("renderServerAddress"),
     method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "Content-Length": Buffer.byteLength(data),
-    },
+    data: payload,
   };
 
-  const httpReq = http.request(options, function (httpRes) {
-    httpRes.setEncoding("utf8");
-    httpRes.on("data", function (chunk) {
-      console.log("body: " + chunk);
-      res.send(chunk);
-    });
-  });
-
-  httpReq.write(data);
-  httpReq.end();
+  axios(options)
+    .then((axiosRes) => {
+      res.send(axiosRes.data);
+    })
+    .catch(next);
 });
 
 app.listen(port, () => {
