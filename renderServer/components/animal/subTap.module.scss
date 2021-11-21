@@ -17,7 +17,7 @@
         height: 29px;
         margin-right: 1.5px;
 
-        .linkEntire {
+        .tapEntireLink {
           display: flex;
           border-radius: 3px;
           margin: 1px 0 0 18px;
@@ -35,53 +35,11 @@
         }
       }
 
-      .tapBasicInfo {
-        height: 29px;
-        margin: 0 1.5px;
-
-        .linkBasicInfo {
-          margin-top: 1px;
-          color: #917659;
-          cursor: pointer;
-
-          .subTapText {
-            padding: 0 11px;
-            font-size: 13px;
-            line-height: 28px;
-          }
-        }
-      }
-
-      .tapPhoto {
-        height: 29px;
-        margin: 0 1.5px;
-
-        .linkPhoto {
-          margin-top: 1px;
-          color: #917659;
-          cursor: pointer;
-
-          .subTapBar {
-            display: inline-block;
-            width: 1px;
-            height: 11px;
-            margin: 0 3px 0 1px;
-            background-color: rgba(166, 143, 116, 0.3);
-          }
-
-          .subTapText {
-            padding: 0 11px;
-            font-size: 13px;
-            line-height: 28px;
-          }
-        }
-      }
-
-      .tapSimilar {
+      .subTap {
         height: 29px;
         margin-left: 1.5px;
 
-        .linkSimilar {
+        .subTapLink {
           margin-top: 1px;
           color: #917659;
           cursor: pointer;
