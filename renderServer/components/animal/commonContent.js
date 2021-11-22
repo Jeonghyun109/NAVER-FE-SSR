@@ -29,11 +29,10 @@ function CommonContent(props) {
           return (
             <li className={styles.smallPhoto} key={idx}>
               <a className={styles.linkSmallPhoto}>
-                {idx !== 2 && (
-                  <img src={smallPhoto} className={styles.smallPhotoImg} />
-                )}
-                {idx === 2 && (
+                {idx === 2 ? (
                   <img src={smallPhoto} className={styles.smallPhotoRoundImg} />
+                ) : (
+                  <img src={smallPhoto} className={styles.smallPhotoImg} />
                 )}
               </a>
             </li>
