@@ -1,24 +1,25 @@
-const axios = require("axios");
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const path = require("path");
+const axios = require("axios")
+const express = require("express")
+const cors = require("cors")
+const path = require("path")
 const config = require("config")
-var proxy = require("express-http-proxy")
+const proxy = require("express-http-proxy")
+
 const port = config.get("webServerPort")
 const renderServerAddress = config.get("renderServerAddress")
 const payloadSelector = require("./payloadSelector")
 
-app.use(cors());
+const app = express()
+app.use(cors())
 app.use("/proxy", proxy(renderServerAddress))
 
 app.get("/", (req, res, next) => {
-  let keys = req.query.keys;
+  let keys = req.query.keys
   if (keys !== undefined) {
-    keys = keys.split(",");
+    keys = keys.split(",")
   }
 
-  payload = payloadSelector.select(keys);
+  payload = payloadSelector.select(keys)
 
   const options = {
     "url": renderServerAddress,
@@ -30,9 +31,9 @@ app.get("/", (req, res, next) => {
     .then((axiosRes) => {
       res.send(axiosRes.data);
     })
-    .catch(next);
-});
+    .catch(next)
+})
 
 app.listen(port, () => {
   console.log(`Web Server listening at http://localhost:${port}`);
-});
+})
