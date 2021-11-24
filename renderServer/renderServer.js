@@ -16,15 +16,15 @@ app.use("/", router);
 
 router.post("/", (req, res) => {
   res.send(`
-  <!DOCTYPE html>
-  <html lang="ko">
-      <head>
-      <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
-          ${ReactDomServer.renderToString(App(req.body))}
-      </body>
-  </html>
+    <!DOCTYPE html>
+    <html lang="ko">
+        <head>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            ${ReactDomServer.renderToString(App(req.body))}
+        </body>
+    </html>
 `);
 });
 

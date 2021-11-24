@@ -5,19 +5,11 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
+# vim temporary files
+*.swp
 
 # production
-/build
-
-# misc
-.DS_Store
-*.pem
+/dist
 
 # debug
 npm-debug.log*
@@ -30,5 +22,3 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# vercel
-.vercel
