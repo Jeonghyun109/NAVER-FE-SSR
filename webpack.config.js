@@ -32,10 +32,4 @@ const config = {
   },
 };
 
-<<<<<<< HEAD
-new MiniCssExtractPlugin({
-  filename: "bootstrap/dist/css/bootstrap.css",
-});
-=======
 module.exports = [config];
->>>>>>> eb582978255879f8abfbd0a53576df5dd2de5671
