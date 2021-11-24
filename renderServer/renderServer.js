@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const React = require("react");
 const cors = require("cors");
 const ReactDomServer = require("react-dom/server");
-import App from "./components/app";
+import App from "./components/common/app";
 
 const router = express.Router();
 const app = express();
@@ -15,18 +15,14 @@ app.use(bodyParser.json());
 app.use("/", router);
 
 router.post("/", (req, res) => {
-  const temp = ReactDomServer.renderToString(<App body={req.body} />);
   res.send(`
   <!DOCTYPE html>
   <html lang="ko">
       <head>
-          <meta charset="utf-8">
-          <title>NAVER-FE-SSR</title>
+      <link rel="stylesheet" href="style.css">
       </head>
       <body>
-          <div id="root">
-              ${temp}
-          </div>
+          ${ReactDomServer.renderToString(App(req.body))}
       </body>
   </html>
 `);

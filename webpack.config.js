@@ -6,3 +6,7 @@ module.exports = {
     filename: "bundle.[hash].js", // 4
   },
 };
+
+new MiniCssExtractPlugin({
+  filename: "bootstrap/dist/css/bootstrap.css",
+});
