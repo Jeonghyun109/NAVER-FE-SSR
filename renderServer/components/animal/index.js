@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import Title from "./title";
 import SubTap from "./subTap";
 import CommonContent from "./commonContent";
+import SimilarContent from "./similarContent";
 
 function Animal(props) {
   return (
@@ -14,7 +15,7 @@ function Animal(props) {
 
       <div className={styles.contentWrap}>
         <CommonContent />
-        <div className={styles.similarContentArea}>xy</div>
+        <SimilarContent />
       </div>
     </div>
   );
