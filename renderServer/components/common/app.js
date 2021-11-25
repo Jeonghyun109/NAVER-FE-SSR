@@ -8,12 +8,12 @@ import CulturalAsset from "../cultural_asset/index";
 function App(props) {
   return (
     <div className={styles.container}>
-      <Header/>
-      <div className = {styles.bodybackground}>
-        <CulturalAsset props = {props[0]["mainCard"]}/>
+      <Header />
+      <div className={styles.bodybackground}>
+        <Animal />
+        <CulturalAsset props={props[0]["mainCard"]} />
         <News />
       </div>
-      
     </div>
   );
 }
