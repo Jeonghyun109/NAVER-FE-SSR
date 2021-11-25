@@ -1,22 +1,23 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Title from "./title";
-import SubTap from "./subtap";
-import Content from "./content";
+import SubTap from "./subTap";
+import CommonContent from "./commonContent";
 
-function Webtoon({ props }) {
+function Animal(props) {
   return (
     <div className={styles.commonModule}>
       <div className={styles.topWrap}>
-        <Title props={props} />
-        <SubTap props={props} />
+        <Title />
+        <SubTap />
       </div>
 
       <div className={styles.contentWrap}>
-        <Content props={props} />
+        <CommonContent />
+        <div className={styles.similarContentArea}>xy</div>
       </div>
     </div>
   );
 }
 
-export default Webtoon;
+export default Animal;

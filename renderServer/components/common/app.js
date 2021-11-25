@@ -10,7 +10,7 @@ function App(props) {
   return (
     <div className={styles.container}>
       <Header />
-      <Webtoon props = {props[1]}/>
+      <Webtoon props={props[1]} />
     </div>
   );
 }

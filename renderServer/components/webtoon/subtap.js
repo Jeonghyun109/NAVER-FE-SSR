@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./subtap.module.scss";
 
-function SubTap({props}) {
+function SubTap({ props }) {
   return (
     <div className={styles.subTapArea}>
       <ul className={styles.tapList}>
@@ -10,10 +10,12 @@ function SubTap({props}) {
             return (
               <li className={styles.subTap}>
                 <a className={styles.subTapEntireLink}>
-                  <span className={styles.subTapText}>{subTapInfo["title"]}</span>
+                  <span className={styles.subTapText}>
+                    {subTapInfo["title"]}
+                  </span>
                 </a>
-              </li>                 
-            )
+              </li>
+            );
           }
           return (
             <li className={styles.subTap} key={idx}>

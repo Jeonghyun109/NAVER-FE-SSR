@@ -1,69 +1,69 @@
-.searchBar{
-    height: 70px;
-    border-bottom: 1px solid #06c755;
-    width: 100%;
+.searchBar {
+  height: 70px;
+  border-bottom: 1px solid #06c755;
+  width: 100%;
 
-    .Logo{
-        position: absolute;
-        font-size: 30pt;
-        color: #06c755;
-        font-weight: 900;
-        font-stretch: 300%;
-        top: 14px;
-        left: 20px;
-    }
-    .searchBox{
-        position: absolute;
-        top: 16px;
-        left: 60px;
-        border: 0px;
-        font-size: 24px;
-        font-weight: bold;
-        width: calc((100vw - 100px)*0.8);
-        padding: 5px;
-    }
-    .Erase {
-        color: lightgray;
-        position: absolute;
-        top: 20px;
-        right: 140px;
-        white-space: nowrap;
-    }
-    .voiceSearch{
-        color: #06c755;
-        position: absolute;
-        top: 15px;
-        right: 75px;
-    }
-    .searchIcon{
-        color: #06c755;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
-}
-.scrollMenu{
-    overflow: auto;
+  .Logo {
+    position: absolute;
+    font-size: 30pt;
+    color: #06c755;
+    font-weight: 900;
+    font-stretch: 300%;
+    top: 14px;
+    left: 20px;
+  }
+  .searchBox {
+    position: absolute;
+    top: 16px;
+    left: 60px;
+    border: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    width: calc((100vw - 100px) * 0.8);
+    padding: 5px;
+  }
+  .Erase {
+    color: lightgray;
+    position: absolute;
+    top: 20px;
+    right: 140px;
     white-space: nowrap;
-    margin-left: 10px;
-    margin-top: 5px;
-    
-    .menuhome{
-        display: inline-block;
-        text-align: center;
-        padding: 15px;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-        color: #06c755;
-    }
-    .menu{
-        display: inline-block;
-        text-align: center;
-        padding: 15px;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-        color: black;
-    }
+  }
+  .voiceSearch {
+    color: #06c755;
+    position: absolute;
+    top: 15px;
+    right: 75px;
+  }
+  .searchIcon {
+    color: #06c755;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}
+.scrollMenu {
+  overflow: auto;
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-top: 5px;
+
+  .menuhome {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #06c755;
+  }
+  .menu {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
 }
