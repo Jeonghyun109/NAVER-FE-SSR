@@ -8,7 +8,6 @@ import Body2 from './body2';
 export default function CulturalAsset({props}) {
 
     return (
-        <>
         <div className = {styles.container}>
             <div className = {styles.maincard}>
                 <Header props = {props}/>
@@ -19,8 +18,5 @@ export default function CulturalAsset({props}) {
             </div>
             <br/>
         </div>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/>
-        </>
     )
 }

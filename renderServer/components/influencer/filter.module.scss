@@ -1,0 +1,78 @@
+.filterDiv{
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    background-color: #fafbfc;
+    height: 80px;
+    display: flex;
+    align-items: center; /* align vertical */
+    border-top: 1px solid #e2e5e8;
+    border-bottom: 1px solid #e2e5e8;
+
+    .filterList{
+        display: flex;
+        margin-left: -25px;
+        list-style-type: none;
+    }
+}
+.tabFirst{
+    padding: 13px 15px 10px 15px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: #06c755;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.tabs{
+    padding: 13px 15px 10px 15px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    margin-right: 10px;
+    border: 1px solid #e2e5e8;
+    text-decoration: none;
+}
+.tabThumbnail{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border: 0.5px solid #e2e5e8;
+    text-decoration: none;
+}
+.tabTitle{
+    font-weight: 700;
+    font-size: 12pt;
+    display: inline;
+    text-decoration: none;
+}
+.tabSubTitle{
+    font-size: 10pt;
+    text-decoration: none;
+}
+.tabTitleTabs{
+    font-weight: 700;
+    font-size: 12pt;
+    display: inline;
+    text-decoration: none;
+    color: #797979;
+}
+.tabSubTitleTabs{
+    font-size: 10pt;
+    color: #999999;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+}
