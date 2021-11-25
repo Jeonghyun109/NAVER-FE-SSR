@@ -152,6 +152,10 @@ class PayloadSelector {
         ],
       },
     },
+    "sham": {
+      "type": "animal",
+      "title": "샴(샤미즈)"
+    },
     ind_diary: {
       type: "webtoon",
       title: "독립일기",
