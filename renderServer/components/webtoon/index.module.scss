@@ -1,10 +1,10 @@
 .commonModule {
   height: 724px;
   padding-bottom: 25px;
-  border: 1px solid #e8ebee;
+  border: 1px solid #e2e5e8;
   border-radius: 6px;
   margin: 0 30px 0 30px;
-  background-color: #f4f3f0;
+  background-color: #e9ecef;
 
   .topWrap {
     height: 114px;
@@ -15,7 +15,7 @@
       height: 2px;
       border-top: 1px solid #e8ebee;
       border-radius: 6px 6px 0 0;
-      background-color: #e2dad1;
+      background-color: rgb(236, 239, 243);
     }
   }
 
@@ -23,10 +23,5 @@
     height: 589px;
     padding-bottom: 20px;
     border: 0 1px 1px 1px;
-
-    .similarContentArea {
-      height: 213px;
-      padding-bottom: 1px;
-    }
   }
 }

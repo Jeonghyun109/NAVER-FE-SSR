@@ -85,5 +85,31 @@
         text-decoration: underline;
       }
     }
+
+    .ul {
+      list-style: none;
+    }
+
+    .webtoonList {
+      display: talbe;
+      padding-top: 1px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 5px;      
+      border-spacing: 9px 0;
+      border-collapse: separate;
+      table-layout: fixed;
+      box-sizing: border-box;
+
+      .webtoonElem {
+        display: table-cell;
+        height: 1px;
+        position: relative;
+        background-color: var(#fff!important);
+        white-space: normal;
+        vertical-align: top;
+        z-index: 2;
+      }
+    }
   }
 }
