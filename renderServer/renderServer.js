@@ -20,6 +20,10 @@ router.post("/", (req, res) => {
     <html lang="ko">
         <head>
         <link rel="stylesheet" href="style.css">
+        <script
+          src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+          data-auto-a11y="true"
+        ></script>
         </head>
         <body>
             ${ReactDomServer.renderToString(App(req.body))}
