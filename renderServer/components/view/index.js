@@ -11,11 +11,15 @@ function View(props) {
         <h2 className={styles.h2}>VIEW</h2>
       </div>
       <ul className={styles.ul}>
-        <li className={styles.li}>
-          <TotalWrap />
-          <TotalTag />
-          <TotalLink />
-        </li>
+        {props.view.list.map((element, idx) => {
+          return (
+            <li className={styles.li} key={idx}>
+              <TotalWrap totalWrap={element.totalWrap} />
+              <TotalTag totalTag={element.totalTag} />
+              <TotalLink totalLink={element.totalLink} />
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

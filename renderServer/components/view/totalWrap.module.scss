@@ -6,8 +6,9 @@
     display: flex;
     max-width: fit-content;
     height: 27px;
-    cursor: pointer;
     align-items: center;
+    text-decoration: none;
+    cursor: pointer;
 
     .image {
       width: 24px;
@@ -86,6 +87,7 @@
     color: #0068c3;
     font-size: 19px;
     line-height: 25px;
+    text-decoration: none;
     cursor: pointer;
   }
 
@@ -98,7 +100,9 @@
       .textLink {
         display: block;
         word-break: break-all;
+        color: black;
         font-size: 16.5px;
+        text-decoration: none;
         cursor: pointer;
       }
     }

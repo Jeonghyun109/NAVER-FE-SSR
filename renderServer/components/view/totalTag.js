@@ -2,14 +2,12 @@ import React from "react";
 import styles from "./totalTag.module.scss";
 
 function TotalTag(props) {
-  const tags = ["샴고양이", "샤미즈", "샴고양이성격"];
-
   return (
     <div className={styles.totalTagArea}>
-      {tags.map((tag, idx) => {
+      {props.totalTag.list.map((tag, idx) => {
         return (
-          <a className={styles.tagLink} key={idx}>
-            #{tag}
+          <a href={tag.href} className={styles.tagLink} key={idx}>
+            #{tag.title}
           </a>
         );
       })}
