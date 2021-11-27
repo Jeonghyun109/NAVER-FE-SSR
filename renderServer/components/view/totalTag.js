@@ -5,11 +5,11 @@ function TotalTag(props) {
   const tags = ["샴고양이", "샤미즈", "샴고양이성격"];
 
   return (
-    <div className={styles.totalTag}>
+    <div className={styles.totalTagArea}>
       {tags.map((tag, idx) => {
         return (
-          <a className={styles.tag} key={idx}>
-            {tag}
+          <a className={styles.tagLink} key={idx}>
+            #{tag}
           </a>
         );
       })}

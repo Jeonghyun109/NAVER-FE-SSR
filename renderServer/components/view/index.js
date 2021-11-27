@@ -13,6 +13,8 @@ function View(props) {
       <ul className={styles.ul}>
         <li className={styles.li}>
           <TotalWrap />
+          <TotalTag />
+          <TotalLink />
         </li>
       </ul>
     </div>

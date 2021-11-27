@@ -1,10 +1,17 @@
-.totalTag {
+.totalTagArea {
+  display: flex;
   padding-bottom: 18px;
+  margin-left: 14px;
+  overflow: auto;
 
-  .tag {
+  .tagLink {
+    display: block;
     height: 28px;
     padding: 0 8px;
     margin-left: 4px;
+    background-color: #f4f7f8;
+    color: #666;
+    font-size: 14px;
     line-height: 28px;
     cursor: pointer;
   }
