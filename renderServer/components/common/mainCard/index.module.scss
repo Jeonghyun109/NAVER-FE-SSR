@@ -1,15 +1,17 @@
 .commonModule {
+  position: relative;
+  width: 768px;
   border: 1px solid #e8ebee;
   border-radius: 6px;
-  margin: auto;
+  margin: 9px auto 0 auto;
   background-color: #f4f3f0;
-  max-width: 670px;
 
   .topWrap {
     &:before {
       content: "";
       position: absolute;
-      width: 670px;
+      top: 0;
+      width: 768px;
       height: 2px;
       border-top: 1px solid #e8ebee;
       border-radius: 6px 6px 0 0;

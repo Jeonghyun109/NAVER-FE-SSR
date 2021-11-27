@@ -1,3 +1,5 @@
+$image-width: 148.8px;
+
 .commonContentArea {
   margin: 0 9px 12px 9px;
 
@@ -6,7 +8,7 @@
     grid-template-columns: auto auto auto auto;
     padding: 0;
     border-radius: 8px 8px 0 0;
-    margin: 0;
+    margin: 0 1px 0 1px;
     background-color: white;
     list-style-type: none;
 
@@ -17,12 +19,12 @@
 
       .linkMainPhoto {
         display: block;
-        height: 260.2px;
+        height: calc($image-width * 2 + 1px);
         cursor: pointer;
 
         .mainPhotoImg {
-          width: 260.2px;
-          height: 260.2px;
+          width: calc($image-width * 2 + 1px);
+          height: calc($image-width * 2 + 1px);
           border-radius: 8px 0 0 0;
         }
       }
@@ -33,17 +35,17 @@
 
       .linkSmallPhoto {
         display: block;
-        height: 129.6px;
+        height: $image-width;
         cursor: pointer;
 
         .smallPhotoImg {
-          width: 129.6px;
-          height: 129.6px;
+          width: $image-width;
+          height: $image-width;
         }
 
         .smallPhotoRoundImg {
-          width: 129.6px;
-          height: 129.6px;
+          width: $image-width;
+          height: $image-width;
           border-radius: 0 8px 0 0;
         }
       }
@@ -57,14 +59,31 @@
 
     .linkMiddleTitle {
       display: block;
-      margin: 0 15px;
+      position: relative;
+      margin-left: 15px;
+      text-decoration: none;
       cursor: pointer;
+      &:hover > .arrow {
+        color: black;
+      }
 
       .h3 {
         height: 22px;
         padding-top: 14px;
         margin: 0;
-        font-size: 16px;
+        color: black;
+        font-size: 18px;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 15.5px;
+        right: 15px;
+        width: 19px;
+        height: 19px;
+        color: #bfbfbf;
+        font-size: 19px;
+        line-height: 19px;
       }
     }
   }
@@ -74,16 +93,16 @@
     border-bottom: 1px solid #e8ebee;
     border-right: 1px solid #e8ebee;
     border-radius: 0 0 8px 8px;
-    padding: 7px 15px 16px 15px;
+    padding: 12px 15px 16px 15px;
     background-color: white;
 
     .text {
-      font-size: 12.6px;
+      font-size: 15px;
       color: #424242;
     }
 
     .a {
-      font-size: 13px;
+      font-size: 15px;
       color: #0c43b7;
       word-break: keep-all;
       text-decoration: none;

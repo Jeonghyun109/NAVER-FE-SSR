@@ -4,7 +4,7 @@ import styles from "./title.module.scss";
 function Title(props) {
   return (
     <div className={styles.titleArea}>
-      <h2 className={styles.mainTitle}>샴(샤미즈)</h2>
+      <h2 className={styles.mainTitle}>{props.title.name}</h2>
       <div className={styles.saveKeep}>
         <a className={styles.circlesLink}>
           <div className={styles.circles}></div>
@@ -15,9 +15,9 @@ function Title(props) {
         </div>
       </div>
       <div className={styles.subTitle}>
-        <span className={styles.subTextSpan}>동물</span>
+        <span className={styles.subTextSpan}>{props.title.type}</span>
         <span className={styles.subBarSpan} />
-        <span className={styles.subTextSpan}>Siamese cat</span>
+        <span className={styles.subTextSpan}>{props.title.subName}</span>
       </div>
     </div>
   );

@@ -2,22 +2,25 @@ import React from "react";
 import styles from "./subTap.module.scss";
 
 function SubTap(props) {
-  const subTapArray = ["기본정보", "포토", "함께 찾은 품종"];
-
   return (
     <div className={styles.subTapArea}>
       <ul className={styles.tapList}>
         <li className={styles.subTap}>
-          <a className={styles.subTapEntireLink}>
-            <span className={styles.subTapText}>전체</span>
+          <a
+            href={props.subTap.mainTap.href}
+            className={styles.subTapEntireLink}
+          >
+            <span className={styles.subTapText}>
+              {props.subTap.mainTap.title}
+            </span>
           </a>
         </li>
-        {subTapArray.map((subTapInfo, idx) => {
+        {props.subTap.list.map((subTapInfo, idx) => {
           return (
             <li className={styles.subTap} key={idx}>
-              <a className={styles.subTapLink}>
+              <a href={subTapInfo.href} className={styles.subTapLink}>
                 {idx !== 0 && <span className={styles.subTapBar} />}
-                <span className={styles.subTapText}>{subTapInfo}</span>
+                <span className={styles.subTapText}>{subTapInfo.title}</span>
               </a>
             </li>
           );
