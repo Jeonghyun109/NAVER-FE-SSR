@@ -7,13 +7,32 @@
 
   .linkMiddleTitle {
     display: block;
+    position: relative;
     padding-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover > .arrow {
+      color: black;
+    }
 
     .h3 {
       height: 22px;
       padding: 8px 30px 0 0;
       margin: 0;
-      font-size: 16px;
+      color: black;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 9.5px;
+      right: 15px;
+      width: 19px;
+      height: 19px;
+      color: #bfbfbf;
+      font-size: 19px;
+      line-height: 19px;
     }
   }
 
@@ -40,6 +59,7 @@
           width: 87px;
           height: 141px;
           cursor: pointer;
+          text-decoration: none;
           &:hover {
             text-decoration: underline;
           }
@@ -57,7 +77,7 @@
           .titleBox {
             padding: 8px 12px 10px 12px;
             margin: 0;
-            font-size: 13px;
+            font-size: 14px;
             word-break: break-all;
             color: #242424;
           }
