@@ -1,6 +1,4 @@
 .commonModule {
-  height: 724px;
-  padding-bottom: 25px;
   border: 1px solid #e8ebee;
   border-radius: 6px;
   margin: auto;
@@ -8,7 +6,6 @@
   max-width: 670px;
 
   .topWrap {
-    height: 114px;
     &:before {
       content: "";
       position: absolute;
@@ -21,13 +18,7 @@
   }
 
   .contentWrap {
-    height: 589px;
     padding-bottom: 20px;
     border: 0 1px 1px 1px;
-
-    .similarContentArea {
-      height: 213px;
-      padding-bottom: 1px;
-    }
   }
 }

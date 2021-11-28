@@ -35,8 +35,39 @@ function content({props}) {
                                 </tr>
                             </tbody>
                         </table>
-                        <div>
-                            {influencer["keywords"][0]["title"]} {influencer["keywords"][1]["value"]} {influencer["keywords"][2]["value"]} {influencer["keywords"][3]["value"]}
+                        <div className = {styles.keywords}>
+                            <b>{influencer["keywords"][0]["title"]}</b> {influencer["keywords"][1]["value"]} {influencer["keywords"][2]["value"]} {influencer["keywords"][3]["value"]}
+                        </div>
+                        <div className = {styles.imgDiv}>
+                            <ul className={styles.imgList}>
+                                {influencer["images"].map((imgsrc, idx) => {
+                                    if(idx === 0){
+                                        return (
+                                            <li className={styles.imgFirst} key={idx}>
+                                                <a href = {props["link"]}>
+                                                    <img src = {imgsrc} className = {styles.img} alt = "thumbnail"/>
+                                                </a>
+                                            </li>
+                                        )
+                                    }
+                                    else if(idx === (influencer["images"].length - 1)){
+                                        return (
+                                            <li className={styles.imgLast} key={idx}>
+                                                <a href = {props["link"]}>
+                                                    <img src = {imgsrc} className = {styles.img} alt = "thumbnail"/>
+                                                </a>
+                                            </li>
+                                        )
+                                    }
+                                    return (
+                                        <li className={styles.imgBox} key={idx}>
+                                            <a href = {props["link"]}>
+                                                <img src = {imgsrc} className = {styles.img} alt = "thumbnail"/>
+                                            </a>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
                         </div>
                     </div>
                 )
