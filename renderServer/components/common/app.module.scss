@@ -1,8 +1,10 @@
 .container {
-  width: 100vw;
+  // TODO: 100vh
+  width: calc(100vw - 80px);
   margin: -8px;
 }
-.bodybackground{
+.bodybackground {
   background-color: #e9ecef;
   border: 1px solid #e2e5e8;
+  width: 100vw;
 }

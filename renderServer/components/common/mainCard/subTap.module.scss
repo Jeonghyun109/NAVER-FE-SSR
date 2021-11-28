@@ -1,5 +1,5 @@
 .subTapArea {
-  margin-top: -17px;
+  margin-top: -12px;
 
   .tapList {
     display: flex;
@@ -16,34 +16,36 @@
         margin: 1px 0 0 18px;
         color: #fff;
         font-weight: bold;
-        background-color: #a68f74;
         justify-content: center;
+        text-decoration: none;
         cursor: pointer;
 
         .subTapText {
           padding: 0 11px;
-          font-size: 13px;
-          line-height: 28px;
+          font-size: 15px;
+          line-height: 30px;
         }
       }
 
       .subTapLink {
         margin-top: 1px;
-        color: #917659;
         cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
 
         .subTapBar {
           display: inline-block;
           width: 1px;
-          height: 11px;
-          margin: 0 3px 0 1px;
-          background-color: rgba(166, 143, 116, 0.3);
+          height: 16px;
+          margin-right: 4px;
         }
 
         .subTapText {
           padding: 0 11px;
-          font-size: 13px;
-          line-height: 28px;
+          font-size: 15px;
+          line-height: 30px;
         }
       }
     }

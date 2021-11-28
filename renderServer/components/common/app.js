@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "./app.module.scss";
-import Animal from "../animal/index";
-import Influencer from "../influencer/index"
+import Header from "./header/index";
+import MainCard from "./mainCard/index";
+import View from "../view/index";
 import News from "../news/index";
-import Header from "./header";
-import CulturalAsset from "../cultural_asset/index";
 
 function App(props) {
   return (
     <div className={styles.container}>
       <Header />
       <div className={styles.bodybackground}>
-        <Animal />
-        <CulturalAsset props={props[0]["mainCard"]} />
-        <Influencer/>
+        <MainCard mainCard={props[0].mainCard} />
+        {props[0].mainCard.title.type === "동물" && (
+          <View view={props[0].view} />
+        )}
         <News />
       </div>
     </div>
