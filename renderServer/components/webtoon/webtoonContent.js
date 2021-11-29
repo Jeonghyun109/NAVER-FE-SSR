@@ -15,7 +15,7 @@ function WebtoonContent(props) {
             {props.common.together.list.map((togetherContent, idx) => {
                 return (
                 <li className={styles.webtoon} key={idx}>
-                    <a href={togetherContent.href} className={styles.linkWebtoon}>
+                    <a href={togetherContent.href} className={styles.linkWebtoon_together}>
                     <div className={styles.webtoonDiv}>
                         <span className={styles.rank}>{id(idx)}</span>
                         <img src={togetherContent.src} className={styles.webtoonThumb} />
@@ -25,6 +25,10 @@ function WebtoonContent(props) {
                     </div>
                     <div className={styles.subtitleBox}>
                         {togetherContent.sub_text}
+                    </div>
+                    <div className={styles.preference}>
+                        <span class={styles.divide_line}></span>
+                        {togetherContent.preference}
                     </div>
                     </a>
                 </li>

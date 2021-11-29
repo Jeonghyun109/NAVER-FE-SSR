@@ -27,17 +27,6 @@
             color: #6b707a;            
         }
       }
-  
-      .arrow {
-        position: absolute;
-        top: 9.5px;
-        right: 15px;
-        width: 19px;
-        height: 19px;
-        color: #bfbfbf;
-        font-size: 19px;
-        line-height: 19px;
-      }
     }
   
     .webtoonInfo {
@@ -59,6 +48,70 @@
           border-radius: 6px;
           margin-right: 9px;
   
+          .linkWebtoon_together {
+            width: 105px;
+            height: 224.9px;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+  
+            .webtoonDiv {
+              height: 111.9px;
+              position: relative;
+  
+              .rank {
+                position: absolute;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-color: #878e9a;
+                font-size: 14px;
+                color: #fff;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 4px;
+              }
+
+              .webtoonThumb {
+                width: 105px;
+                height: 105px;
+                border-radius: 6px 6px 0 0;
+              }
+           
+            .preference {
+                padding-left: 11px;
+                padding-right: 12px;
+                padding-bottom: 5 px;
+                width: 83px;
+                height: 1px;
+                background-color: #f2f4f6;
+                font-size: 14px;
+                color: #6b707a;
+            }
+          }              
+            }
+  
+            .titleBox {
+              padding: 0px 15px 5px 11px;  // top left bottom right
+              margin: 0;
+              font-size: 16px;
+              word-break: break-all;
+              color: #242424;
+
+
+            }
+            .subtitleBox {
+                padding: 3px 11px 5px 11px;
+                margin: 0;
+                margin-top: -5px;
+                font-size: 14px;
+                word-break: break-all;
+                color: #8f8f8f;
+            }
+ 
+
           .linkWebtoon {
             width: 105px;
             height: 186.9px;
@@ -93,7 +146,7 @@
             }
   
             .titleBox {
-              padding: 30px 15px 5px 12px;  // top left bottom right
+              padding: 30px 15px 5px 11px;  // top left bottom right
               margin: 0;
               font-size: 16px;
               word-break: break-all;
@@ -102,7 +155,7 @@
 
             }
             .subtitleBox {
-                padding: 3px 11px 5px 12px;
+                padding: 3px 11px 5px 11px;
                 margin: 0;
                 margin-top: -5px;
                 font-size: 14px;
