@@ -5,6 +5,7 @@ import SubTap from "./subTap";
 import SimilarContent from "./similarContent";
 
 import AnimalContent from "../../animal/animalContent";
+import WebtoonContent from "../../webtoon/webtoonContent";
 
 function MainCard(props) {
   return (
@@ -21,9 +22,10 @@ function MainCard(props) {
         {props.mainCard.title.type === "문화재" && (
           <div>TODO: 불국사 기본정보 및 사진</div>
         )}
-        {/* {props.mainCard.title.type === "웹툰" && (
-            <div>ToDO: 웹툰 콘텐츠</div>
-        )} */}
+        {props.mainCard.title.type === "웹툰" && (
+            <div>TODO:gigigi</div>
+            // <WebtoonContent common={props.mainCard.common} />
+        )}
         <SimilarContent similar={props.mainCard.similar} />
       </div>
     </div>

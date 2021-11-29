@@ -12,6 +12,7 @@ class PayloadSelector {
           mainTap: {
             title: "전체",
             href: "https://search.naver.com",
+            order: "first",
           },
           list: [
             {
@@ -170,6 +171,7 @@ class PayloadSelector {
         subTap: {
           mainTap: {
             title: "전체",
+            order: "first",
           },
           list: [
             {
@@ -413,18 +415,19 @@ class PayloadSelector {
         ],
       },
     },
-    ind_diary: {
-        maincard: {
+    diary: {
+        mainCard: {
             title: {
-                name: "독립일기 함께 많이보는 웹툰",
+                name: "독립일기",
                 type: "웹툰",
                 "title-url": "https://search.naver.com",
-                subNmae: "연재중",
+                subName: "연재중",
             },
 
             subTap: {
                 mainTap: {
                     title: "함께 많이보는 웹툰",
+                    order: "last",
                 },
                 list: [
                     {
@@ -794,9 +797,6 @@ class PayloadSelector {
                 ],
                 text: "네이버 웹툰 2021-11-29",
             },
-        },
-        news: {
-
         },
       },
   };
