@@ -23,8 +23,7 @@ function MainCard(props) {
           <div>TODO: 불국사 기본정보 및 사진</div>
         )}
         {props.mainCard.title.type === "웹툰" && (
-            <div>TODO:gigigi</div>
-            // <WebtoonContent common={props.mainCard.common} />
+            <WebtoonContent common={props.mainCard.common} />
         )}
         <SimilarContent similar={props.mainCard.similar} />
       </div>

@@ -526,7 +526,7 @@ class PayloadSelector {
                 life: {
                     header: {
                         button: "일상",                        
-                        title: "웹툰 랭킹",
+                        title: " 웹툰 랭킹",
                     },
                     list: [
                         {

@@ -2,56 +2,114 @@ import React from "react";
 import styles from "./webtoonContent.module.scss";
 
 function WebtoonContent(props) {
+  function id (idx) {
+      return (idx + 1);
+  }
   return (
     <div className={styles.commonContentArea}>
-      <ul className={styles.photoList}>
-        <li className={styles.mainPhoto}>
-          <a
-            href={props.common.mainPhoto.href}
-            className={styles.linkMainPhoto}
-          >
-            <img
-              src={props.common.mainPhoto.src}
-              className={styles.mainPhotoImg}
-            />
-          </a>
-        </li>
+        <a className={styles.linkMiddleTitle}>
+            <h3 className={styles.h3}>{props.common.together.header.title}</h3>
+        </a>
+        <div className={styles.webtoonInfo}>
+            <ul className={styles.webtoonList}>
+            {props.common.together.list.map((togetherContent, idx) => {
+                return (
+                <li className={styles.webtoon} key={idx}>
+                    <a href={togetherContent.href} className={styles.linkWebtoon}>
+                    <div className={styles.webtoonDiv}>
+                        <span className={styles.rank}>{id(idx)}</span>
+                        <img src={togetherContent.src} className={styles.webtoonThumb} />
+                    </div>
+                    <div className={styles.titleBox}>
+                        {togetherContent.title}
+                    </div>
+                    <div className={styles.subtitleBox}>
+                        {togetherContent.sub_text}
+                    </div>
+                    </a>
+                </li>
+                );
+            })}
+            </ul>
+        </div>
 
-        {props.common.smallPhoto.list.map((smallPhoto, idx) => {
-          return (
-            <li className={styles.smallPhoto} key={idx}>
-              <a href={smallPhoto.href} className={styles.linkSmallPhoto}>
-                {idx === 2 ? (
-                  <img
-                    src={smallPhoto.src}
-                    className={styles.smallPhotoRoundImg}
-                  />
-                ) : (
-                  <img src={smallPhoto.src} className={styles.smallPhotoImg} />
-                )}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-      <div className={styles.middleTitle}>
-        <a
-          href={props.common.basicInfo.href}
-          className={styles.linkMiddleTitle}
-        >
-          <h3 className={styles.h3}>{props.common.basicInfo.title}</h3>
-          <div className={styles.arrow}>
-            <i className="fas fa-arrow-right"></i>
-          </div>
+        <a className={styles.linkMiddleTitle}>
+            <h3 className={styles.h3}>
+                <span className={styles.span}>{props.common.life.header.button}</span>
+                {props.common.life.header.title}
+            </h3>
         </a>
-      </div>
-      <div className={styles.detailInfo}>
-        <span className={styles.text}>{props.common.basicInfo.detail}</span>
-        <a href={props.common.basicInfo.moreDetails} className={styles.a}>
-          더보기
+        <div className={styles.webtoonInfo}>
+            <ul className={styles.webtoonList}>
+            {props.common.life.list.map((lifeContent, idx) => {
+                return (
+                <li className={styles.webtoon} key={idx}>
+                    <a href={lifeContent.href} className={styles.linkWebtoon}>
+                    <div className={styles.webtoonDiv}>
+                        <span className={styles.rank}>{id(idx)}</span>                        
+                        <img src={lifeContent.src} className={styles.webtoonThumb} />
+                    </div>
+                    <div className={styles.titleBox}>{lifeContent.title}</div>
+                    <div className={styles.subtitleBox}>
+                        {lifeContent.sub_text}
+                    </div>
+                    </a>
+                </li>
+                );
+            })}
+            </ul>
+        </div>
+
+        <a className={styles.linkMiddleTitle}>
+            <h3 className={styles.h3}>{props.common.new.header.title}</h3>
         </a>
-      </div>
+        <div className={styles.webtoonInfo}>
+            <ul className={styles.webtoonList}>
+            {props.common.new.list.map((newContent, idx) => {
+                return (
+                <li className={styles.webtoon} key={idx}>
+                    <a href={newContent.href} className={styles.linkWebtoon}>
+                    <div className={styles.webtoonDiv}>
+                        <span className={styles.rank}>{id(idx)}</span>
+                        <img src={newContent.src} className={styles.webtoonThumb} />
+                    </div>
+                    <div className={styles.titleBox}>{newContent.title}</div>
+                    <div className={styles.subtitleBox}>
+                        {newContent.sub_text}
+                    </div>
+                    </a>
+                </li>
+                );
+            })}
+            </ul>
+        </div>
+
+        <a className={styles.linkMiddleTitle}>
+            <h3 className={styles.h3}>{props.common.weekly.header.title}</h3>
+        </a>
+        <div className={styles.webtoonInfo}>
+            <ul className={styles.webtoonList}>
+            {props.common.weekly.list.map((weeklyContent, idx) => {
+                return (
+                <li className={styles.webtoon} key={idx}>
+                    <a href={weeklyContent.href} className={styles.linkWebtoon}>
+                    <div className={styles.webtoonDiv}>
+                        <span className={styles.rank}>{id(idx)}</span>
+                        <img src={weeklyContent.src} className={styles.webtoonThumb} />
+                    </div>
+                    <div className={styles.titleBox}>{weeklyContent.title}</div>
+                    <div className={styles.subtitleBox}>
+                        {weeklyContent.sub_text}
+                    </div>
+                    </a>
+                </li>
+                );
+            })}
+            </ul>
+        </div>
     </div>
+
+
   );
 }
 
