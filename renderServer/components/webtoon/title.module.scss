@@ -1,0 +1,33 @@
+.titleArea {
+    height: 49px;
+    padding: 18px 38px 15px 18px;
+    margin-top: -1px;
+  
+    .mainTitle {
+      height: 25px;
+      margin: 2px 46px 0 0;
+      line-height: 25px;
+      font-size: 18px;
+      letter-spacing: -0.25px;
+    }
+  
+    .subTitle {
+      height: 18px;
+      margin-top: 4px;
+      color: rgba(107, 112, 122, 0.8);
+  
+      .subTextSpan {
+        line-height: 18px;
+        font-size: 13px;
+      }
+  
+      .subBarSpan {
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        margin: 4px 7px 0 8px;
+        background-color: rgba(107, 112, 122, 0.8);
+      }
+    }
+  }
+  

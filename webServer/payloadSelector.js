@@ -413,6 +413,392 @@ class PayloadSelector {
         ],
       },
     },
+    ind_diary: {
+        maincard: {
+            title: {
+                name: "독립일기 함께 많이보는 웹툰",
+                type: "웹툰",
+                "title-url": "https://search.naver.com",
+                subNmae: "연재중",
+            },
+
+            subTap: {
+                mainTap: {
+                    title: "함께 많이보는 웹툰",
+                },
+                list: [
+                    {
+                        title: "전체",
+                        href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&pkid=47&os=14300223&qvt=0&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0",                    
+                    },
+                    {
+                        title: "회차보기",
+                        href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&pkid=47&os=14300223&qvt=0&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0%20%ED%9A%8C%EC%B0%A8%EB%B3%B4%EA%B8%B0",
+                    },
+                    {
+                        title: "작가의 다른작품",
+                        href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&pkid=47&os=14300223&qvt=0&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0%20%EC%9E%91%EA%B0%80%EC%9D%98%20%EB%8B%A4%EB%A5%B8%EC%9E%91%ED%92%88",
+                    },
+                ],                
+            },
+            
+            common: {
+                together: {
+                    header: {
+                        title: "함께 많이 보는 웹툰",
+                    },
+                    list: [
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_a7a092fd-4f82-4ec9-afad-0ea1268d9a53.jpg",
+                            title: "먹는 인생",
+                            sub_text: "홍끼",
+                            perference: 99,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_e295146b-8729-4ea0-a332-1c6463d81bd6.jpg",
+                            title: "2021 최애캐 안녕, ...",
+                            sub_text: "네이버웹툰",
+                            perference: 99,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_25be10b5-729b-474d-ac9c-bae0a879e8cd.jpg",
+                            title: "조조코믹스",
+                            sub_text: "이동건",
+                            perference: 89,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_c20e1412-a2fb-493d-8e1e-57234c0ab7e4.jpg",
+                            title: "노곤하개",
+                            sub_text: "홍끼",
+                            perference: 86,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_eefd3fab-24d0-4734-a4e7-d9cdd3de742b.jpg",
+                            title: "개를 낳았다",
+                            sub_text: "이선",
+                            perference: 84,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_d44348af-7f3b-44a4-88e3-6ff1430256c1.jpg",
+                            title: "그 해 우리는 - 초여...",
+                            sub_text: "한경찰",
+                            perference: 82,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…ail%2Ftitle_thumbnail_20161031214436_t220x202.jpg",
+                            title: "윌유메리미",
+                            sub_text: "마인드C",
+                            perference: 81,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_b822d5ad-0cd6-4313-976a-aa60238375ed.jpg",
+                            title: "결혼생활 그림일기",
+                            sub_text: "은꼼지",
+                            perference: 98,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…ail%2Ftitle_thumbnail_20160601180804_t220x202.jpg",
+                            title: "대학일기",
+                            sub_text: "자까",
+                            perference: 81,
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_9a66efb3-2d4f-4013-b43f-03ebe0d8d373.jpg",
+                            title: "닥터앤닥터 육아일기",
+                            sub_txt: "닥터베르",
+                            perference: 80,
+                        },                       
+                    ],
+                },
+                life: {
+                    header: {
+                        button: "일상",                        
+                        title: "웹툰 랭킹",
+                    },
+                    list: [
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_73f1aaef-824f-4790-a70b-f3b1e3aa22b4.jpg",
+                            title: "나쁜사람",
+                            sub_text: "둠스",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_d8bd40f2-76f6-448b-8650-126c0d5137b6.jpg",
+                            title: "독립일기",
+                            sub_text: "자까",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_a7a092fd-4f82-4ec9-afad-0ea1268d9a53.jpg",
+                            title: "먹는 인생",
+                            sub_text: "홍끼",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_c614978a-da9b-462e-9e8c-f5ba49400109.jpg",
+                            title: "오빠세끼",
+                            sub_text: "올리브유",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_af8ac713-8563-48f9-9028-325668ed4d2c.jpg",
+                            title: "최면학교",
+                            sub_text: "박은혁",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_54e93171-9019-484d-9696-0f492d9a9772.jpg",
+                            title: "내과 박원장",
+                            sub_text: "장봉수",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_85ae070d-7677-45e6-a034-e25116c900c1.jpg",
+                            title: "경자 전성시대",
+                            sub_text: "김호드",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            sc: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_4ef07c1d-5daa-4cc8-b75c-7b9ef20146ed.jpg",
+                            title: "혁신적 얼간이들",
+                            sub_text: "가스파드",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_7db34970-7fe9-4b1c-8e3d-91c255981829.jpg",
+                            title: "사실 마법이었던 ...",
+                            sub_text: "박성현",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_a13551ff-0c82-422e-beff-454e91915ddb.jpg",
+                            title: "만물의 영장",
+                            sub_text: "보민",
+                        },                     
+                    ],
+                },
+                new: {
+                    header: {
+                        title: "주간 신작 랭킹",
+                    },
+                    list: [
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_e295146b-8729-4ea0-a332-1c6463d81bd6.jpg",
+                            title: "퀘스트 지상주의",
+                            sub_text: "박태준 만화회사",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_2ac4c0ab-5fa8-4b8e-8561-7113782a057a.jpg",
+                            title: "김부장",
+                            sub_text: "박태준 만화회사",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_1f6cc767-2c3e-4a7e-9fb4-e6a8628f98bd.jpg",
+                            title: "존망코인",
+                            sub_text: "박태준 만화회사",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_c24f84ca-4d6a-4651-9a14-0f1fd2ad4fe2.jpg",
+                            title: "2021 최애캐 안녕, ...",
+                            sub_text: "웹툰작가",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_35e3b752-6c15-466f-bef5-f75245161fc8.jpg",
+                            title: "쇼미더럭키짱!",
+                            sub_text: "박태준",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_a7a092fd-4f82-4ec9-afad-0ea1268d9a53.jpg",
+                            title: "현실퀘스트",
+                            sub_text: "이주운",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_7a5497b2-98a2-4966-9940-6f501af33f9f.jpg",
+                            title: "내가 키운 S급들",
+                            sub_text: "근서, seri",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_b1ed2d69-abc6-43a3-8a17-41af6f972168.jpg",
+                            title: "먹는 인생",
+                            sub_text: "홍끼",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_0572dea8-def9-413e-a9d4-3c8a273147ae.jpg",
+                            title: "그 해 우리는 -초여...",
+                            sub_text: "한경찰",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_96cfb2dc-54b6-40fb-8c15-65f728fb3820.jpg",
+                            title: "엑스애쉬",
+                            sub_text: "김세훈",
+                        },
+                    ],
+                },
+                weekly: {
+                    header: {
+                        title: "신작 랭킹",
+                    },
+                    list: [
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_c04fd4ec-8bbf-4765-ab13-2281b1eb254e.jpg",
+                            title: "연애혁명",
+                            sub_text: "232",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_256e08d0-dfd0-454a-9a74-1743bad87e81.jpg",
+                            title: "싸움독학",
+                            sub_text: "박태준",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_fe828dc9-84a2-4329-9d83-2f4afc981031.jpg",
+                            title: "외모지상주의",
+                            sub_text: "박태준",
+
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_67290a02-fe7f-448d-aed9-6ec88e558088.jpg",
+                            title: "참교육",
+                            sub_text: "채용택",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_e50a911a-aeed-4cd1-abb9-1efba754f68b.jpg",
+                            title: "더 복서",
+                            sub_text: "정지훈",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…ail%2Ftitle_thumbnail_20150323153418_t220x202.jpg",
+                            title: "전지적 독자 시점",
+                            sub_text: "싱숑, UMI",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_225f310e-c16c-4ac3-b164-987d0cec46a7.jpg",
+                            title: "프리드로우",
+                            sub_text: "전선욱",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_d8bd40f2-76f6-448b-8650-126c0d5137b6.jpg",
+                            title: "여신강림",
+                            sub_text: "야옹이",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_96bede54-a8da-47ca-a9ac-3ae610addbfe.jpg",
+                            title: "나 혼자 만렙 뉴비",
+                            sub_text: "메슬로우, WAN.Z",
+                        },
+                        {
+                            href: "https://webtoon.naver.com/",                            
+                            src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_510971eb-e1d0-45ce-ac81-51df7edfd9d6.jpg",
+                            title: "한림체육관",
+                            sub_text: "혜성",
+                        },
+                    ],
+                },
+            },
+            similar: {
+                header: {
+                    title: "여성들이 많이 찾는 월요웹툰",
+                },
+                list: [
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_c04fd4ec-8bbf-4765-ab13-2281b1eb254e.jpg",
+                        title: "연애혁명",
+                        sub_text: "232",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_256e08d0-dfd0-454a-9a74-1743bad87e81.jpg",
+                        title: "싸움독학",
+                        sub_text: "박태준",
+
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_fe828dc9-84a2-4329-9d83-2f4afc981031.jpg",
+                        title: "외모지상주의",
+                        sub_text: "박태준",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_67290a02-fe7f-448d-aed9-6ec88e558088.jpg",
+                        title: "참교육",
+                        sub_text: "채용택",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_e50a911a-aeed-4cd1-abb9-1efba754f68b.jpg",
+                        title: "더 복서",
+                        sub_text: "정지훈",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…ail%2Ftitle_thumbnail_20150323153418_t220x202.jpg",
+                        title: "전지적 독자 시점",
+                        sub_text: "싱숑, UMI",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_225f310e-c16c-4ac3-b164-987d0cec46a7.jpg",
+                        title: "프리드로우",
+                        sub_text: "전선욱",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_d8bd40f2-76f6-448b-8650-126c0d5137b6.jpg",
+                        title: "여신강림",
+                        sub_text: "야옹이",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_96bede54-a8da-47ca-a9ac-3ae610addbfe.jpg",
+                        title: "나 혼자 만렙 뉴비",
+                        sub_text: "메슬로우, WAN.Z",
+                    },
+                    {
+                        href: "https://webtoon.naver.com/",                        
+                        src: "https://search.pstatic.net/common?type=f&size=210x…l_IMAG19_510971eb-e1d0-45ce-ac81-51df7edfd9d6.jpg",
+                        title: "한림체육관",
+                        sub_text: "혜성",
+
+                    },
+                ],
+                text: "네이버 웹툰 2021-11-29",
+            },
+        },
+        news: {
+
+        },
+      },
   };
   static payloadKeys = Object.keys(this.payloadMap);
 

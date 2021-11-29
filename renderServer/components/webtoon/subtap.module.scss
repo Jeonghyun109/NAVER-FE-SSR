@@ -1,0 +1,52 @@
+.subTapArea {
+    margin-top: -17px;
+  
+    .tapList {
+      display: flex;
+      padding: 8px 0 11px 0;
+      margin: 0;
+      list-style-type: none;
+  
+      .subTap {
+        margin-right: 1.5px;
+  
+        .subTapEntireLink {
+          display: flex;
+          border-radius: 3px;
+          margin: 1px 0 0 18px;
+          color: #fff;
+          font-weight: bold;
+          background-color: #6b707a;
+          justify-content: center;
+          cursor: pointer;
+  
+          .subTapText {
+            padding: 0 11px;
+            font-size: 13px;
+            line-height: 28px;
+          }
+        }
+  
+        .subTapLink {
+          margin-top: 1px;
+          color: #6b707a;
+          cursor: pointer;
+  
+          .subTapBar {
+            display: inline-block;
+            width: 1px;
+            height: 11px;
+            margin: 0 3px 0 1px;
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+  
+          .subTapText {
+            padding: 0 11px;
+            font-size: 13px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+  
