@@ -16,7 +16,7 @@ function App(props) {
           <View view={props[0].view} />
         )}
         {props[0].mainCard.title.type === "동물" && (
-            <News news={props[0].news} />
+          <News news={props[0].news} />
         )}
       </div>
     </div>

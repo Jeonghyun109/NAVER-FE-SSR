@@ -1,0 +1,27 @@
+.commonModule {
+  height: 724px;
+  padding-bottom: 25px;
+  border: 1px solid #e2e5e8;
+  border-radius: 6px;
+  margin: 0 30px 0 30px;
+  background-color: #e9ecef;
+
+  .topWrap {
+    height: 114px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 670px;
+      height: 2px;
+      border-top: 1px solid #e8ebee;
+      border-radius: 6px 6px 0 0;
+      background-color: rgb(236, 239, 243);
+    }
+  }
+
+  .contentWrap {
+    height: 589px;
+    padding-bottom: 20px;
+    border: 0 1px 1px 1px;
+  }
+}
