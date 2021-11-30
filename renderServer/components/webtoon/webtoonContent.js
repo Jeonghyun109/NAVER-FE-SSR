@@ -2,9 +2,6 @@ import React from "react";
 import styles from "./webtoonContent.module.scss";
 
 function WebtoonContent(props) {
-  function id(idx) {
-    return idx + 1;
-  }
   return (
     <div className={styles.commonContentArea}>
       <div className={styles.linkMiddleTitle}>
@@ -20,7 +17,7 @@ function WebtoonContent(props) {
                   className={styles.linkWebtoon_together}
                 >
                   <div className={styles.webtoonDiv}>
-                    <span className={styles.rank}>{id(idx)}</span>
+                    <span className={styles.rank}>{idx + 1}</span>
                     <img
                       src={togetherContent.src}
                       className={styles.webtoonThumb}
@@ -54,7 +51,7 @@ function WebtoonContent(props) {
               <li className={styles.webtoon} key={idx}>
                 <a href={lifeContent.href} className={styles.linkWebtoon}>
                   <div className={styles.webtoonDiv}>
-                    <span className={styles.rank}>{id(idx)}</span>
+                    <span className={styles.rank}>{idx + 1}</span>
                     <img
                       src={lifeContent.src}
                       className={styles.webtoonThumb}
@@ -81,7 +78,7 @@ function WebtoonContent(props) {
               <li className={styles.webtoon} key={idx}>
                 <a href={newContent.href} className={styles.linkWebtoon}>
                   <div className={styles.webtoonDiv}>
-                    <span className={styles.rank}>{id(idx)}</span>
+                    <span className={styles.rank}>{idx + 1}</span>
                     <img src={newContent.src} className={styles.webtoonThumb} />
                   </div>
                   <div className={styles.titleBox}>{newContent.title}</div>
@@ -105,7 +102,7 @@ function WebtoonContent(props) {
               <li className={styles.webtoon} key={idx}>
                 <a href={weeklyContent.href} className={styles.linkWebtoon}>
                   <div className={styles.webtoonDiv}>
-                    <span className={styles.rank}>{id(idx)}</span>
+                    <span className={styles.rank}>{idx + 1}</span>
                     <img
                       src={weeklyContent.src}
                       className={styles.webtoonThumb}
