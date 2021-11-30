@@ -21,27 +21,18 @@ function TotalWrap(props) {
         {props.totalWrap.text.title}
       </a>
 
-      {props.totalWrap.text.src === "" && (
-        <div className={styles.totalGroup}>
-          <div className={styles.textDiv}>
-            <a href={props.totalWrap.text.href} className={styles.textLink}>
-              {props.totalWrap.text.detail}
-            </a>
-          </div>
+      <div className={styles.totalGroup}>
+        <div className={styles.textDiv}>
+          <a href={props.totalWrap.text.href} className={styles.textLink}>
+            {props.totalWrap.text.detail}
+          </a>
         </div>
-      )}
-      {props.totalWrap.text.src !== "" && (
-        <div className={styles.totalGroup}>
-          <div className={styles.textDiv}>
-            <a href={props.totalWrap.text.href} className={styles.textLink}>
-              {props.totalWrap.text.detail}
-            </a>
-          </div>
+        {props.totalWrap.text.src !== "" && (
           <a href={props.totalWrap.text.href} className={styles.imageLink}>
             <img src={props.totalWrap.text.src} className={styles.image} />
           </a>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
