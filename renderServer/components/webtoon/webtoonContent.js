@@ -7,9 +7,9 @@ function WebtoonContent(props) {
   }
   return (
     <div className={styles.commonContentArea}>
-        <a className={styles.linkMiddleTitle}>
+        <div className={styles.linkMiddleTitle}>
             <h3 className={styles.h3}>{props.common.together.header.title}</h3>
-        </a>
+        </div>
         <div className={styles.webtoonInfo}>
             <ul className={styles.webtoonList}>
             {props.common.together.list.map((togetherContent, idx) => {
@@ -37,12 +37,12 @@ function WebtoonContent(props) {
             </ul>
         </div>
 
-        <a className={styles.linkMiddleTitle}>
+        <div className={styles.linkMiddleTitle}>
             <h3 className={styles.h3}>
                 <span className={styles.span}>{props.common.life.header.button}</span>
                 {props.common.life.header.title}
             </h3>
-        </a>
+        </div>
         <div className={styles.webtoonInfo}>
             <ul className={styles.webtoonList}>
             {props.common.life.list.map((lifeContent, idx) => {
@@ -64,9 +64,9 @@ function WebtoonContent(props) {
             </ul>
         </div>
 
-        <a className={styles.linkMiddleTitle}>
+        <div className={styles.linkMiddleTitle}>
             <h3 className={styles.h3}>{props.common.new.header.title}</h3>
-        </a>
+        </div>
         <div className={styles.webtoonInfo}>
             <ul className={styles.webtoonList}>
             {props.common.new.list.map((newContent, idx) => {
@@ -88,9 +88,9 @@ function WebtoonContent(props) {
             </ul>
         </div>
 
-        <a className={styles.linkMiddleTitle}>
+        <div className={styles.linkMiddleTitle}>
             <h3 className={styles.h3}>{props.common.weekly.header.title}</h3>
-        </a>
+        </div>
         <div className={styles.webtoonInfo}>
             <ul className={styles.webtoonList}>
             {props.common.weekly.list.map((weeklyContent, idx) => {

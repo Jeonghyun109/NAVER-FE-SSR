@@ -15,11 +15,9 @@ function App(props) {
         {props[0].mainCard.title.type === "동물" && (
           <View view={props[0].view} />
         )}
-        {/* <MainCard mainCard={props[2].mainCard} /> */}
-        {/* {props[2].mainCard.title.type === "웹툰" && (
-            <News news={props[2].view} />
-        )} */}
-        <News />
+        {props[0].mainCard.title.type === "동물" && (
+            <News news={props[0].news} />
+        )}
       </div>
     </div>
   );

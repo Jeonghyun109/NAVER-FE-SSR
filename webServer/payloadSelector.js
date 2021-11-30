@@ -414,6 +414,90 @@ class PayloadSelector {
           },
         ],
       },
+      news: {
+        header: {
+            title: "뉴스",
+            condition: "관련도순",
+            subcondition: {
+                href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_amr&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4&sort=1&nso=so:dd,p:all",
+                text: "최신순",
+            },
+        },
+        list: [
+            {
+                totalWrap: {
+                    article: {
+                        src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+                        title: "노트펫",
+                        time: "5일 전",
+                        href: "http://www.notepet.co.kr/0",
+                    },
+                    text: {
+                        title: "한효주, 점심 식당에서 만난 고양이..'나 가야되는데...'",
+                        detail:
+                            "한효주 인스타그램 배우 한효주가 점심 차 간 식당에서 고양이에게 찜(?)을 당했다. 한효주는 24일 인스타그램 스토리에 \"점심으로 쌀국수를 먹으러 갔는데 고양이가 있어....\"라며 식당에서 만난 고양이를 소개했다. 한효주 옆을 비추는 렌즈에는 샴으로 보이는 고양이가 핑크빛 방울을 달고 자리를...",
+                        src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F24%2F70683.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+                        href: "http://www.notepet.co.kr/news/article/article_view/?idx=24080&groupCode=AB800AD810",
+                    },
+                },
+            },
+            {
+                totalWrap: {
+                    article: {
+                        src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+                        title: "노트펫",
+                        time: "2021.11.13.",
+                        href: "http://www.notepet.co.kr/0",
+                    },
+                    text: {
+                        title: "경남 거창 한국승강기대학 정문에서 샴 고양이 발견 보호",
+                        detail:
+                            "경남 거창 거창읍 송정리 700 한국승강기대학교에서 발견 구조한 암컷 샴 고양이가 12일 동물보호소에 들어왔다. 진갈색, 연갈색 샴은 몸무게 4Kg에 2019년생으로 추정된다. 온순함, 한국승강기대학 정문부근에서 발견됨, 2세 추정. 공고기한은 11월22일까지이고...",
+                        src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F13%2F70010.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+                        href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=152764",
+                    },
+                },
+            },
+            {
+                totalWrap: {
+                    article: {
+                        src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+                        title: "노트펫",
+                        time: "2021.10.21.",
+                        href: "http://www.notepet.co.kr/0",
+                    },
+                    text: {
+                        title: "충북 단양 매포읍 평동리 농협에서 샴 고양이 발견 보호",
+                        detail:
+                            "충북 단양 매포읍 평동리 농협 인근에서 발견 구조한 암컷 샴 고양이가 20일 동물보호소에 들어왔다. 갈색 샴은 몸무게 4.10Kg에 2018년생으로 추정된다. 샴 고양이로 사람 손을 탄 것으로 추정. 공고기한은 10월29일까지이고, 단양군유기동물보호소(010-3822-4351)에서...",
+                        src: "",
+                        href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=147905",
+                    },
+                },
+            },
+            {
+                totalWrap: {
+                    article: {
+                        src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+                        title: "노트펫",
+                        time: "2021.10.19.",
+                        href: "http://www.notepet.co.kr/0",
+                    },
+                    text: {
+                        title: "세종 조치원읍 조형아파트 인근에서 샴 고양이 발견 보호",
+                        detail:
+                            "세종 조치원읍 신안리 244-1 조형아파트 인근에서 발견 구조한 암컷 샴 고양이가 18일 동물보호소에 들어왔다. 갈색 혼합 샴은 몸무게 3.12Kg에 2017년생으로 추정된다. . 공고기한은 10월25일까지이고, 세종유기동물보호센터(010-4435-3720)에서 보호하고 있다. 공고...",
+                        src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F10%2F19%2F68007.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+                        href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=147168",
+                    },
+                },
+            },
+        ],
+        button: {
+            text: "뉴스 더보기",
+            href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_nmr&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4&sort=0&nso=so:r,p:all",
+        }, 
+      }
     },
     diary: {
         mainCard: {
