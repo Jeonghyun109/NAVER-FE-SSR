@@ -5,18 +5,18 @@
   background-color: white;
   margin-bottom: 10px;
 }
-.infoTable{
-  position:relative;
+.infoTable {
+  position: relative;
 }
-.infoTable::after{
-  position:absolute;
-  border-left: 3px solid rgba(135,142,154,0.2);
+.infoTable::after {
+  position: absolute;
+  border-left: 3px solid rgba(135, 142, 154, 0.2);
   content: "";
   left: -10px;
   top: 4%;
   bottom: 5%;
 }
-.infoArea{
+.infoArea {
   margin-top: -10px;
   padding: 0px 0px 13px 15px;
 
@@ -58,15 +58,15 @@
   margin-bottom: 10px;
   font-size: 12pt;
 
-  .infoHeading{
+  .infoHeading {
     color: #8f8f8f;
     line-height: 16pt;
   }
-  .infoDetail{
+  .infoDetail {
     color: #424242;
     line-height: 16pt;
   }
-  .Link{
+  .Link {
     color: #0068c3;
     text-decoration: none;
   }

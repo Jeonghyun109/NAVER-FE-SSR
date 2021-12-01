@@ -1,0 +1,50 @@
+$image-width: 148.8px;
+
+.photoList {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0;
+  border-radius: 8px 8px 0 0;
+  margin: 0 1px 0 1px;
+  background-color: white;
+  list-style-type: none;
+
+  .mainPhoto {
+    margin-top: 1px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    .linkMainPhoto {
+      display: block;
+      height: calc($image-width * 2 + 1px);
+      cursor: pointer;
+
+      .mainPhotoImg {
+        width: calc($image-width * 2 + 1px);
+        height: calc($image-width * 2 + 1px);
+        border-radius: 8px 0 0 0;
+      }
+    }
+  }
+
+  .smallPhoto {
+    margin: 1px 0 0 1px;
+
+    .linkSmallPhoto {
+      display: block;
+      height: $image-width;
+      cursor: pointer;
+
+      .smallPhotoImg {
+        width: $image-width;
+        height: $image-width;
+      }
+
+      .smallPhotoRoundImg {
+        width: $image-width;
+        height: $image-width;
+        border-radius: 0 8px 0 0;
+      }
+    }
+  }
+}

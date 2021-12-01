@@ -1,49 +1,57 @@
 import React from "react";
 import styles from "./culturalAssetContent.module.scss";
-import styles2 from '../common/mainCard/similarContent.module.scss';
-import Images from './images';
+import styles2 from "../common/mainCard/similarContent.module.scss";
+import Images from "./images";
 
 function body1(props) {
   function renderInformation(lst) {
     var keys = Object.keys(lst);
     var temp = [];
     for (var i = 0; i < keys.length; i++) {
-      if (lst[keys[i]].link){
+      if (lst[keys[i]].link) {
         temp.push(
           <tr key={i}>
             <td className={styles.infoHeading} key={"td" + i}>
               {keys[i]}
             </td>
-            <td key={"td" + i} className={styles.infoDetail}><a href={lst[keys[i]].url} className = {styles.Link}>{lst[keys[i]].detail}</a></td>
+            <td key={"td" + i} className={styles.infoDetail}>
+              <a href={lst[keys[i]].url} className={styles.Link}>
+                {lst[keys[i]].detail}
+              </a>
+            </td>
+          </tr>
+        );
+      } else {
+        temp.push(
+          <tr key={i}>
+            <td className={styles.infoHeading} key={"td" + i}>
+              {keys[i]}
+            </td>
+            <td key={"td" + i} className={styles.infoDetail}>
+              {lst[keys[i]].detail}
+            </td>
           </tr>
         );
       }
-      else{
-        temp.push(
-          <tr key={i}>
-            <td className={styles.infoHeading} key={"td" + i}>
-              {keys[i]}
-            </td>
-            <td key={"td" + i} className={styles.infoDetail}>{lst[keys[i]].detail}</td>
-          </tr>
-        );
-      } 
     }
     return temp;
   }
 
   return (
     <div className={styles.bodyDiv}>
-      <Images common = {props.common} />
-      <div className = {styles.infoArea}>
-        <a href={props.common.descriptionURL} className={styles.linkMiddleTitle}>
+      <Images common={props.common} />
+      <div className={styles.infoArea}>
+        <a
+          href={props.common.descriptionURL}
+          className={styles.linkMiddleTitle}
+        >
           <h3 className={styles.h3}>{props.common.title}</h3>
           <div className={styles.arrow}>
             <i className="fas fa-arrow-right"></i>
           </div>
         </a>
         <div className={styles.details}>
-          <table className = {styles.infoTable}>
+          <table className={styles.infoTable}>
             <tbody>{renderInformation(props.common.information)}</tbody>
           </table>
         </div>

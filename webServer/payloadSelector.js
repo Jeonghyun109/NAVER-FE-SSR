@@ -43,42 +43,38 @@ class PayloadSelector {
           title: "기본정보",
           information: {
             //detail-info?
-            지정종목: 
-              {
-                detail: "사적",
-                link: false,
-              },
-            지정일: 
-              {
-                detail: "2009년 12월 21일",
-                link: false,
-              },
-            소재지: 
-              {
-                detail: "경북 경주시 불국로 385, 등 (진현동)",
-                link: true,
-                url: "https://map.naver.com/v5/?c=14396938.5121574,4271253.7030237,15,0,0,0,dh&lng=129.3298991&lat=35.7862812&type=0&title=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC",
-              },
-            
-            시대: 
-              {
-                detail: "통일신라",
-                link: false,
-              },
-            "종류/분류": 
-              {
-                detail: "사찰",
-                link: false,
-              },
-            크기: 
-              {
-                detail: "면적 409,315㎡",
-                link: false,
-              },
+            지정종목: {
+              detail: "사적",
+              link: false,
+            },
+            지정일: {
+              detail: "2009년 12월 21일",
+              link: false,
+            },
+            소재지: {
+              detail: "경북 경주시 불국로 385, 등 (진현동)",
+              link: true,
+              url: "https://map.naver.com/v5/?c=14396938.5121574,4271253.7030237,15,0,0,0,dh&lng=129.3298991&lat=35.7862812&type=0&title=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC",
+            },
+
+            시대: {
+              detail: "통일신라",
+              link: false,
+            },
+            "종류/분류": {
+              detail: "사찰",
+              link: false,
+            },
+            크기: {
+              detail: "면적 409,315㎡",
+              link: false,
+            },
           },
-          "descriptionText": "경북 경주시 진현동 토함산 기슭에 있는 신라시대 절. 사적이다.",
-          "descriptionURL": "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=blZH&x_csa=%7B%22pkid%22%3A648%7D&pkid=648&os=19371944&x_nqx=%7B%22theme%22%3A%22culturalassets%22%2C%22pkid%22%3A%22648%22%2C%22os%22%3A%2219371944%22%7D&qvt=0&query=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC%20%EA%B8%B0%EB%B3%B8%EC%A0%95%EB%B3%B4",
-          "imageList": [
+          descriptionText:
+            "경북 경주시 진현동 토함산 기슭에 있는 신라시대 절. 사적이다.",
+          descriptionURL:
+            "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=blZH&x_csa=%7B%22pkid%22%3A648%7D&pkid=648&os=19371944&x_nqx=%7B%22theme%22%3A%22culturalassets%22%2C%22pkid%22%3A%22648%22%2C%22os%22%3A%2219371944%22%7D&qvt=0&query=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC%20%EA%B8%B0%EB%B3%B8%EC%A0%95%EB%B3%B4",
+          imageList: [
             {
               src: "https://search.pstatic.net/common?type=b&size=336&quality=75&direct=true&src=https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F2765_000_361%2F20200109065040326_XPT7GLZUJ.gif%2F79773_0.gif%3Ftype%3Dm4500_4500_fst%26wm%3DN",
               alt: "경주 불국사 본문 이미지 1",
@@ -120,7 +116,8 @@ class PayloadSelector {
               alt: "불국사 대웅전 석가모니불",
             },
           ],
-          imgURL: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=blZH&x_csa=%7B%22pkid%22%3A648%7D&pkid=648&os=19371944&x_nqx=%7B%22theme%22%3A%22culturalassets%22%2C%22pkid%22%3A%22648%22%2C%22os%22%3A%2219371944%22%7D&qvt=0&query=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC%20%ED%8F%AC%ED%86%A0",
+          imgURL:
+            "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=blZH&x_csa=%7B%22pkid%22%3A648%7D&pkid=648&os=19371944&x_nqx=%7B%22theme%22%3A%22culturalassets%22%2C%22pkid%22%3A%22648%22%2C%22os%22%3A%2219371944%22%7D&qvt=0&query=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC%20%ED%8F%AC%ED%86%A0",
           place:
             "http://map.naver.com?title=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC&y=35.7862812&x=129.3298991",
         },
