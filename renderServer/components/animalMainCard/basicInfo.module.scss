@@ -1,0 +1,59 @@
+.middleTitle {
+  border-left: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+  background-color: white;
+
+  .linkMiddleTitle {
+    display: block;
+    position: relative;
+    margin-left: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover > .arrow {
+      color: black;
+    }
+
+    .h3 {
+      height: 22px;
+      padding-top: 14px;
+      margin: 0;
+      color: black;
+      font-size: 18px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 15.5px;
+      right: 15px;
+      width: 19px;
+      height: 19px;
+      color: #bfbfbf;
+      font-size: 19px;
+      line-height: 19px;
+    }
+  }
+}
+
+.detailInfo {
+  border-left: 1px solid #e8ebee;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+  border-radius: 0 0 8px 8px;
+  padding: 12px 15px 16px 15px;
+  background-color: white;
+
+  .text {
+    font-size: 15px;
+    color: #424242;
+  }
+
+  .a {
+    font-size: 15px;
+    color: #0c43b7;
+    word-break: keep-all;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

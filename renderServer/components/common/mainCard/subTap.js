@@ -9,17 +9,28 @@ function SubTap(props) {
           <a
             href={props.subTap.mainTap.href}
             className={styles.subTapEntireLink}
+            style={{ backgroundColor: props.colorScheme.subTapColor }}
           >
             <span className={styles.subTapText}>
               {props.subTap.mainTap.title}
             </span>
           </a>
         </li>
+
         {props.subTap.list.map((subTapInfo, idx) => {
           return (
             <li className={styles.subTap} key={idx}>
-              <a href={subTapInfo.href} className={styles.subTapLink}>
-                {idx !== 0 && <span className={styles.subTapBar} />}
+              <a
+                href={subTapInfo.href}
+                className={styles.subTapLink}
+                style={{ color: props.colorScheme.subTapColor }}
+              >
+                {idx !== 0 && (
+                  <span
+                    className={styles.subTapBar}
+                    style={{ backgroundColor: props.colorScheme.subTapBar }}
+                  />
+                )}
                 <span className={styles.subTapText}>{subTapInfo.title}</span>
               </a>
             </li>
