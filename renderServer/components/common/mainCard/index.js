@@ -4,7 +4,7 @@ import Title from "./title";
 import SubTap from "./subTap";
 import SimilarContent from "./similarContent";
 import CulturalAssetContent from "../../cultural_asset/culturalAssetContent";
-import AnimalMainCard from "../../animal/index";
+import AnimalMainCard from "../../animalMainCard/index";
 
 function MainCard(props) {
   return (
