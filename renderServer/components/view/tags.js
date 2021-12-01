@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./totalTag.module.scss";
+import styles from "./tags.module.scss";
 
-function TotalTag(props) {
+function Tags(props) {
   return (
-    <div className={styles.totalTagArea}>
-      {props.totalTag.list.map((tag, idx) => {
+    <div className={styles.tagArea}>
+      {props.tags.list.map((tag, idx) => {
         return (
           <a href={tag.href} className={styles.tagLink} key={idx}>
             #{tag.title}
@@ -15,4 +15,4 @@ function TotalTag(props) {
   );
 }
 
-export default TotalTag;
+export default Tags;

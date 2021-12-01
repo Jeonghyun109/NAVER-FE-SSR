@@ -346,22 +346,20 @@ class PayloadSelector {
       view: {
         list: [
           {
-            totalWrap: {
               blog: {
                 src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTAyMDNfMjky%2FMDAxNjEyMzM2NTY4NzA2.fo-KxpG1dxa_RQqlepV7k_ANF_W8SL6FrEFWfiidhjwg.bFWiSyH0sQX-0vdSxOWKnbHheAGSOithDLVinEQ_nocg.JPEG.yarolove%2F%2525EA%2525B9%252580%2525EC%25258B%2525A4%2525EC%25259E%2525A5.JPG&type=f54_54",
                 title: "교육정보 캐며 요리하는 주부KIM실장",
                 time: "2021.03.15.",
                 href: "https://m.blog.naver.com/yarolove",
               },
-              text: {
+              body: {
                 title: "샤미즈 샴고양이 특성과 예민하게 화장실 사용하는 로브",
                 detail:
                   "저희 집에는 똑똑이 샤미즈 샴고양이 로브도 있거든요. 오늘은 로브를 소개할게요. 화장실 쓰는 게 너무 귀여워서 올려봐요. 샴고양이 샤미즈 샤미즈가 샴고양이 맞아요. 샴고양이...",
                 src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTVfNzQg%2FMDAxNjE1ODAzMTQ4ODkz.jgUwcx6sLi2nm7RUUaKxiiZsUgA8jb5J6avOYJygNM4g.reFXgjXYUCqV3JfRGV0m499pzsi2OilKejwgcaAdiGAg.JPEG.yarolove%2F1615645073916%25A3%25AD7.jpg%23900x900&type=ff192_192",
                 href: "https://m.blog.naver.com/yarolove/222276544963",
               },
-            },
-            totalTag: {
+            tags: {
               list: [
                 {
                   title: "샴고양이",
@@ -377,29 +375,27 @@ class PayloadSelector {
                 },
               ],
             },
-            totalLink: {
+            link: {
               text: "샤미즈 & 브숏 급조한 장난감으로 사냥놀이 했어요~(#브숏 #샤미즈)",
               href: "https://m.blog.naver.com/yarolove/222229343444",
             },
           },
 
           {
-            totalWrap: {
               blog: {
                 src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMDAxMjlfMjk0%2FMDAxNTgwMzA4NTUwOTcy.j3XSja3O6VEhrKXVBBnQku-olRGK2eTxbytzH37zZCgg._bshTC1PL-UelYmJsabgGCbNYSvVcIRGcIViObDwdysg.JPEG.nice_pet%2FKakaoTalk_20200127_215943303.jpg&type=f54_54",
                 title: "The 착한애견",
                 time: "2020.02.13.",
                 href: "https://m.blog.naver.com/nice_pet",
               },
-              text: {
+              body: {
                 title: "<부산고양이분양> 샴 고양이 분양 / 샤미즈",
                 detail:
                   "The착한애견> #부산고양이분양 #부산고양이 #부산샴분양 #샴고양이분양 #개냥이 #샤미즈 #샴고양이성격 #샴고양이 #샴분양 #고양이분양 고양이의 대명사 !!! 바로 샴 (샤미즈) 고양이가...",
                 src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAyMThfMjgw%2FMDAxNTgyMDE0NDE5Mjc1.mxgjMrcpqw4q7x01Dgv0q9qqQMdmizbQLCqT-58VhHwg.WOlHe3AtIj4giYXfULLtf_JUtc-kx8kjC57Yfia0ow0g.JPEG.nice_pet%2FKakaoTalk_20200212_163625126_05.jpg%23600x600&type=ff192_192",
                 href: "https://m.blog.naver.com/nice_pet/221807969253",
               },
-            },
-            totalTag: {
+            tags: {
               list: [
                 {
                   title: "부산고양이분양",
@@ -443,7 +439,7 @@ class PayloadSelector {
                 },
               ],
             },
-            totalLink: {
+            link: {
               text: "샤미즈 & 브숏 급조한 장난감으로 사냥놀이 했어요~(#브숏 #샤미즈)",
               href: "https://m.blog.naver.com/yarolove/222229343444",
             },
