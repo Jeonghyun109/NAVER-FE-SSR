@@ -623,19 +623,24 @@
         },
         x = function (e) {
           return a().createElement(
-            "div",
-            { className: "OlQTLqRbi1QIHzlwyrHs" },
-            e.tags.list.map(function (e, t) {
-              return a().createElement(
-                "a",
-                { href: e.href, className: "Tg9q3QdcdPc23U3UZ661", key: t },
-                "#",
-                e.title
-              );
-            })
+            a().Fragment,
+            null,
+            0 !== e.tags.list.length &&
+              a().createElement(
+                "div",
+                { className: "OlQTLqRbi1QIHzlwyrHs" },
+                e.tags.list.map(function (e, t) {
+                  return a().createElement(
+                    "a",
+                    { href: e.href, className: "Tg9q3QdcdPc23U3UZ661", key: t },
+                    "#",
+                    e.title
+                  );
+                })
+              )
           );
         },
-        K = function (e) {
+        F = function (e) {
           return a().createElement(
             "div",
             { className: "Hd2UNEr0aG2tf8bM6xJ2" },
@@ -646,7 +651,7 @@
             )
           );
         },
-        R = function (e) {
+        K = function (e) {
           return a().createElement(
             "div",
             { className: "yja0_WgnvkZy0Qfj5Fmx" },
@@ -673,13 +678,13 @@
                     a().createElement(I, { body: e.body })
                   ),
                   a().createElement(x, { tags: e.tags }),
-                  a().createElement(K, { link: e.link })
+                  a().createElement(F, { link: e.link })
                 );
               })
             )
           );
         },
-        F = function (e) {
+        R = function (e) {
           return a().createElement("div", null, "News");
         };
       var H = t(860),
@@ -706,8 +711,8 @@
                     "div",
                     { className: "lwMSkhbL51TI_MbpDTZQ" },
                     a().createElement(w, { mainCard: r[0].mainCard }),
-                    a().createElement(R, { view: r[0].view }),
-                    a().createElement(F, null)
+                    a().createElement(K, { view: r[0].view }),
+                    a().createElement(R, null)
                   )
                 ))
               ),

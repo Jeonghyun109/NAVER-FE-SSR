@@ -194,101 +194,49 @@ class PayloadSelector {
         list: [
           {
             blog: {
-              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTAyMDNfMjky%2FMDAxNjEyMzM2NTY4NzA2.fo-KxpG1dxa_RQqlepV7k_ANF_W8SL6FrEFWfiidhjwg.bFWiSyH0sQX-0vdSxOWKnbHheAGSOithDLVinEQ_nocg.JPEG.yarolove%2F%2525EA%2525B9%252580%2525EC%25258B%2525A4%2525EC%25259E%2525A5.JPG&type=f54_54",
-              title: "교육정보 캐며 요리하는 주부KIM실장",
-              time: "2021.03.15.",
-              href: "https://m.blog.naver.com/yarolove",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fblogpfthumb-phinf.pstatic.net%2FMjAxODA4MTBfMTU5%2FMDAxNTMzODYwNDcyMjQy.PPwtfIzpjpX2YCt8YkKckTS6gT4WfRO3OE5FI9RF0l8g.9mtuWOCclQdM9DzRjUuXU9tIUXqJhb_yUXdcji8CCIUg.JPEG.tcacyc%2FprofileImage.jpg&type=f54_54",
+              title: "일상탈출",
+              influencer: "true",
+              time: "2021.10.24.",
+              href: "https://in.naver.com/tcacyc",
             },
             body: {
-              title: "샤미즈 샴고양이 특성과 예민하게 화장실 사용하는 로브",
+              title: "경주 가볼만한곳 대릉원 불국사 야경투어",
               detail:
-                "저희 집에는 똑똑이 샤미즈 샴고양이 로브도 있거든요. 오늘은 로브를 소개할게요. 화장실 쓰는 게 너무 귀여워서 올려봐요. 샴고양이 샤미즈 샤미즈가 샴고양이 맞아요. 샴고양이...",
-              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTVfNzQg%2FMDAxNjE1ODAzMTQ4ODkz.jgUwcx6sLi2nm7RUUaKxiiZsUgA8jb5J6avOYJygNM4g.reFXgjXYUCqV3JfRGV0m499pzsi2OilKejwgcaAdiGAg.JPEG.yarolove%2F1615645073916%25A3%25AD7.jpg%23900x900&type=ff192_192",
-              href: "https://m.blog.naver.com/yarolove/222276544963",
+                "경주 불국사 경북 경주시 불국로 385 운영시간 : 8시 ~ 18시 30분 이용요금 : 어린 6,000원 / 청소년 4,000원 / 어린이 3,000원 대릉원에서 나와 세계적으로 유명한 경주 가볼만한곳 불국사를...",
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMjNfMTgz%2FMDAxNjM0OTg4MzgwODQ0.ooUWwC9bQPC5T0eg6eXjin2hzCrTd2yELoX47HIi4tAg.5R8OaqPoFpJVJvwTIcHjQxuNU7yTYGzKmH3_AcCF-ecg.JPEG.tcacyc%2F01_%25B0%25E6%25C1%25D6.jpg%23900x700&type=ff192_192",
+              href: "https://m.blog.naver.com/tcacyc/222546516689",
             },
             tags: {
-              list: [
-                {
-                  title: "샴고양이",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4",
-                },
-                {
-                  title: "샤미즈",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%A4%EB%AF%B8%EC%A6%88",
-                },
-                {
-                  title: "샴고양이성격",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EC%84%B1%EA%B2%A9",
-                },
-              ],
+              list: [],
             },
             link: {
-              text: "샤미즈 & 브숏 급조한 장난감으로 사냥놀이 했어요~(#브숏 #샤미즈)",
-              href: "https://m.blog.naver.com/yarolove/222229343444",
+              text: "일상탈출의 #경주야경투어 콘텐츠 더보기",
+              href: "https://in.naver.com/tcacyc/challenge/keyword/253560942475009",
             },
           },
 
           {
             blog: {
-              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMDAxMjlfMjk0%2FMDAxNTgwMzA4NTUwOTcy.j3XSja3O6VEhrKXVBBnQku-olRGK2eTxbytzH37zZCgg._bshTC1PL-UelYmJsabgGCbNYSvVcIRGcIViObDwdysg.JPEG.nice_pet%2FKakaoTalk_20200127_215943303.jpg&type=f54_54",
-              title: "The 착한애견",
-              time: "2020.02.13.",
-              href: "https://m.blog.naver.com/nice_pet",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fphinf.pstatic.net%2Fcontact%2F20191031_234%2F1572455419925mTYwA_JPEG%2F1.jpg&type=f54_54",
+              title: "쏠트몬",
+              influencer: "true",
+              time: "2021.11.05.",
+              href: "https://in.naver.com/soltmon",
             },
             body: {
-              title: "<부산고양이분양> 샴 고양이 분양 / 샤미즈",
+              title: "경주 가볼만한곳 불타는 단풍 가을 불국사",
               detail:
-                "The착한애견> #부산고양이분양 #부산고양이 #부산샴분양 #샴고양이분양 #개냥이 #샤미즈 #샴고양이성격 #샴고양이 #샴분양 #고양이분양 고양이의 대명사 !!! 바로 샴 (샤미즈) 고양이가...",
-              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAyMThfMjgw%2FMDAxNTgyMDE0NDE5Mjc1.mxgjMrcpqw4q7x01Dgv0q9qqQMdmizbQLCqT-58VhHwg.WOlHe3AtIj4giYXfULLtf_JUtc-kx8kjC57Yfia0ow0g.JPEG.nice_pet%2FKakaoTalk_20200212_163625126_05.jpg%23600x600&type=ff192_192",
-              href: "https://m.blog.naver.com/nice_pet/221807969253",
+                "경주 가볼만한곳들은 대체로 입장료가 있더라고요. < 불국사 입장료 > 어른 19~64세 6,000원 중고생 13~18세 4,000원 어린이 만 7~12세 3,000원 만 65세 이상, 장애인, 경주시민, 국가유공자...",
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTJfMTQg%2FMDAxNjE1NTMzNzEzOTM0.1Q2LejcBHwG8iOz84Xqwr5RZ12dp-4mCCn1QzhJAX0Ig.CwnIXA8yGf8QWNEHpgdqc5XicSEBmWnnCXHVbbG5t6kg.JPEG.kyena200%2FP20201103_135558747_9ADC25F0-B619-4D5A-A777-BE02ECE810CF.jpg%23665x665&type=ff192_192",
+              href: "https://m.blog.naver.com/kyena200/222556888699",
             },
             tags: {
-              list: [
-                {
-                  title: "부산고양이분양",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EB%B6%80%EC%82%B0%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B6%84%EC%96%91",
-                },
-                {
-                  title: "부산고양이",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EB%B6%80%EC%82%B0%EA%B3%A0%EC%96%91%EC%9D%B4",
-                },
-                {
-                  title: "부산샴분양",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EB%B6%80%EC%82%B0%EC%83%B4%EB%B6%84%EC%96%91",
-                },
-                {
-                  title: "샴고양이분양",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B6%84%EC%96%91",
-                },
-                {
-                  title: "개냥이",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EA%B0%9C%EB%83%A5%EC%9D%B4",
-                },
-                {
-                  title: "샤미즈",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%A4%EB%AF%B8%EC%A6%88",
-                },
-                {
-                  title: "샴고양이성격",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EC%84%B1%EA%B2%A9",
-                },
-                {
-                  title: "샴고양이",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4",
-                },
-                {
-                  title: "샴분양",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%83%B4%EB%B6%84%EC%96%91",
-                },
-                {
-                  title: "고양이분양",
-                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B6%84%EC%96%91",
-                },
-              ],
+              list: [],
             },
             link: {
-              text: "샤미즈 & 브숏 급조한 장난감으로 사냥놀이 했어요~(#브숏 #샤미즈)",
-              href: "https://m.blog.naver.com/yarolove/222229343444",
+              text: "쏠트몬의 #가을나들이 콘텐츠 더보기",
+              href: "https://in.naver.com/soltmon/challenge/keyword/365368432715808",
             },
           },
         ],
@@ -452,6 +400,7 @@ class PayloadSelector {
             blog: {
               src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTAyMDNfMjky%2FMDAxNjEyMzM2NTY4NzA2.fo-KxpG1dxa_RQqlepV7k_ANF_W8SL6FrEFWfiidhjwg.bFWiSyH0sQX-0vdSxOWKnbHheAGSOithDLVinEQ_nocg.JPEG.yarolove%2F%2525EA%2525B9%252580%2525EC%25258B%2525A4%2525EC%25259E%2525A5.JPG&type=f54_54",
               title: "교육정보 캐며 요리하는 주부KIM실장",
+              influencer: "false",
               time: "2021.03.15.",
               href: "https://m.blog.naver.com/yarolove",
             },
@@ -488,6 +437,7 @@ class PayloadSelector {
             blog: {
               src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMDAxMjlfMjk0%2FMDAxNTgwMzA4NTUwOTcy.j3XSja3O6VEhrKXVBBnQku-olRGK2eTxbytzH37zZCgg._bshTC1PL-UelYmJsabgGCbNYSvVcIRGcIViObDwdysg.JPEG.nice_pet%2FKakaoTalk_20200127_215943303.jpg&type=f54_54",
               title: "The 착한애견",
+              influencer: "false",
               time: "2020.02.13.",
               href: "https://m.blog.naver.com/nice_pet",
             },
