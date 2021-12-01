@@ -11,6 +11,50 @@
     letter-spacing: -0.25px;
   }
 
+  .saveKeep {
+    width: 21px;
+    height: 27px;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+
+    .circlesLink {
+      display: block;
+      width: 38px;
+      height: 27px;
+      cursor: pointer;
+      &:hover > .circles {
+        background-color: #a68f74;
+      }
+
+      .circles {
+        position: relative;
+        width: 4px;
+        height: 4px;
+        margin-left: 17px;
+        background-color: rgba(166, 143, 116, 0.5);
+        border-radius: 50%;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          background-color: inherit;
+          border-radius: inherit;
+        }
+        &:before {
+          top: 7px;
+        }
+        &:after {
+          top: 14px;
+        }
+      }
+    }
+  }
+
   .subTitle {
     height: 20px;
 
