@@ -12,6 +12,7 @@ function BasicInfo(props) {
           </div>
         </a>
       </div>
+
       <div className={styles.detailInfo}>
         <span className={styles.text}>{props.basicInfo.detail}</span>
         <a href={props.basicInfo.moreDetails} className={styles.a}>
