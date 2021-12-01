@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./images.module.scss";
 
-function images(props) {
+function Images(props) {
   //TODO image 개수 알려주는 thumbnail
   return (
     <div className={styles.imgdiv}>
       <ul className={styles.img_list}>
         {props.common.imageList.map((imgInfo, idx) => {
-          if (idx === 0) {
-            return (
+          {
+            idx === 0 && (
               <li key={idx}>
                 <a href={props.common.imgURL}>
                   <img
@@ -19,8 +19,9 @@ function images(props) {
                 </a>
               </li>
             );
-          } else if (idx === props.common.imageList.length - 1) {
-            return (
+          }
+          {
+            idx === props.common.imageList.length - 1 && (
               <li key={idx}>
                 <a href={props.common.imgURL}>
                   <img
@@ -31,8 +32,9 @@ function images(props) {
                 </a>
               </li>
             );
-          } else {
-            return (
+          }
+          {
+            idx !== 0 && idx !== props.common.imageList.length - 1 && (
               <li key={idx}>
                 <a href={props.common.imgURL}>
                   <img
@@ -50,4 +52,4 @@ function images(props) {
   );
 }
 
-export default images;
+export default Images;

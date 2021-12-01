@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./pictures.module.scss";
+import styles from "./photos.module.scss";
 
 function AnimalPictures(props) {
   return (

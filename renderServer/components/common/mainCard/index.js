@@ -3,8 +3,8 @@ import styles from "./index.module.scss";
 import Title from "./title";
 import SubTap from "./subTap";
 import SimilarContent from "./similarContent";
-import CulturalAssetContent from "../../cultural_asset/culturalAssetContent";
 import AnimalMainCard from "../../animalMainCard/index";
+import CultureMainCard from "../../cultureMainCard/index";
 
 function MainCard(props) {
   return (
@@ -32,7 +32,7 @@ function MainCard(props) {
           <AnimalMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "문화재" && (
-          <CulturalAssetContent common={props.mainCard.common} />
+          <CultureMainCard common={props.mainCard.common} />
         )}
         <SimilarContent similar={props.mainCard.similar} />
       </div>

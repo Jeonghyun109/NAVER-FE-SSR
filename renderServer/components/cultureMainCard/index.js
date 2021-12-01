@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./culturalAssetContent.module.scss";
-import styles2 from "../common/mainCard/similarContent.module.scss";
+import styles from "./index.module.scss";
 import Images from "./images";
 
-function body1(props) {
+function CultureMainCard(props) {
   function renderInformation(lst) {
     var keys = Object.keys(lst);
     var temp = [];
@@ -77,4 +76,4 @@ function body1(props) {
   );
 }
 
-export default body1;
+export default CultureMainCard;
