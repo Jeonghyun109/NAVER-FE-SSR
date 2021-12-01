@@ -1,6 +1,6 @@
 $image-width: 148.8px;
 
-.photoList {
+.imageList {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 0;
@@ -9,17 +9,17 @@ $image-width: 148.8px;
   background-color: white;
   list-style-type: none;
 
-  .mainPhoto {
+  .mainImage {
     margin-top: 1px;
     grid-row-start: 1;
     grid-row-end: 3;
 
-    .linkMainPhoto {
+    .linkMainImage {
       display: block;
       height: calc($image-width * 2 + 1px);
       cursor: pointer;
 
-      .mainPhotoImg {
+      .mainImageSrc {
         width: calc($image-width * 2 + 1px);
         height: calc($image-width * 2 + 1px);
         border-radius: 8px 0 0 0;
@@ -27,20 +27,20 @@ $image-width: 148.8px;
     }
   }
 
-  .smallPhoto {
+  .smallImage {
     margin: 1px 0 0 1px;
 
-    .linkSmallPhoto {
+    .linkSmallImage {
       display: block;
       height: $image-width;
       cursor: pointer;
 
-      .smallPhotoImg {
+      .smallImageSrc {
         width: $image-width;
         height: $image-width;
       }
 
-      .smallPhotoRoundImg {
+      .smallImageRoundSrc {
         width: $image-width;
         height: $image-width;
         border-radius: 0 8px 0 0;

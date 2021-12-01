@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./basicInfo.module.scss";
 
-function AnimalBasicInfo(props) {
+function BasicInfo(props) {
   return (
     <>
       <div className={styles.middleTitle}>
@@ -22,4 +22,4 @@ function AnimalBasicInfo(props) {
   );
 }
 
-export default AnimalBasicInfo;
+export default BasicInfo;
