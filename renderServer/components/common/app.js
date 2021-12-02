@@ -12,16 +12,18 @@ function App(props) {
       <Header />
       <div className={styles.bodybackground}>
         <MainCard mainCard={props[0].mainCard} />
-<<<<<<< HEAD
         {props[0].mainCard.title.type === "동물" && (
           <>
           <View view={props[0].view} />
           <Influencer influencer={props[0].influencer}/>
           </>
         )}
-=======
-        <View view={props[0].view} />
->>>>>>> upstream/main
+        {props[0].mainCard.title.type === "문화재" && (
+          <>
+          <Influencer influencer={props[0].influencer}/>
+          <View view={props[0].view} />
+          </>
+        )}
         <News />
       </div>
     </div>
