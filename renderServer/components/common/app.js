@@ -4,6 +4,7 @@ import Header from "./header/index";
 import MainCard from "./mainCard/index";
 import View from "../view/index";
 import News from "../news/index";
+import Error from "../error/index";
 
 function App(props) {
   return (
@@ -11,8 +12,12 @@ function App(props) {
       <Header />
       <div className={styles.bodybackground}>
         <MainCard mainCard={props[0].mainCard} />
-        <View view={props[0].view} />
-        <News />
+        {props[0].mainCard.title.type === "동물" && (
+          <View view={props[0].view} />
+        )}
+        {props[0].mainCard.title.type === "동물" && (
+          <News news={props[0].news} />
+        )}
       </div>
     </div>
   );
