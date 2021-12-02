@@ -1,26 +1,34 @@
 .influencerBody{
-    width: 100vw;
-    max-width: 750px;
+    width: 768px;
     background-color: white;
-    border: 1px solid #e2e5e8;
-    margin: auto;
+    border: 1px solid #e8ebee;
+    margin: 0 auto;
     margin-top: 10px;
 }
-.titleArea{
-    width:95%;
-    margin-left:2.5%;
-    height: 50px;
+.title_area{
+    display: block;
+    position: relative;
+    height: 50.4px;
 }
 .title{
-    font-weight: bold;
-    font-size: 12pt;
+    margin: 0;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 51px;
+}
+.subtitle{
+    position: absolute;
+    top: 0;
+    right: 18px;
+    font-size: 15px;
+    line-height: 51px;
+    text-align: right;
 }
 .alert{
     cursor: pointer;
-}
-.influencerLink{
-    text-align: right;
-    font-size: 11pt;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-bottom: 3px;
 }
 .Link{
     color: #0068c3;

@@ -1,38 +1,132 @@
-.headerBody{
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 10px;
+.contentWrapper{
+    padding: 0 18px;
+
+    .userBox{
+        position: relative;
+        padding: 15px 0 13px;
+        display: block;
+
+        .userThumbnail{
+            float: left;
+            position: relative;
+            margin: 0 7px 0 -3px;
+        }
+        .crown{
+            position: absolute;
+            border-radius: 50%;
+            top: 30px;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            font-size: 8pt;
+            color: white;
+            line-height: 20px;
+            text-align: center;
+            border: 2px solid white;
+        }
+        .btnArea{
+            position: relative;
+            display: flex;
+            float: right;
+            margin: 4px 0;
+            width: 68px;
+            height: 30px;
+            border-radius: 16px;
+            font-size: 11px;
+            border: 1px solid;
+            justify-content: center;
+            cursor: pointer;
+            align-items: center;
+        }
+        .userInner{
+            overflow: hidden;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            height: 39px;
+            padding-top: 6px;
+
+
+            .userArea{
+                overflow: hidden;
+                display: inline-block;
+                max-width: 100%;
+                vertical-align: top;
+                
+                .name{
+                    font-weight: 700;
+                    font-size: 13pt;
+                    margin-right: 6px;
+                    color: black;
+                    text-decoration: none;
+                }
+                .fanCount{
+                    font-size: 11pt;
+                    color: #8f8f8f;
+                }
+            }
+            .userEtc{
+                overflow: hidden;
+                display: inline-block;
+                max-width: 100%;
+                vertical-align: top;
+                margin-top: 4px;
+                font-size: 11pt;
+                color: #8f8f8f;
+
+                .bar{
+                    margin: 0 5px;
+                    display: inline-block;
+                    width: 1px;
+                    height: 10px;
+                    background-color: #e1e1e1;
+                }
+            }
+        }
+    }
+}
+.detail{
+    width: 100%;
+    display: block;
+}
+.viewDetail{
+    position: relative;
+    display: flex;
+    float: right;
+    margin-top: -35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    width: 24px;
+    height: 24px;
+    font-size: 11pt;
+    cursor: pointer;
+}
+.Right{
+    position: relative;
+    display: flex;
+    float: right;
+    margin-top: 13px;
 }
 .influencerThumbnail{
     width: 44px;
     height: 44px;
     border-radius: 70px;
 }
-.headerThumbnail{
-    width: 50px;
-}
-.fanTab{
-    text-align: right;
-}
-.fanBtn{
-    padding: 5px;
-    width: 50px;
-    text-align: center;
-    border-radius: 20px;
-    height: 25px;
-    line-height: 25px;
-    color: white;
-    font-size: 10pt;
-    background-color: #c27636;
-}
-.headerDetail{
-    width:83%;
-}
+
 .keywords{
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 15px;
-    color: #c27636;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 .imgDiv{
     overflow-y: scroll;
@@ -51,12 +145,52 @@
 }
 .imgFirst{
     height: 87px;
-    margin-left: 15px;
+    border-radius: 6px 0 0 6px;
+    margin-right: 2px;
 }
 .imgLast{
     height: 87px;
-    margin-right: 15px;
+    border-radius: 0 6px 6px 0;
 }
 .img{
     height: 87px;
+    margin-right: 2px;
+}
+.descArea{
+
+    .descHeader{
+        display: block;
+        height: 25px;
+        color: #0068c3;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 7px;
+    }
+    .descDesc{
+        display: block;
+        word-break: break-all;
+        color: black;
+        font-size: 16.5px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
+    .date{
+        color: #8f8f8f;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+.additionalContent{
+    color: #666;
+    background-color: #f4f7f8;
+    width: calc(100% - 36px);
+    height: 42px;
+    line-height: 42px;
+    padding: 0 12px;
+    font-size: 11pt;
+    text-decoration: none;
+    margin-bottom: 20px;
 }

@@ -1,76 +1,76 @@
 .filterDiv{
-    overflow-y: auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    background-color: #f8fafb;
+    display: flex;
+    border-top: 1px solid #e2e5e8;
+    border-bottom: 1px solid #e2e5e8;
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    height: 63px;
+    align-items: center;
     &::-webkit-scrollbar {
         display: none;
     }
-    background-color: #fafbfc;
-    height: 80px;
-    display: flex;
-    align-items: center; /* align vertical */
-    border-top: 1px solid #e2e5e8;
-    border-bottom: 1px solid #e2e5e8;
-
-    .filterList{
-        display: flex;
-        margin-left: -25px;
-        list-style-type: none;
-    }
 }
 .tabFirst{
-    padding: 13px 15px 10px 15px;
-    height: 20px;
+    padding: 4px 4px 4px 4px;
+    width: 80px;
+    display: inline-block;
+    height: 30px;
     border: 1px solid transparent;
     border-radius: 40px;
     background-color: #06c755;
-    text-align: center;
     color: white;
-    white-space: nowrap;
-    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px 0 15px;
 }
 .tabs{
-    padding: 13px 15px 10px 15px;
-    height: 20px;
+    padding: 4px 15px 4px 4px;
+    display: inline-block;
+    height: 30px;
     border: 1px solid transparent;
     border-radius: 40px;
     background-color: white;
     text-align: center;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    margin-right: 10px;
     border: 1px solid #e2e5e8;
     text-decoration: none;
+    margin-right: 10px;
 }
 .tabThumbnail{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
     width: 28px;
     height: 28px;
-    border-radius: 50px;
+    margin-right: 5px;
+    border-radius: 50%;
+    vertical-align: middle;
     border: 0.5px solid #e2e5e8;
-    text-decoration: none;
 }
 .tabTitle{
-    font-weight: 700;
-    font-size: 12pt;
+    font-weight: 600;
+    font-size: 11pt;
     display: inline;
     text-decoration: none;
+    line-height: 32px;
 }
 .tabSubTitle{
     font-size: 10pt;
     text-decoration: none;
 }
 .tabTitleTabs{
-    font-weight: 700;
-    font-size: 12pt;
+    font-weight: 600;
+    font-size: 11pt;
     display: inline;
     text-decoration: none;
-    color: #797979;
+    color: #666;
+    // line-height: 32px;
 }
 .tabSubTitleTabs{
     font-size: 10pt;
-    color: #999999;
+    color: #666;
     text-decoration: none;
 }
 .link{
