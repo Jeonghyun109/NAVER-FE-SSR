@@ -3,25 +3,38 @@ import styles from "./index.module.scss";
 import Title from "./title";
 import SubTap from "./subTap";
 import SimilarContent from "./similarContent";
-
-import AnimalContent from "../../animal/animalContent";
 import WebtoonContent from "../../webtoon/webtoonContent";
 import DailyContent from "../../webtoon/dailyContent";
+import AnimalMainCard from "../../animalMainCard/index";
+import CultureMainCard from "../../cultureMainCard/index";
 
 function MainCard(props) {
   return (
-    <div className={styles.commonModule}>
+    <div
+      className={styles.commonModule}
+      style={{ backgroundColor: props.mainCard.colorScheme.background }}
+    >
+      <div
+        className={styles.topBorder}
+        style={{ backgroundColor: props.mainCard.colorScheme.topBorder }}
+      />
       <div className={styles.topWrap}>
-        <Title title={props.mainCard.title} />
-        <SubTap subTap={props.mainCard.subTap} />
+        <Title
+          title={props.mainCard.title}
+          colorScheme={props.mainCard.colorScheme}
+        />
+        <SubTap
+          subTap={props.mainCard.subTap}
+          colorScheme={props.mainCard.colorScheme}
+        />
       </div>
 
       <div className={styles.contentWrap}>
         {props.mainCard.title.type === "동물" && (
-          <AnimalContent common={props.mainCard.common} />
+          <AnimalMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "문화재" && (
-           <div>TODO: 불국사 기본정보 및 사진</div>    
+          <CultureMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "웹툰" && (
                 <WebtoonContent common={props.mainCard.common} />

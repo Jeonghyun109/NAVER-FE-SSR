@@ -1,0 +1,62 @@
+.headerBody {
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 10px;
+}
+.influencerThumbnail {
+  width: 44px;
+  height: 44px;
+  border-radius: 70px;
+}
+.headerThumbnail {
+  width: 50px;
+}
+.fanTab {
+  text-align: right;
+}
+.fanBtn {
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  border-radius: 20px;
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  font-size: 10pt;
+  background-color: #c27636;
+}
+.headerDetail {
+  width: 83%;
+}
+.keywords {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  color: #c27636;
+}
+.imgDiv {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .imgList {
+    display: flex;
+    padding: 3px 0 11px 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+.imgFirst {
+  height: 87px;
+  margin-left: 15px;
+}
+.imgLast {
+  height: 87px;
+  margin-right: 15px;
+}
+.img {
+  height: 87px;
+}
