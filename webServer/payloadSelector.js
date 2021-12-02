@@ -360,6 +360,10 @@ class PayloadSelector {
           },
           "keywords": [
             {
+              "title": "이달의 블로그 (2020.8)",
+              "type": "Blog",
+            },
+            {
               "key": "여행 스타일",
               "value": "자연경관 선호"
             },
@@ -402,6 +406,10 @@ class PayloadSelector {
             "expertise": "국내 전문"
           },
           "keywords": [
+            {
+              "title": "도서 출간 2권",
+              "type": "None",
+            },
             {
               "key": "여행 스타일",
               "value": "자연경관 선호"
