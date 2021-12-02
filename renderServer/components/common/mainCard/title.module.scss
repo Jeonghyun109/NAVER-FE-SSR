@@ -53,62 +53,14 @@
         }
       }
     }
-
-    .saveKeepLayer {
-      //TODO: toggle display none, block
-      display: none;
-      position: absolute;
-      top: 28px;
-      right: 0;
-      width: 162px;
-      border: 1px solid #dadde1;
-      border-radius: 6px;
-      box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-      background-color: white;
-      color: #505050;
-      font-size: 15px;
-      line-height: 37px;
-
-      .saveToKeep {
-        width: 140px;
-        height: 37px;
-        padding: 0 11px;
-
-        &:after {
-          content: "";
-          display: inline-block;
-          position: absolute;
-          top: 10.5px;
-          right: 11px;
-          width: 16px;
-          height: 16px;
-          background-color: red;
-        }
-      }
-
-      .goToKeep {
-        width: 140px;
-        height: 37px;
-        padding: 0 11px;
-        border-top: 1px solid #f6f6f9;
-
-        &:after {
-          content: "";
-          display: inline-block;
-          position: absolute;
-          top: 50.5px;
-          right: 11px;
-          width: 8px;
-          height: 12px;
-          background-color: blue;
-        }
-      }
-    }
   }
 
   .subTitle {
     height: 20px;
+<<<<<<< HEAD
     margin-top: 7px;
+=======
+>>>>>>> upstream/main
 
     .subTextSpan {
       line-height: 20px;

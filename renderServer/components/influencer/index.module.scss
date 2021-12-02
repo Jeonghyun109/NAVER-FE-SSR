@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .influencerBody{
     width: 768px;
     background-color: white;
@@ -34,3 +35,33 @@
     color: #0068c3;
     text-decoration: none;
 }
+=======
+.influencerBody {
+  width: 100vw;
+  max-width: 750px;
+  background-color: white;
+  border: 1px solid #e2e5e8;
+  margin: auto;
+  margin-top: 10px;
+}
+.titleArea {
+  width: 95%;
+  margin-left: 2.5%;
+  height: 50px;
+}
+.title {
+  font-weight: bold;
+  font-size: 12pt;
+}
+.alert {
+  cursor: pointer;
+}
+.influencerLink {
+  text-align: right;
+  font-size: 11pt;
+}
+.Link {
+  color: #0068c3;
+  text-decoration: none;
+}
+>>>>>>> upstream/main

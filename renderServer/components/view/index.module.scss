@@ -23,14 +23,9 @@
     list-style-type: none;
 
     .li {
-      .totalTagArea {
-        padding-bottom: 18px;
-      }
-
-      .totalLinkArea {
-        padding: 13px 0;
-        border-top: 1px solid #f4f6f7;
-        margin: 0 18px;
+      .content {
+        position: relative;
+        padding: 14px 18px 15px 18px;
       }
     }
   }

@@ -10,6 +10,7 @@ function SimilarContent(props) {
           <i className="fas fa-arrow-right"></i>
         </div>
       </a>
+
       <div className={styles.similarInfo}>
         <ul className={styles.photoList}>
           {props.similar.list.map((similarContent, idx) => {
