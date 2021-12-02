@@ -12,7 +12,7 @@ function App(props) {
       <Header />
       <div className={styles.bodybackground}>
         <MainCard mainCard={props[0].mainCard} />
-        {props[0].mainCard.title.type === "동물" && (
+        {props[0].mainCard.title.type !== "웹툰" && (
           <View view={props[0].view} />
         )}
         {props[0].mainCard.title.type === "동물" && (
