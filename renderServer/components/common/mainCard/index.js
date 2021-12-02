@@ -6,6 +6,7 @@ import SimilarContent from "./similarContent";
 
 import AnimalContent from "../../animal/animalContent";
 import WebtoonContent from "../../webtoon/webtoonContent";
+import DailyContent from "../../webtoon/dailyContent";
 
 function MainCard(props) {
   return (
@@ -20,12 +21,18 @@ function MainCard(props) {
           <AnimalContent common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "문화재" && (
-          <div>TODO: 불국사 기본정보 및 사진</div>
+           <div>TODO: 불국사 기본정보 및 사진</div>    
         )}
         {props.mainCard.title.type === "웹툰" && (
-          <WebtoonContent common={props.mainCard.common} />
+                <WebtoonContent common={props.mainCard.common} />
         )}
-        <SimilarContent similar={props.mainCard.similar} />
+        {props.mainCard.title.type === "웹툰" && (
+            <DailyContent similar={props.mainCard.similar} />            
+        )}
+        {props.mainCard.title.type !== "웹툰" && (
+            <SimilarContent similar={props.mainCard.similar} />          
+        )}
+
       </div>
     </div>
   );
