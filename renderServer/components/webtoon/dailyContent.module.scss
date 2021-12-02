@@ -1,92 +1,138 @@
 .commonContentArea {
-    padding: 9px 0px 13px 15px;
-    border: 1px solid #e8ebee;
-    margin: 20px 9px;
-    background-color: white;
-  
-    .linkMiddleTitle {
-      display: block;
-      position: relative;
-      padding-right: 15px;
-      text-decoration: none;
-  
-      .h3 {
-        height: 22px;
-        padding: 8px 30px 0 0;
-        margin: 0;
-        color: black;
-        font-size: 18px;
-        line-height: 22px;
-  
-        .span {
-          color: #6b707a;
-        }
+  padding: 9px 0px 13px 15px;
+  border: 1px solid #e8ebee;
+  margin: 20px 9px;
+  background-color: white;
+
+  .linkMiddleTitle {
+    display: block;
+    position: relative;
+    padding-right: 15px;
+    text-decoration: none;
+
+    .h3 {
+      height: 22px;
+      padding: 8px 30px 0 0;
+      margin: 0;
+      color: black;
+      font-size: 18px;
+      line-height: 22px;
+
+      .span {
+        color: #6b707a;
       }
     }
-  
-    .webtoonInfo {
-      padding: 13px 0 3px 0;
-  
-      .webtoonList {
-        display: flex;
-        padding: 1px 0 4px 0px;
-        margin: 0;
-        list-style-type: none;
-        overflow: auto;
-        &::-webkit-scrollbar {
-          display: none;
-        }
-  
-        .webtoon {
-          display: inline-block;
-          border: 0.1px solid #e8ebee;
-          border-radius: 6px;
-          margin-right: 9px;
-  
-          .linkWebtoon_together {
-            width: 105px;
-            height: 224.9px;
-            cursor: pointer;
-            text-decoration: none;
-  
-            .webtoonDiv {
-              height: 111.9px;
-              position: relative;
-  
-              .rank {
-                position: absolute;
-                display: block;
-                width: 24px;
-                height: 24px;
-                background-color: rgba(135, 142, 154, 0.9);
-                font-size: 14px;
-                color: #fff;
-                font-weight: bold;
-                text-align: center;
-                border-radius: 4px;
-              }
-  
-              .webtoonThumb {
-                width: 105px;
-                height: 105px;
-                border-radius: 6px 6px 0 0;
-              }
-  
-              .preference {
-                padding-left: 11px;
-                padding-right: 12px;
-                padding-bottom: 5 px;
-                width: 83px;
-                height: 1px;
-                background-color: #f2f4f6;
-                font-size: 14px;
-                color: #6b707a;
-              }
+  }
+
+  .webtoonInfo {
+    padding: 13px 0 3px 0;
+
+    .webtoonList {
+      display: flex;
+      padding: 1px 0 4px 0px;
+      margin: 0;
+      list-style-type: none;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .webtoon {
+        display: inline-block;
+        border: 0.1px solid #e8ebee;
+        border-radius: 6px;
+        margin-right: 9px;
+
+        .linkWebtoon_together {
+          width: 105px;
+          height: 224.9px;
+          cursor: pointer;
+          text-decoration: none;
+
+          .webtoonDiv {
+            height: 111.9px;
+            position: relative;
+
+            .rank {
+              position: absolute;
+              display: block;
+              width: 24px;
+              height: 24px;
+              background-color: rgba(135, 142, 154, 0.9);
+              font-size: 14px;
+              color: #fff;
+              font-weight: bold;
+              text-align: center;
+              border-radius: 4px;
+            }
+
+            .webtoonThumb {
+              width: 105px;
+              height: 105px;
+              border-radius: 6px 6px 0 0;
+            }
+
+            .preference {
+              padding-left: 11px;
+              padding-right: 12px;
+              padding-bottom: 5 px;
+              width: 83px;
+              height: 1px;
+              background-color: #f2f4f6;
+              font-size: 14px;
+              color: #6b707a;
             }
           }
-  
+        }
+
+        .titleBox {
+          padding: 0px 15px 5px 11px; // top left bottom right
+          margin: 0;
+          font-size: 16px;
+          word-break: break-all;
+          color: #242424;
+        }
+        .subtitleBox {
+          padding: 3px 11px 5px 11px;
+          margin: 0;
+          margin-top: -5px;
+          font-size: 14px;
+          word-break: break-all;
+          color: #8f8f8f;
+        }
+
+        .linkWebtoon {
+          width: 105px;
+          height: 186.9px;
+          cursor: pointer;
+          text-decoration: none;
+
+          .webtoonDiv {
+            height: 81.9px;
+            position: relative;
+
+            .rank {
+              position: absolute;
+              display: block;
+              width: 24px;
+              height: 24px;
+              background-color: rgba(135, 142, 154, 0.9);
+              font-size: 14px;
+              color: #fff;
+              font-weight: bold;
+              text-align: center;
+              border-radius: 4px;
+            }
+
+            .webtoonThumb {
+              width: 105px;
+              height: 105px;
+              border-radius: 6px 6px 0 0;
+            }
+          }
+
           .titleBox {
-            padding: 0px 15px 5px 11px; // top left bottom right
+            padding: 30px 15px 5px 11px; // top left bottom right
             margin: 0;
             font-size: 16px;
             word-break: break-all;
@@ -100,60 +146,13 @@
             word-break: break-all;
             color: #8f8f8f;
           }
-  
-          .linkWebtoon {
-            width: 105px;
-            height: 186.9px;
-            cursor: pointer;
-            text-decoration: none;
-  
-            .webtoonDiv {
-              height: 81.9px;
-              position: relative;
-  
-              .rank {
-                position: absolute;
-                display: block;
-                width: 24px;
-                height: 24px;
-                background-color: rgba(135, 142, 154, 0.9);
-                font-size: 14px;
-                color: #fff;
-                font-weight: bold;
-                text-align: center;
-                border-radius: 4px;
-              }
-  
-              .webtoonThumb {
-                width: 105px;
-                height: 105px;
-                border-radius: 6px 6px 0 0;
-              }
-            }
-  
-            .titleBox {
-              padding: 30px 15px 5px 11px; // top left bottom right
-              margin: 0;
-              font-size: 16px;
-              word-break: break-all;
-              color: #242424;
-            }
-            .subtitleBox {
-              padding: 3px 11px 5px 11px;
-              margin: 0;
-              margin-top: -5px;
-              font-size: 14px;
-              word-break: break-all;
-              color: #8f8f8f;
-            }
-          }
         }
       }
     }
-
-    .daily {
-        color: #8f8f8f;
-        font-size: 14px;
-    }
   }
-  
+
+  .daily {
+    color: #8f8f8f;
+    font-size: 14px;
+  }
+}

@@ -18,33 +18,33 @@
       },
     },
     a = {};
-  function t(r) {
-    var l = a[r];
-    if (void 0 !== l) return l.exports;
-    var c = (a[r] = { exports: {} });
-    return e[r](c, c.exports, t), c.exports;
+  function t(l) {
+    var c = a[l];
+    if (void 0 !== c) return c.exports;
+    var r = (a[l] = { exports: {} });
+    return e[l](r, r.exports, t), r.exports;
   }
   (t.n = (e) => {
     var a = e && e.__esModule ? () => e.default : () => e;
     return t.d(a, { a }), a;
   }),
     (t.d = (e, a) => {
-      for (var r in a)
-        t.o(a, r) &&
-          !t.o(e, r) &&
-          Object.defineProperty(e, r, { enumerable: !0, get: a[r] });
+      for (var l in a)
+        t.o(a, l) &&
+          !t.o(e, l) &&
+          Object.defineProperty(e, l, { enumerable: !0, get: a[l] });
     }),
     (t.o = (e, a) => Object.prototype.hasOwnProperty.call(e, a)),
     (() => {
       var e = t(689),
         a = t.n(e);
-      const r = "Gaofu0_WhLiZfSSlHHlK",
-        l = require("@mui/icons-material/Cancel");
-      var c = t.n(l);
+      const l = "Gaofu0_WhLiZfSSlHHlK",
+        c = require("@mui/icons-material/Cancel");
+      var r = t.n(c);
       const m = require("@mui/icons-material/MicNone");
-      var n = t.n(m);
-      const s = require("@mui/icons-material/Search");
-      var i = t.n(s);
+      var s = t.n(m);
+      const n = require("@mui/icons-material/Search");
+      var i = t.n(n);
       const o = function (e) {
           return a().createElement(
             "div",
@@ -62,11 +62,11 @@
                 placeholder: "검색어를 입력해주세요.",
                 defaultValue: "불국사",
               }),
-              a().createElement(c(), {
+              a().createElement(r(), {
                 className: "CvWCFkpm_Gfk1MrGVe1s",
                 sx: { fontSize: 30 },
               }),
-              a().createElement(n(), {
+              a().createElement(s(), {
                 className: "Rg0WwUXCTpI6XtH0HddY",
                 sx: { fontSize: 45 },
               }),
@@ -85,43 +85,43 @@
               ),
               a().createElement(
                 "a",
-                { className: r, href: "#image" },
+                { className: l, href: "#image" },
                 "이미지"
               ),
               a().createElement(
                 "a",
-                { className: r, href: "#knowledge" },
+                { className: l, href: "#knowledge" },
                 "지식백과"
               ),
-              a().createElement("a", { className: r, href: "#view" }, "VIEW"),
-              a().createElement("a", { className: r, href: "#kin" }, "지식iN"),
+              a().createElement("a", { className: l, href: "#view" }, "VIEW"),
+              a().createElement("a", { className: l, href: "#kin" }, "지식iN"),
               a().createElement(
                 "a",
-                { className: r, href: "#influencer" },
+                { className: l, href: "#influencer" },
                 "인플루언서"
               ),
               a().createElement(
                 "a",
-                { className: r, href: "#video" },
+                { className: l, href: "#video" },
                 "동영상"
               ),
               a().createElement(
                 "a",
-                { className: r, href: "#shopping" },
+                { className: l, href: "#shopping" },
                 "쇼핑"
               ),
-              a().createElement("a", { className: r, href: "#news" }, "뉴스"),
+              a().createElement("a", { className: l, href: "#news" }, "뉴스"),
               a().createElement(
                 "a",
-                { className: r, href: "#dictionary" },
+                { className: l, href: "#dictionary" },
                 "어학사전"
               ),
-              a().createElement("a", { className: r, href: "#map" }, "지도"),
-              a().createElement("a", { className: r, href: "#book" }, "책"),
-              a().createElement("a", { className: r, href: "#music" }, "뮤직"),
+              a().createElement("a", { className: l, href: "#map" }, "지도"),
+              a().createElement("a", { className: l, href: "#book" }, "책"),
+              a().createElement("a", { className: l, href: "#music" }, "뮤직"),
               a().createElement(
                 "a",
-                { className: r, href: "#audio" },
+                { className: l, href: "#audio" },
                 "오디오클립"
               )
             )
@@ -163,56 +163,105 @@
             )
           );
         },
-        f = "UpenaO3fzWKfrRWhnXOR",
-        u = "F6JlJdKozDTguLRNhEHX",
-        h = function (e) {
+        u = (require("@mui/system"), "AKvpsA5VvILGVv40MapP"),
+        f = "ZD5uPrErEIoI8Czs6osS",
+        h = "UpenaO3fzWKfrRWhnXOR",
+        p = "FkbXTj3ln4sHSSPj3L2z",
+        v = "F6JlJdKozDTguLRNhEHX",
+        b = "fcLye7hIRyUBIsHOYXmW",
+        g = "HOW7s48xMS79rdeewPcr",
+        k = function (e) {
           return a().createElement(
             "div",
-            { className: "AKvpsA5VvILGVv40MapP" },
-            a().createElement(
-              "ul",
-              { className: "ZD5uPrErEIoI8Czs6osS" },
+            { className: u },
+            "last" === e.subTap.mainTap.order &&
               a().createElement(
-                "li",
+                "ul",
                 { className: f },
+                a().createElement("li", { className: "s5s6dHhPWh4w9zpGH9vP" }),
+                e.subTap.list.map(function (t, l) {
+                  return a().createElement(
+                    "li",
+                    { className: h, key: l },
+                    a().createElement(
+                      "a",
+                      {
+                        href: t.href,
+                        className: b,
+                        style: { color: e.colorScheme.subTapColor },
+                      },
+                      0 !== l &&
+                        a().createElement("span", {
+                          className: g,
+                          style: { backgroundColor: e.colorScheme.subTapBar },
+                        }),
+                      a().createElement("span", { className: v }, t.title)
+                    )
+                  );
+                }),
                 a().createElement(
-                  "a",
-                  {
-                    href: e.subTap.mainTap.href,
-                    className: "FkbXTj3ln4sHSSPj3L2z",
-                    style: { backgroundColor: e.colorScheme.subTapColor },
-                  },
-                  a().createElement(
-                    "span",
-                    { className: u },
-                    e.subTap.mainTap.title
-                  )
-                )
-              ),
-              e.subTap.list.map(function (t, r) {
-                return a().createElement(
                   "li",
-                  { className: f, key: r },
+                  { className: h },
                   a().createElement(
                     "a",
                     {
-                      href: t.href,
-                      className: "fcLye7hIRyUBIsHOYXmW",
-                      style: { color: e.colorScheme.subTapColor },
+                      href: e.subTap.mainTap.href,
+                      className: p,
+                      style: { backgroundColor: e.colorScheme.subTapColor },
                     },
-                    0 !== r &&
-                      a().createElement("span", {
-                        className: "HOW7s48xMS79rdeewPcr",
-                        style: { backgroundColor: e.colorScheme.subTapBar },
-                      }),
-                    a().createElement("span", { className: u }, t.title)
+                    a().createElement(
+                      "span",
+                      { className: v },
+                      e.subTap.mainTap.title
+                    )
                   )
-                );
-              })
-            )
+                )
+              ),
+            "first" === e.subTap.mainTap.order &&
+              a().createElement(
+                "ul",
+                { className: f },
+                a().createElement(
+                  "li",
+                  { className: h },
+                  a().createElement(
+                    "a",
+                    {
+                      href: e.subTap.mainTap.href,
+                      className: p,
+                      style: { backgroundColor: e.colorScheme.subTapColor },
+                    },
+                    a().createElement(
+                      "span",
+                      { className: v },
+                      e.subTap.mainTap.title
+                    )
+                  )
+                ),
+                e.subTap.list.map(function (t, l) {
+                  return a().createElement(
+                    "li",
+                    { className: h, key: l },
+                    a().createElement(
+                      "a",
+                      {
+                        href: t.href,
+                        className: b,
+                        style: { color: e.colorScheme.subTapColor },
+                      },
+                      0 !== l &&
+                        a().createElement("span", {
+                          className: g,
+                          style: { backgroundColor: e.colorScheme.subTapBar },
+                        }),
+                      a().createElement("span", { className: v }, t.title)
+                    )
+                  );
+                })
+              )
           );
         },
-        p = function (e) {
+        y = function (e) {
           return a().createElement(
             "div",
             { className: "V_biLkhbpj1TiFQG01hN" },
@@ -266,7 +315,286 @@
             )
           );
         },
-        v = function (e) {
+        w = {
+          commonContentArea: "ihSY5SbEFx0_eK_DYs7B",
+          linkMiddleTitle: "fHzit4ULvzCTKKnp80HW",
+          h3: "muyEcIhTnMjXipZBj6ea",
+          span: "f2PT4c8DXNUrzhDVbb6n",
+          webtoonInfo: "_4IrKRq61NUfjojkde7zH",
+          webtoonList: "mpSfPXJ9oF9vpsmGjNiQ",
+          webtoon: "bjwzNY69Ok0jPz9MMif4",
+          linkWebtoon_together: "aEwidlpRvCmpgDXg65BR",
+          webtoonDiv: "qmbYDd5nmvgabzCeqU9j",
+          rank: "f00NOILBpTeiQEv_kaSq",
+          webtoonThumb: "EIQHkLMRq84fnsW_9hIl",
+          preference: "Cq7BR9zNC0eDA_gb5Mgv",
+          titleBox: "lA9XmV1Pu5IN_skJu5BJ",
+          subtitleBox: "FlCRrD5dIRg2CyVCbgiE",
+          linkWebtoon: "FU75_1fLYS6SSRpo9nrE",
+        },
+        T = function (e) {
+          return a().createElement(
+            "div",
+            { className: w.commonContentArea },
+            a().createElement(
+              "div",
+              { className: w.linkMiddleTitle },
+              a().createElement(
+                "h3",
+                { className: w.h3 },
+                e.common.together.header.title
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.webtoonInfo },
+              a().createElement(
+                "ul",
+                { className: w.webtoonList },
+                e.common.together.list.map(function (e, t) {
+                  return a().createElement(
+                    "li",
+                    { className: w.webtoon, key: t },
+                    a().createElement(
+                      "a",
+                      { href: e.href, className: w.linkWebtoon_together },
+                      a().createElement(
+                        "div",
+                        { className: w.webtoonDiv },
+                        a().createElement("span", { className: w.rank }, t + 1),
+                        a().createElement("img", {
+                          src: e.src,
+                          className: w.webtoonThumb,
+                        })
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.titleBox },
+                        e.title
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.subtitleBox },
+                        e.sub_text
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.preference },
+                        a().createElement("span", { class: w.divide_line }),
+                        e.preference
+                      )
+                    )
+                  );
+                })
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.linkMiddleTitle },
+              a().createElement(
+                "h3",
+                { className: w.h3 },
+                a().createElement(
+                  "span",
+                  { className: w.span },
+                  e.common.life.header.button
+                ),
+                e.common.life.header.title
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.webtoonInfo },
+              a().createElement(
+                "ul",
+                { className: w.webtoonList },
+                e.common.life.list.map(function (e, t) {
+                  return a().createElement(
+                    "li",
+                    { className: w.webtoon, key: t },
+                    a().createElement(
+                      "a",
+                      { href: e.href, className: w.linkWebtoon },
+                      a().createElement(
+                        "div",
+                        { className: w.webtoonDiv },
+                        a().createElement("span", { className: w.rank }, t + 1),
+                        a().createElement("img", {
+                          src: e.src,
+                          className: w.webtoonThumb,
+                        })
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.titleBox },
+                        e.title
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.subtitleBox },
+                        e.sub_text
+                      )
+                    )
+                  );
+                })
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.linkMiddleTitle },
+              a().createElement(
+                "h3",
+                { className: w.h3 },
+                e.common.new.header.title
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.webtoonInfo },
+              a().createElement(
+                "ul",
+                { className: w.webtoonList },
+                e.common.new.list.map(function (e, t) {
+                  return a().createElement(
+                    "li",
+                    { className: w.webtoon, key: t },
+                    a().createElement(
+                      "a",
+                      { href: e.href, className: w.linkWebtoon },
+                      a().createElement(
+                        "div",
+                        { className: w.webtoonDiv },
+                        a().createElement("span", { className: w.rank }, t + 1),
+                        a().createElement("img", {
+                          src: e.src,
+                          className: w.webtoonThumb,
+                        })
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.titleBox },
+                        e.title
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.subtitleBox },
+                        e.sub_text
+                      )
+                    )
+                  );
+                })
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.linkMiddleTitle },
+              a().createElement(
+                "h3",
+                { className: w.h3 },
+                e.common.weekly.header.title
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: w.webtoonInfo },
+              a().createElement(
+                "ul",
+                { className: w.webtoonList },
+                e.common.weekly.list.map(function (e, t) {
+                  return a().createElement(
+                    "li",
+                    { className: w.webtoon, key: t },
+                    a().createElement(
+                      "a",
+                      { href: e.href, className: w.linkWebtoon },
+                      a().createElement(
+                        "div",
+                        { className: w.webtoonDiv },
+                        a().createElement("span", { className: w.rank }, t + 1),
+                        a().createElement("img", {
+                          src: e.src,
+                          className: w.webtoonThumb,
+                        })
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.titleBox },
+                        e.title
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: w.subtitleBox },
+                        e.sub_text
+                      )
+                    )
+                  );
+                })
+              )
+            )
+          );
+        },
+        C = function (e) {
+          return a().createElement(
+            "div",
+            { className: "I15WjpNjbGNZEUxZVxZA" },
+            a().createElement(
+              "div",
+              { className: "N55QFjMiz_jBc7I0fNOO" },
+              a().createElement(
+                "h3",
+                { className: "ievetBPoEGEf9hjxPEKM" },
+                e.similar.header.title
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: "jnjnphGFxlaDDII4cPxR" },
+              a().createElement(
+                "ul",
+                { className: "AMOPr8Ay0JT3fTrUkUcu" },
+                e.similar.list.map(function (e, t) {
+                  return a().createElement(
+                    "li",
+                    { className: "M1rptZoNsAWir05oPqke", key: t },
+                    a().createElement(
+                      "a",
+                      { href: e.href, className: "xsTAj8pNoF3Bod7JTldT" },
+                      a().createElement(
+                        "div",
+                        { className: "ZKjd7cusEBlFNPXM8k7B" },
+                        a().createElement(
+                          "span",
+                          { className: "uO9AxqXPYx9x1QxySrP4" },
+                          t + 1
+                        ),
+                        a().createElement("img", {
+                          src: e.src,
+                          className: "RDpcaRJxumalg36d2Dx9",
+                        })
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: "V15jzZXuVNVKEhbGNnD2" },
+                        e.title
+                      ),
+                      a().createElement(
+                        "div",
+                        { className: "jhJS72qT8qzFH3E4_7ag" },
+                        e.sub_text
+                      )
+                    )
+                  );
+                })
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: "NJ8796DQVcvKwbc3TG_g" },
+              "네이버 웹툰 2021-11-30"
+            )
+          );
+        },
+        x = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -307,7 +635,7 @@
             )
           );
         },
-        g = function (e) {
+        S = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -348,39 +676,39 @@
             )
           );
         },
-        b = function (e) {
+        I = function (e) {
           return a().createElement(
             "div",
             { className: "mKVpa2NVZMsG58qsvqNp" },
-            a().createElement(v, {
+            a().createElement(x, {
               mainImage: e.common.mainImage,
               smallImage: e.common.smallImage,
             }),
-            a().createElement(g, { basicInfo: e.common.basicInfo })
+            a().createElement(S, { basicInfo: e.common.basicInfo })
           );
         },
-        y = function (e) {
+        q = function (e) {
           return a().createElement(
             "div",
             { className: "MqKms0lrf0CEULJlxiuz" },
             a().createElement(
               "ul",
               { className: "rIgo2IAOkpGWECNYu17n" },
-              e.common.imageList.map(function (t, r) {
-                var l =
-                  0 === r
+              e.common.imageList.map(function (t, l) {
+                var c =
+                  0 === l
                     ? "xZczpMtN8MvR9jLG93jy"
-                    : r === e.common.imageList.length - 1
+                    : l === e.common.imageList.length - 1
                     ? "OSm8GrXyUGa7J391Sgzb"
                     : "QwboBBqRJnQT_wkHCK3f";
                 return a().createElement(
                   "li",
-                  { key: r },
+                  { key: l },
                   a().createElement(
                     "a",
                     { href: e.common.imgURL },
                     a().createElement("img", {
-                      className: l,
+                      className: c,
                       src: t.src,
                       alt: t.alt,
                     })
@@ -390,9 +718,9 @@
             )
           );
         },
-        k = "KCbYgkcFRSdeQtiWSrdc",
-        S = "MJwqi1QXoetX0Rpc0VF4",
-        C = function (e) {
+        W = "KCbYgkcFRSdeQtiWSrdc",
+        B = "MJwqi1QXoetX0Rpc0VF4",
+        F = function (e) {
           return a().createElement(
             "div",
             { className: "Ahrntx314hFVGwzHIUcc" },
@@ -424,51 +752,51 @@
                   null,
                   (function (e) {
                     for (
-                      var t = Object.keys(e), r = [], l = 0;
-                      l < t.length;
-                      l++
+                      var t = Object.keys(e), l = [], c = 0;
+                      c < t.length;
+                      c++
                     )
-                      e[t[l]].link
-                        ? r.push(
+                      e[t[c]].link
+                        ? l.push(
                             a().createElement(
                               "tr",
-                              { key: l },
+                              { key: c },
                               a().createElement(
                                 "td",
-                                { className: k, key: "td" + l },
-                                t[l]
+                                { className: W, key: "td" + c },
+                                t[c]
                               ),
                               a().createElement(
                                 "td",
-                                { key: "td" + l, className: S },
+                                { key: "td" + c, className: B },
                                 a().createElement(
                                   "a",
                                   {
-                                    href: e[t[l]].url,
+                                    href: e[t[c]].url,
                                     className: "FKBKlt3skRLtUnTzv1Dc",
                                   },
-                                  e[t[l]].detail
+                                  e[t[c]].detail
                                 )
                               )
                             )
                           )
-                        : r.push(
+                        : l.push(
                             a().createElement(
                               "tr",
-                              { key: l },
+                              { key: c },
                               a().createElement(
                                 "td",
-                                { className: k, key: "td" + l },
-                                t[l]
+                                { className: W, key: "td" + c },
+                                t[c]
                               ),
                               a().createElement(
                                 "td",
-                                { key: "td" + l, className: S },
-                                e[t[l]].detail
+                                { key: "td" + c, className: B },
+                                e[t[c]].detail
                               )
                             )
                           );
-                    return r;
+                    return l;
                   })(e.common.information)
                 )
               )
@@ -503,15 +831,15 @@
             )
           );
         },
-        w = function (e) {
+        L = function (e) {
           return a().createElement(
             "div",
             { className: "AI2MWm_9lJfaJVeLEZU4" },
-            a().createElement(y, { common: e.common }),
-            a().createElement(C, { common: e.common })
+            a().createElement(q, { common: e.common }),
+            a().createElement(F, { common: e.common })
           );
         },
-        T = function (e) {
+        K = function (e) {
           return a().createElement(
             "div",
             {
@@ -529,7 +857,7 @@
                 title: e.mainCard.title,
                 colorScheme: e.mainCard.colorScheme,
               }),
-              a().createElement(h, {
+              a().createElement(k, {
                 subTap: e.mainCard.subTap,
                 colorScheme: e.mainCard.colorScheme,
               })
@@ -538,15 +866,20 @@
               "div",
               { className: E.contentWrap },
               "동물" === e.mainCard.title.type &&
-                a().createElement(b, { common: e.mainCard.common }),
+                a().createElement(I, { common: e.mainCard.common }),
               "문화재" === e.mainCard.title.type &&
-                a().createElement(w, { common: e.mainCard.common }),
-              a().createElement(p, { similar: e.mainCard.similar })
+                a().createElement(L, { common: e.mainCard.common }),
+              "웹툰" === e.mainCard.title.type &&
+                a().createElement(T, { common: e.mainCard.common }),
+              "웹툰" === e.mainCard.title.type &&
+                a().createElement(C, { similar: e.mainCard.similar }),
+              "웹툰" !== e.mainCard.title.type &&
+                a().createElement(y, { similar: e.mainCard.similar })
             )
           );
         },
-        I = "lTxjECTPG4UBmvZNHf3c",
-        q = function (e) {
+        M = "lTxjECTPG4UBmvZNHf3c",
+        _ = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -566,14 +899,14 @@
                 a().createElement(
                   a().Fragment,
                   null,
-                  a().createElement("div", { className: I }),
+                  a().createElement("div", { className: M }),
                   a().createElement(
                     "div",
                     { className: "I0xNw6ThnzgKwWBLMReQ" },
                     "인플루언서"
                   )
                 ),
-              a().createElement("div", { className: I }),
+              a().createElement("div", { className: M }),
               a().createElement(
                 "div",
                 { className: "CPTRr9N6TiKd_rBNc5OG" },
@@ -591,7 +924,7 @@
             )
           );
         },
-        x = function (e) {
+        R = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -623,7 +956,7 @@
             )
           );
         },
-        F = function (e) {
+        U = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -642,7 +975,7 @@
               )
           );
         },
-        R = function (e) {
+        P = function (e) {
           return a().createElement(
             "div",
             { className: "Hd2UNEr0aG2tf8bM6xJ2" },
@@ -653,7 +986,7 @@
             )
           );
         },
-        H = function (e) {
+        z = function (e) {
           return a().createElement(
             "div",
             { className: "yja0_WgnvkZy0Qfj5Fmx" },
@@ -676,35 +1009,142 @@
                   a().createElement(
                     "div",
                     { className: "IiW4X4iQJ9DRfzQSxh7O" },
-                    a().createElement(q, { blog: e.blog }),
-                    a().createElement(x, { body: e.body })
+                    a().createElement(_, { blog: e.blog }),
+                    a().createElement(R, { body: e.body })
                   ),
-                  a().createElement(F, { tags: e.tags }),
-                  a().createElement(R, { link: e.link })
+                  a().createElement(U, { tags: e.tags }),
+                  a().createElement(P, { link: e.link })
                 );
               })
             )
           );
         },
-        K = function (e) {
-          return a().createElement("div", null, "News");
+        H = {
+          container: "B8tU4obS226xap_otu8o",
+          title: "O1kfEVJGox2AkhVXB4J1",
+          h2: "CZ1coumT_8ij2EJ2i1Fj",
+          ul: "ioJKCs6sameAUuZ1HB7M",
+          li: "U58yQNi7_CIAPC6jA5Gi",
+          totalTagArea: "stqXkY1eankyot5DWcNg",
+          totalLinkArea: "z6AbV1L9PqL9JcqKMQYP",
+        },
+        j = "ce3351zEWCUbaw2YTIkL",
+        Q = function (e) {
+          return a().createElement(
+            "div",
+            { className: "IOV4d5nQqNMXPVTnowfw" },
+            a().createElement(
+              "a",
+              {
+                href: e.totalWrap.article.href,
+                className: "uCF254pie096DkXTVLsU",
+              },
+              a().createElement("img", {
+                src: e.totalWrap.article.src,
+                className: j,
+              }),
+              a().createElement(
+                "div",
+                { className: "F1OKZgnl18ldhVuSvGLn" },
+                e.totalWrap.article.title
+              ),
+              a().createElement("div", { className: "XBTWlOCtipqwm6i_EMCR" }),
+              a().createElement(
+                "div",
+                { className: "IbRTgo5LUgUUgLKPB9bw" },
+                e.totalWrap.article.time
+              )
+            ),
+            a().createElement(
+              "div",
+              { className: "wx5D1vH1xRcLDVlLBV_s" },
+              a().createElement(
+                "a",
+                { className: "KysQL0ioQUlxAIhBQhpg" },
+                a().createElement("div", { className: "pPKOU2sf99vZ3F7FKiC1" })
+              )
+            ),
+            a().createElement(
+              "a",
+              {
+                href: e.totalWrap.text.href,
+                className: "rUnsVqobG_jfHH7Sqwka",
+              },
+              e.totalWrap.text.title
+            ),
+            a().createElement(
+              "div",
+              { className: "xJg1YBeIxO0I0GXIFZWE" },
+              a().createElement(
+                "div",
+                { className: "UE64ATcyuKIaUQoix9ct" },
+                a().createElement(
+                  "a",
+                  {
+                    href: e.totalWrap.text.href,
+                    className: "HtQrL85QmKvGRtF0EAkk",
+                  },
+                  e.totalWrap.text.detail
+                )
+              ),
+              "" !== e.totalWrap.text.src &&
+                a().createElement(
+                  "a",
+                  {
+                    href: e.totalWrap.text.href,
+                    className: "qCHriz6AKJuCIPJkFQXb",
+                  },
+                  a().createElement("img", {
+                    src: e.totalWrap.text.src,
+                    className: j,
+                  })
+                )
+            )
+          );
+        },
+        G = function (e) {
+          return a().createElement(
+            "div",
+            { className: H.container },
+            a().createElement(
+              "div",
+              { className: H.title },
+              a().createElement("h2", { className: H.h2 }, e.news.header.title)
+            ),
+            a().createElement(
+              "ul",
+              { className: H.ul },
+              e.news.list.map(function (e, t) {
+                return a().createElement(
+                  "li",
+                  { className: H.li, key: t },
+                  a().createElement(Q, { totalWrap: e.totalWrap })
+                );
+              })
+            ),
+            a().createElement(
+              "div",
+              { className: H.newsButton },
+              e.news.button.text
+            )
+          );
         };
-      var M = t(860),
-        z = t(986),
-        L = (t(689), t(582)),
-        G = t(684),
-        O = M.Router(),
-        Q = M();
-      Q.use(L()),
-        Q.use(z.urlencoded({ extended: !1 })),
-        Q.use(z.json()),
-        Q.use("/", O),
-        O.post("/", function (e, t) {
-          var r;
+      var X = t(860),
+        A = t(986),
+        J = (t(689), t(582)),
+        O = t(684),
+        V = X.Router(),
+        D = X();
+      D.use(J()),
+        D.use(A.urlencoded({ extended: !1 })),
+        D.use(A.json()),
+        D.use("/", V),
+        V.post("/", function (e, t) {
+          var l;
           t.send(
             '\n    <!DOCTYPE html>\n    <html lang="ko">\n        <head>\n        <link rel="stylesheet" href="style.css">\n<script src=\'https://kit.fontawesome.com/a076d05399.js\' crossorigin=\'anonymous\'></script>\n        <script\n          src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"\n          data-auto-a11y="true"\n        ></script>\n        </head>\n        <body>\n            '.concat(
-              G.renderToString(
-                ((r = e.body),
+              O.renderToString(
+                ((l = e.body),
                 a().createElement(
                   "div",
                   { className: "hOkuBJSRIrHdsWQ4K9Zf" },
@@ -712,9 +1152,11 @@
                   a().createElement(
                     "div",
                     { className: "lwMSkhbL51TI_MbpDTZQ" },
-                    a().createElement(T, { mainCard: r[0].mainCard }),
-                    a().createElement(H, { view: r[0].view }),
-                    a().createElement(K, null)
+                    a().createElement(K, { mainCard: l[0].mainCard }),
+                    "동물" === l[0].mainCard.title.type &&
+                      a().createElement(z, { view: l[0].view }),
+                    "동물" === l[0].mainCard.title.type &&
+                      a().createElement(G, { news: l[0].news })
                   )
                 ))
               ),
@@ -722,7 +1164,7 @@
             )
           );
         }),
-        Q.listen(4e3, function () {
+        D.listen(4e3, function () {
           console.log(
             "Render Server listening at http://localhost:".concat(4e3)
           );
