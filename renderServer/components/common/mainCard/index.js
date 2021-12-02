@@ -37,15 +37,14 @@ function MainCard(props) {
           <CultureMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "웹툰" && (
-                <WebtoonContent common={props.mainCard.common} />
+          <WebtoonContent common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "웹툰" && (
-            <DailyContent similar={props.mainCard.similar} />            
+          <DailyContent similar={props.mainCard.similar} />
         )}
         {props.mainCard.title.type !== "웹툰" && (
-            <SimilarContent similar={props.mainCard.similar} />          
+          <SimilarContent similar={props.mainCard.similar} />
         )}
-
       </div>
     </div>
   );

@@ -588,6 +588,13 @@ class PayloadSelector {
     },
     diary: {
       mainCard: {
+        colorScheme: {
+          background: "rgb(236, 239, 243)",
+          topBorder: "#c2c9cd",
+          subTitle: "rgba(107,112,122,0.8)",
+          subTapColor: "#6b707a",
+          subTapBar: "rgba(135,142,154,0.3)",
+        },
         title: {
           name: "독립일기",
           type: "웹툰",
