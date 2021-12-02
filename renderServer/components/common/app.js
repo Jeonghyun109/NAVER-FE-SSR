@@ -5,6 +5,7 @@ import MainCard from "./mainCard/index";
 import View from "../view/index";
 import News from "../news/index";
 import Influencer from "../influencer/index";
+import Error from "../error/index";
 
 function App(props) {
   return (
