@@ -1,0 +1,27 @@
+.detail {
+  width: 100%;
+  display: block;
+
+  .viewDetail {
+    position: relative;
+    display: flex;
+    float: right;
+    margin-top: -35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    width: 24px;
+    height: 24px;
+    font-size: 11pt;
+    cursor: pointer;
+  }
+  .keywords {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+}
