@@ -1,4 +1,3 @@
-import { style } from "@mui/system";
 import React from "react";
 import styles from "./subTap.module.scss";
 
@@ -11,15 +10,15 @@ function SubTap(props) {
           {props.subTap.list.map((subTapInfo, idx) => {
             return (
               <li className={styles.subTap} key={idx}>
-                <a 
-                  href={subTapInfo.href} 
+                <a
+                  href={subTapInfo.href}
                   className={styles.subTapLink}
                   style={{ color: props.colorScheme.subTapColor }}
                 >
                   {idx !== 0 && (
-                   <span 
-                      className={styles.subTapBar} 
-                      style={{ backgroundColor: props.colorScheme.subTapBar}}
+                    <span
+                      className={styles.subTapBar}
+                      style={{ backgroundColor: props.colorScheme.subTapBar }}
                     />
                   )}
                   <span className={styles.subTapText}>{subTapInfo.title}</span>
@@ -57,15 +56,15 @@ function SubTap(props) {
           {props.subTap.list.map((subTapInfo, idx) => {
             return (
               <li className={styles.subTap} key={idx}>
-                <a 
+                <a
                   href={subTapInfo.href}
                   className={styles.subTapLink}
                   style={{ color: props.colorScheme.subTapColor }}
-                 >
+                >
                   {idx !== 0 && (
-                   <span
-                    className={styles.subTapBar}
-                    style={{ backgroundColor: props.colorScheme.subTapBar}}
+                    <span
+                      className={styles.subTapBar}
+                      style={{ backgroundColor: props.colorScheme.subTapBar }}
                     />
                   )}
                   <span className={styles.subTapText}>{subTapInfo.title}</span>

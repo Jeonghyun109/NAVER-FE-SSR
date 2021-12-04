@@ -17,7 +17,7 @@ function WebtoonContent(props) {
                   className={styles.linkWebtoon_together}
                 >
                   <div className={styles.webtoonDiv}>
-                    <span className={styles.rank}>{idx+1}</span>
+                    <span className={styles.rank}>{idx + 1}</span>
                     <img
                       src={togetherContent.src}
                       className={styles.webtoonThumb}
