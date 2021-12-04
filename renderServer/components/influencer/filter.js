@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./filter.module.scss";
 
-function filter({ props }) {
+function filter(props) {
   return (
     <ul className={styles.filterDiv}>
-      {props["tab-lists"].map((tab, idx) => (
+      {props.tabList.map((tab, idx) => (
         <li key={idx}>
           {idx === 0 ? (
             <a className={styles.link} key={idx}>

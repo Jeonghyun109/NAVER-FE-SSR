@@ -14,7 +14,7 @@ function BasicInfo(props) {
         <table className={styles.infoTable}>
           <tbody>
             {Object.keys(props.common.information).map((info, idx) => (
-              <tr>
+              <tr key = {idx}>
                 <td className={styles.infoHeading} key={idx}>
                   {info}
                 </td>

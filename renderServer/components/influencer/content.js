@@ -4,7 +4,7 @@ import UserThumbnail from "./userThumbnail";
 import UserDetail from "./userDetail";
 import Images from "./images";
 
-function content({ props }) {
+function content(props) {
   return (
     <>
       {props.influencers.map((influencer) => {
