@@ -1,6 +1,7 @@
 class PayloadSelector {
   static payloadMap = {
     bulguksa: {
+      order: ["mainCard", "influencers", "view"],
       mainCard: {
         colorScheme: {
           background: "rgb(236, 239, 243)",
@@ -468,6 +469,7 @@ class PayloadSelector {
       },
     },
     sham: {
+      order: ["mainCard", "influencers", "view", "news"],
       mainCard: {
         title: {
           name: "샴(샤미즈)",
@@ -1015,6 +1017,7 @@ class PayloadSelector {
       },
     },
     diary: {
+      order: ["mainCard"],
       mainCard: {
         colorScheme: {
           background: "rgb(236, 239, 243)",
