@@ -1,0 +1,24 @@
+.userThumbnail {
+  float: left;
+  position: relative;
+  margin: 0 7px 0 -3px;
+
+  .influencerThumbnail {
+    width: 44px;
+    height: 44px;
+    border-radius: 70px;
+  }
+  .crown {
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 8pt;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid white;
+  }
+}
