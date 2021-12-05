@@ -1017,7 +1017,7 @@ class PayloadSelector {
       },
     },
     diary: {
-      order: ["mainCard"],
+      order: ["mainCard", "view"],
       mainCard: {
         colorScheme: {
           background: "rgb(236, 239, 243)",
@@ -1403,6 +1403,67 @@ class PayloadSelector {
           ],
           text: "네이버 웹툰 2021-11-29",
         },
+      },
+      view: {
+        list: [
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMTExMDRfMjM0%2FMDAxNjM1OTkwMjQxMzI3.D6baEUSrUiqOuoBZAczfAgw9trcnoyAsVbaFO_ZKF6Mg.B4U0Aj3OpTQTiQx1kn0zTFq-ZA9XFBhO2rR5xyze4SEg.JPEG%2FexternalFile.jpg&type=f54_54",
+              title: "수다떠는 장안맘",
+              influencer: "false",
+              time: "2020.12.03",
+              href: "https://m.cafe.naver.com/ca-fe/web/cafes/jangantalk/articles/220153?useCafeId=false&or=m.search.naver.com&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0&buid=d713d18d-4e14-4e9c-893e-5047c13299bf&art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1ldGMtZm9yLWNvbW1lbnQ.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjIyMDE1MywiaXNzdWVkQXQiOjE2Mzg3MDAyNTYwMjQsImNhZmVJZCI6MjU3Mjg5NTV9.57lPIyd5RG_pLtc-Zq0xj3iDSz6ObEhxDnXGME_MmD8",
+            },
+            body: {
+              title: "웹툰 독립일기 잼있어요 ㅎㅎ",
+              detail:
+                "네*버 웹툰 중에 독립일기 웹툰 잼있어요 ㅋㅋ 제목은 '독립일기'인데 주부이자 아줌마인 저한테도 뭔가 절묘하게 공감이 ㅋㅋ (그림은 문제시 삭제하겠습니다) '세상은 넓고 세제는...'",
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDEyMDNfMTcz%2FMDAxNjA3MDAyNDc1MzA1.e6QAowvS7KOsKEhr8Jyizask1j8VjgYNHb7S8rLw6Cgg.hE_yTwI4p4wDnzUCOqPnH4TbtDEhA_l_6ZZhQzyzAV0g.PNG%2F7CA1D922-DC4D-4B72-8AEC-7EEEEB8E9FBA.png%23800x1732&type=ff192_192",
+              href: "https://m.blog.naver.com/tcacyc/222546516689",
+            },
+            tags: {
+              list: [],
+            },
+            link: {},
+          },
+
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20101127_220%2Fluisini_1290852925505_8i6WaA_jpg%2F101119.jpg&type=f54_54",
+              title: "호오랭애의 활동일지",
+              influencer: "false",
+              time: "2021.09.03.",
+              href: "https://m.blog.naver.com/luisini",
+            },
+            body: {
+              title: "[독립일기] 셀프이사준비 & 자취꿀템 구매",
+              detail:
+                "웹툰 독립일기 보고 알았다. 아무튼 나도 삼 근데 이거 아직도 안붙였다 왜냐면... 진짜 독립 아무나하는거 아니다 싶었다. 아 물론 나처럼 대충 가구없이 살고 그럴거면뭐.....",
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MDNfMjg0%2FMDAxNjMwNjc0NzY5MjE1.m8ONDnxL-3c_5JMqCbqWIToiQstQpTUj7sX3wprpes8g.DK4f00caM8Q4Aak6MGrHprSzEFfU6Dfw26OMFIC3ohcg.JPEG.luisini%2F%25C1%25A6%25B8%25F1%25C0%25BB%25A3%25AD%25C0%25D4%25B7%25C2%25C7%25D8%25C1%25D6%25BC%25BC%25BF%25E4%25A3%25DF%25A3%25AD001.jpg%23900x900&type=ff192_192",
+              href: "https://m.blog.naver.com/kyena200/222556888699",
+            },
+            tags: {
+              list: [
+                {
+                  title: "셀프이사",
+                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%85%80%ED%94%84%EC%9D%B4%EC%82%AC",
+                },
+                {
+                  title: "행복주택",
+                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%ED%96%89%EB%B3%B5%EC%A3%BC%ED%83%9D",
+                },
+                {
+                  title: "자취꿀템",
+                  href: "https://m.search.naver.com/search.naver?where=m_view&sm=mtb_viw.all&query=%EC%9E%90%EC%B7%A8%EA%BF%80%ED%85%9C",
+                },
+              ],
+            },
+            link: {
+              text: "[독립일기] 행복주택 당첨 후 과정 - 등기수령/사전점검/전자계약(#행복주택 #독립)",
+              href: "https://m.blog.naver.com/luisini/222457622189",
+            },
+          },
+        ],
       },
     },
   };
