@@ -22,7 +22,10 @@ function index(props) {
         </div>
       </div>
       <Filter tabList={props.influencer["tab-lists"]} />
-      <Content influencers={props.influencer.influencers} colorScheme = {props.influencer.colorScheme} />
+      <Content
+        influencers={props.influencer.influencers}
+        colorScheme={props.influencer.colorScheme}
+      />
       <a
         href={props.influencer.influencerLink}
         style={{ textDecoration: "None" }}

@@ -8,7 +8,7 @@
   .title {
     height: 50.4px;
     padding: 0 18px;
-    border-bottom: 1px solid #e8ebee;
+    border-bottom: 1px solid #d9d9d9;
 
     .h2 {
       margin: 0;
@@ -23,6 +23,8 @@
     list-style-type: none;
 
     .li {
+      border-bottom: 1px solid #d9d9d9;
+
       .content {
         position: relative;
         padding: 14px 18px 15px 18px;

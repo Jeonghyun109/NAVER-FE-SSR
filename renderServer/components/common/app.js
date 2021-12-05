@@ -12,20 +12,20 @@ function App(props) {
     <div className={styles.container}>
       <Header />
       <div className={styles.bodybackground}>
-        <MainCard mainCard={props[0].mainCard} />
-        {props[0].mainCard.title.type === "동물" && (
-          <>
-            <View view={props[0].view} />
-            <Influencer influencer={props[0].influencer} />
-            <News news={props[0].news} />
-          </>
-        )}
-        {props[0].mainCard.title.type === "문화재" && (
-          <>
-            <Influencer influencer={props[0].influencer} />
-            <View view={props[0].view} />
-          </>
-        )}
+        {props[0].order.map((section, idx) => {
+          return (
+            <div key={idx}>
+              {section === "mainCard" && (
+                <MainCard mainCard={props[0].mainCard} />
+              )}
+              {section === "influencers" && (
+                <Influencer influencer={props[0].influencer} />
+              )}
+              {section === "view" && <View view={props[0].view} />}
+              {section === "news" && <News news={props[0].news} />}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
