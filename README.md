@@ -1,16 +1,21 @@
-### 개발 규칙
+### Demo Link
 
-1. git commit 전에 "yarn format" 실행
+http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/
 
-### 개발 환경
+### Diary
 
-```bash
-yarn dev
-```
+http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=diary
 
-1. 브라우저로 https://localhost:3000 접속
-2. Web Server의 port 번호는 3000, Render Server의 port 번호는 4000
+![image](https://user-images.githubusercontent.com/87184009/144863702-3b7b858d-9795-4b5b-9141-0fb58e216d5b.png)
 
-### 개발 방법
+### Bulguksa
 
-작성중
+http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=bulguksa
+
+![image](https://user-images.githubusercontent.com/87184009/144863814-9b536699-b6ab-4cb1-b2ec-53aa1f0eb1e4.png)
+
+### Sham
+
+http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=sham
+
+![image](https://user-images.githubusercontent.com/87184009/144863753-1ec99d6c-bfff-472d-b360-5a0784bc31a6.png)

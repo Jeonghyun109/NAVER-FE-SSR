@@ -8,8 +8,8 @@
 # vim temporary files
 *.swp
 
-# production
-/dist
+# Mac OS
+.DS_Store
 
 # debug
 npm-debug.log*

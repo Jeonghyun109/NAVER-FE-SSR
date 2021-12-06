@@ -6,8 +6,12 @@ const config = require("config");
 const proxy = require("express-http-proxy");
 const bodyParser = require("body-parser");
 
-const port = config.get("webServerPort");
-const renderServerAddress = config.get("renderServerAddress");
+const webServerPort = config.get("webServerPort");
+const renderServerPort = config.get("renderServerPort");
+const serverAddress = config.get("serverAddress");
+const renderServerAddress =
+  String(serverAddress) + ":" + String(renderServerPort);
+const webServerAddress = String(serverAddress) + ":" + String(webServerPort);
 const payloadSelector = require("./payloadSelector");
 const { UrlShortener } = require("./openApi");
 
@@ -49,6 +53,6 @@ app.post("/open-apis/url-shortener", (req, res, next) => {
     .catch(next);
 });
 
-app.listen(port, () => {
-  console.log(`Web Server listening at http://localhost:${port}`);
+app.listen(webServerPort, () => {
+  console.log(`Web Server listening at ${webServerAddress}`);
 });
