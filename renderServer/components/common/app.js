@@ -11,7 +11,7 @@ function App(props) {
   return (
     <div className={styles.container}>
       <Header />
-      <div className={styles.bodybackground}>
+      <div className={styles.bodybackground}>    
         {props[0].order.map((section, idx) => {
           return (
             <div key={idx}>
@@ -23,6 +23,7 @@ function App(props) {
               )}
               {section === "view" && <View view={props[0].view} />}
               {section === "news" && <News news={props[0].news} />}
+              {section === "error" && <Error error={props[0].content} />}
             </div>
           );
         })}

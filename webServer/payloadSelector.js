@@ -933,9 +933,9 @@ class PayloadSelector {
       },
       news: {
         colorScheme: {
-            main: "#3d92ff",
-            border: "rgba(61,146,255,.2)",
-          },
+          main: "#3d92ff",
+          border: "rgba(61,146,255,.2)",
+        },
         header: {
           title: "뉴스",
           condition: "관련도순",
@@ -988,7 +988,8 @@ class PayloadSelector {
                 href: "http://www.k-health.com/",
               },
               text: {
-                title: "[반려동물 건강이야기] 고양이 각막이 갈색으로 변했다? 각막괴사증 신호!",
+                title:
+                  "[반려동물 건강이야기] 고양이 각막이 갈색으로 변했다? 각막괴사증 신호!",
                 detail:
                   "지금까지 추정되는 원인으로는 만성각막궤양, 안검내번 및 첩모로 인한 오랜 각막염, 안구건조증, 고양이 허피스바이러스(FHV-1)에 의한 각막염 등이다. 모든 품종에서 발생할 수 있는데 특히 페르시안, 버미즈, 히말라얀 및 샴(샤미즈)이 더욱 취약한 것으로 보인다. 진단은 각막염색법...",
                 src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5534%2F2021%2F12%2F01%2F16076.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
@@ -1033,7 +1034,8 @@ class PayloadSelector {
         title: {
           name: "독립일기",
           type: "웹툰",
-          "title-url": "https://m.comic.naver.com/webtoon/list.nhn?titleId=748105",
+          "title-url":
+            "https://m.comic.naver.com/webtoon/list.nhn?titleId=748105",
           subName: "연재중",
         },
 
@@ -1345,65 +1347,65 @@ class PayloadSelector {
           },
           list: [
             {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%82%98%EC%81%9C%EC%82%AC%EB%9E%8C",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F750184%2Fthumbnail%2Fthumbnail_IMAG19_73f1aaef-824f-4790-a70b-f3b1e3aa22b4.jpg",
-                title: "나쁜사람",
-                sub_text: "둠스",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F748105%2Fthumbnail%2Fthumbnail_IMAG19_d8bd40f2-76f6-448b-8650-126c0d5137b6.jpg",
-                title: "독립일기",
-                sub_text: "자까",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%A8%B9%EB%8A%94%20%EC%9D%B8%EC%83%9D",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F784255%2Fthumbnail%2Fthumbnail_IMAG19_a7a092fd-4f82-4ec9-afad-0ea1268d9a53.jpg",
-                title: "먹는 인생",
-                sub_text: "홍끼",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%98%A4%EB%B9%A0%EC%84%B8%EB%81%BC",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F758659%2Fthumbnail%2Fthumbnail_IMAG19_c614978a-da9b-462e-9e8c-f5ba49400109.jpg",
-                title: "오빠세끼",
-                sub_text: "올리브유",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%B5%9C%EB%A9%B4%ED%95%99%EA%B5%90",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F776656%2Fthumbnail%2Fthumbnail_IMAG19_af8ac713-8563-48f9-9028-325668ed4d2c.jpg",
-                title: "최면학교",
-                sub_text: "박은혁",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%82%B4%EA%B3%BC%20%EB%B0%95%EC%9B%90%EC%9E%A5",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F781354%2Fthumbnail%2Fthumbnail_IMAG19_54e93171-9019-484d-9696-0f492d9a9772.jpg",
-                title: "내과 박원장",
-                sub_text: "장봉수",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%8B%A5%ED%84%B0%EC%95%A4%EB%8B%A5%ED%84%B0%20%EC%9C%A1%EC%95%84%EC%9D%BC%EA%B8%B0",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F732955%2Fthumbnail%2Fthumbnail_IMAG19_9a66efb3-2d4f-4013-b43f-03ebe0d8d373.jpg",
-                title: "닥터앤닥터 육아일기",
-                sub_text: "닥터베르",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%ED%98%81%EC%8B%A0%EC%A0%81%20%EC%96%BC%EA%B0%84%EC%9D%B4%EB%93%A4",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F783466%2Fthumbnail%2Fthumbnail_IMAG19_85ae070d-7677-45e6-a034-e25116c900c1.jpg",
-                title: "혁신적 얼간이들",
-                sub_text: "가스파드",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%9C%8C%EC%9C%A0%EB%A9%94%EB%A6%AC%EB%AF%B8",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F616239%2Fthumbnail%2Ftitle_thumbnail_20161031214436_t220x202.jpg",
-                title: "윌유메리미",
-                sub_text: "마인드C",
-              },
-              {
-                href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%A7%8C%EB%AC%BC%EC%9D%98%20%EC%98%81%EC%9E%A5",
-                src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F729964%2Fthumbnail%2Fthumbnail_IMAG19_a13551ff-0c82-422e-beff-454e91915ddb.jpg",
-                title: "만물의 영장",
-                sub_text: "보민",
-              },
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%82%98%EC%81%9C%EC%82%AC%EB%9E%8C",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F750184%2Fthumbnail%2Fthumbnail_IMAG19_73f1aaef-824f-4790-a70b-f3b1e3aa22b4.jpg",
+              title: "나쁜사람",
+              sub_text: "둠스",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F748105%2Fthumbnail%2Fthumbnail_IMAG19_d8bd40f2-76f6-448b-8650-126c0d5137b6.jpg",
+              title: "독립일기",
+              sub_text: "자까",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%A8%B9%EB%8A%94%20%EC%9D%B8%EC%83%9D",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F784255%2Fthumbnail%2Fthumbnail_IMAG19_a7a092fd-4f82-4ec9-afad-0ea1268d9a53.jpg",
+              title: "먹는 인생",
+              sub_text: "홍끼",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%98%A4%EB%B9%A0%EC%84%B8%EB%81%BC",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F758659%2Fthumbnail%2Fthumbnail_IMAG19_c614978a-da9b-462e-9e8c-f5ba49400109.jpg",
+              title: "오빠세끼",
+              sub_text: "올리브유",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%B5%9C%EB%A9%B4%ED%95%99%EA%B5%90",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F776656%2Fthumbnail%2Fthumbnail_IMAG19_af8ac713-8563-48f9-9028-325668ed4d2c.jpg",
+              title: "최면학교",
+              sub_text: "박은혁",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%82%B4%EA%B3%BC%20%EB%B0%95%EC%9B%90%EC%9E%A5",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F781354%2Fthumbnail%2Fthumbnail_IMAG19_54e93171-9019-484d-9696-0f492d9a9772.jpg",
+              title: "내과 박원장",
+              sub_text: "장봉수",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%8B%A5%ED%84%B0%EC%95%A4%EB%8B%A5%ED%84%B0%20%EC%9C%A1%EC%95%84%EC%9D%BC%EA%B8%B0",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F732955%2Fthumbnail%2Fthumbnail_IMAG19_9a66efb3-2d4f-4013-b43f-03ebe0d8d373.jpg",
+              title: "닥터앤닥터 육아일기",
+              sub_text: "닥터베르",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%ED%98%81%EC%8B%A0%EC%A0%81%20%EC%96%BC%EA%B0%84%EC%9D%B4%EB%93%A4",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F783466%2Fthumbnail%2Fthumbnail_IMAG19_85ae070d-7677-45e6-a034-e25116c900c1.jpg",
+              title: "혁신적 얼간이들",
+              sub_text: "가스파드",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%9C%8C%EC%9C%A0%EB%A9%94%EB%A6%AC%EB%AF%B8",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F616239%2Fthumbnail%2Ftitle_thumbnail_20161031214436_t220x202.jpg",
+              title: "윌유메리미",
+              sub_text: "마인드C",
+            },
+            {
+              href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%A7%8C%EB%AC%BC%EC%9D%98%20%EC%98%81%EC%9E%A5",
+              src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F729964%2Fthumbnail%2Fthumbnail_IMAG19_a13551ff-0c82-422e-beff-454e91915ddb.jpg",
+              title: "만물의 영장",
+              sub_text: "보민",
+            },
           ],
           text: "네이버 웹툰 2021-11-29",
         },
@@ -1469,6 +1471,14 @@ class PayloadSelector {
           },
         ],
       },
+    },
+    error: {
+        order: ["error", "content"],
+        content: {
+            title: "유효하지 않은 검색결과입니다.",
+            text1: "단어의 철자가 정확한지 확인해 주세요.",
+            text2: "'샴고양이', '경주 불국사', '독립일기 함께 많이보는 웹툰', 혹은 빈 검색어로 검색해 보세요.",     
+        },
     },
   };
   static payloadKeys = Object.keys(this.payloadMap);

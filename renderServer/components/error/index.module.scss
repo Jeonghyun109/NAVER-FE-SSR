@@ -1,9 +1,32 @@
-.container {
-  // TODO: 100vh
-  width: calc(100vw - 80px);
-  margin: -8px;
+.commonModule {
+    position: relative;
+    width: 768px;
+    height: 600px;
+    border: 1px solid #e2e5e8;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 6px 6px 0 0;
+    margin: 9px auto 0 auto;
+
+    .container {
+        width: 768px;
+        border: 1px solid #e8ebee;
+        background-color: white;
+        display: block;
+
+        .title {
+            padding: 26px 18px 0;
+            font-size: 18px;    
+        }
+      
+        .ul {
+          padding-bottom: 20px;
+
+          .li {
+            margin-top: 4px;
+            font-size: 15px;
+            color: #666;              
+          }
+        }
+    }
 }
-.errorpage {
-  background-color: #ffffff;
-  border: 1px solid #e2e5e8;
-}
+  
