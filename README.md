@@ -1,16 +1,3 @@
-### 개발 규칙
+### Demo Link
 
-1. git commit 전에 "yarn format" 실행
-
-### 개발 환경
-
-```bash
-yarn dev
-```
-
-1. 브라우저로 https://localhost:3000 접속
-2. Web Server의 port 번호는 3000, Render Server의 port 번호는 4000
-
-### 개발 방법
-
-작성중
+http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/
