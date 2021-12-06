@@ -5,7 +5,7 @@
 ### 개발 환경
 
 ```bash
-yarn exec
+yarn dev
 ```
 
 1. 브라우저로 https://localhost:3000 접속
