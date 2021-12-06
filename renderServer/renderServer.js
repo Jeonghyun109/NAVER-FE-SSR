@@ -2,12 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const React = require("react");
 const cors = require("cors");
+const config = require("config");
 const ReactDomServer = require("react-dom/server");
 import App from "./components/common/app";
 
+const serverAddress = config.get("serverAddress");
+const renderServerPort = config.get("renderServerPort");
 const router = express.Router();
 const app = express();
-const port = 4000;
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,6 +35,8 @@ router.post("/", (req, res) => {
 `);
 });
 
-app.listen(port, () => {
-  console.log(`Render Server listening at http://localhost:${port}`);
+app.listen(renderServerPort, () => {
+  console.log(
+    `Render Server listening at ${serverAddress}:${renderServerPort}`
+  );
 });
