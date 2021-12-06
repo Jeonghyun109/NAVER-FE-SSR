@@ -1069,6 +1069,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/p/crd/rd?m=1&px=451&py=379&sx=451&sy=279&p=hjzG0sp0JxlssKhcf%2FossssssO4-361090&q=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0+%ED%95%A8%EA%BB%98+%EB%A7%8E%EC%9D%B4%EB%B3%B4%EB%8A%94+%EC%9B%B9%ED%88%B0&ie=utf8&rev=1&ssc=tab.m.all&f=m&w=m&s=8xQjg2hbcG4P54LNL6r56Q%3D%3D&time=1638725889341&a=nco_x34*1.rrv&r=1&i=1810BA5C_000000DA343F&u=https%3A%2F%2Fm.search.naver.com%2Fsearch.naver%3Fwhere%3Dm%26sm%3Dmtb_etc%26mra%3DbjQz%26x_csa%3D%257B%2522pkid%2522%253A%2520%252247%2522%257D%26pkid%3D47%26qvt%3D0%26query%3D%25EB%25A8%25B9%25EB%258A%2594%2520%25EC%259D%25B8%25EC%2583%259D&cr=1",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F784255%2Fthumbnail%2Fthumbnail_IMAG19_a7a092fd-4f82-4ec9-afad-0ea1268d9a53.jpg",
+                same: "",
                 title: "먹는 인생",
                 sub_text: "홍끼",
                 preference: "선호도 99%",
@@ -1076,6 +1077,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=2021%20%EC%B5%9C%EC%95%A0%EC%BA%90%20%EC%95%88%EB%85%95%2C%20%EC%9E%98%20%EC%A7%80%EB%82%B4%EB%8B%88%3F",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F780506%2Fthumbnail%2Fthumbnail_IMAG19_e295146b-8729-4ea0-a332-1c6463d81bd6.jpg",
+                same: "",
                 title: "2021 최애캐 안녕, ...",
                 sub_text: "네이버웹툰",
                 preference: "선호도 99%",
@@ -1083,6 +1085,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%A1%B0%EC%A1%B0%EC%BD%94%EB%AF%B9%EC%8A%A4",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F774862%2Fthumbnail%2Fthumbnail_IMAG19_25be10b5-729b-474d-ac9c-bae0a879e8cd.jpg",
+                same: "",
                 title: "조조코믹스",
                 sub_text: "이동건",
                 preference: "선호도 89%",
@@ -1090,6 +1093,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%85%B8%EA%B3%A4%ED%95%98%EA%B0%9C",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F702672%2Fthumbnail%2Fthumbnail_IMAG19_c20e1412-a2fb-493d-8e1e-57234c0ab7e4.jpg",
+                same: "",
                 title: "노곤하개",
                 sub_text: "홍끼",
                 preference: "선호도 86%",
@@ -1097,6 +1101,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EA%B0%9C%EB%A5%BC%20%EB%82%B3%EC%95%98%EB%8B%A4",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F712362%2Fthumbnail%2Fthumbnail_IMAG19_d44348af-7f3b-44a4-88e3-6ff1430256c1.jpg",
+                same: "",
                 title: "개를 낳았다",
                 sub_text: "이선",
                 preference: "선호도 84%",
@@ -1104,6 +1109,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EA%B7%B8%20%ED%95%B4%20%EC%9A%B0%EB%A6%AC%EB%8A%94%20-%20%EC%B4%88%EC%97%AC%EB%A6%84%EC%9D%B4%20%EC%A2%8B%EC%95%84!",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F784129%2Fthumbnail%2Fthumbnail_IMAG19_7a5497b2-98a2-4966-9940-6f501af33f9f.jpg",
+                same: "",
                 title: "그 해 우리는 - 초여...",
                 sub_text: "한경찰",
                 preference: "선호도 82%",
@@ -1111,6 +1117,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%9C%8C%EC%9C%A0%EB%A9%94%EB%A6%AC%EB%AF%B8",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F616239%2Fthumbnail%2Ftitle_thumbnail_20161031214436_t220x202.jpg",
+                same: "",
                 title: "윌유메리미",
                 sub_text: "마인드C",
                 preference: "선호도 81%",
@@ -1118,6 +1125,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EA%B2%B0%ED%98%BC%EC%83%9D%ED%99%9C%20%EA%B7%B8%EB%A6%BC%EC%9D%BC%EA%B8%B0",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F741891%2Fthumbnail%2Fthumbnail_IMAG19_b822d5ad-0cd6-4313-976a-aa60238375ed.jpg",
+                same: "",
                 title: "결혼생활 그림일기",
                 sub_text: "은꼼지",
                 preference: "선호도 98%",
@@ -1125,6 +1133,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%8C%80%ED%95%99%EC%9D%BC%EA%B8%B0",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F679519%2Fthumbnail%2Ftitle_thumbnail_20160601180804_t220x202.jpg",
+                same: "같은작가 작품",
                 title: "대학일기",
                 sub_text: "자까",
                 preference: "선호도 81%",
@@ -1132,6 +1141,7 @@ class PayloadSelector {
               {
                 href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EB%8B%A5%ED%84%B0%EC%95%A4%EB%8B%A5%ED%84%B0%20%EC%9C%A1%EC%95%84%EC%9D%BC%EA%B8%B0",
                 src: "https://search.pstatic.net/common?type=f&amp;size=210x210&amp;quality=75&amp;direct=true&amp;src=https%3A%2F%2Fshared-comic.pstatic.net%2Fthumb%2Fwebtoon%2F732955%2Fthumbnail%2Fthumbnail_IMAG19_9a66efb3-2d4f-4013-b43f-03ebe0d8d373.jpg",
+                same: "",
                 title: "닥터앤닥터 육아일기",
                 sub_txt: "닥터베르",
                 preference: "선호도 80%",

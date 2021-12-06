@@ -18,6 +18,9 @@ function WebtoonContent(props) {
                 >
                   <div className={styles.webtoonDiv_together}>
                     <span className={styles.rank_together}>{idx + 1}</span>
+                    {togetherContent.same !== "" && (
+                        <span className={styles.same}>{togetherContent.same}</span>
+                    )}                    
                     <img
                       src={togetherContent.src}
                       className={styles.webtoonThumb_together}
