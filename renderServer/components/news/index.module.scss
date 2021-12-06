@@ -23,28 +23,27 @@
       text-align: right;
 
       .condition {
-          .conditionDot {
-              color: #06c755;
-              margin-right: 5px;
-              vertical-align: middle;
-              margin-bottom: 3px;
-              font-size: 7px;
-          }
-
+        .conditionDot {
+          color: #06c755;
+          margin-right: 5px;
+          vertical-align: middle;
+          margin-bottom: 3px;
+          font-size: 7px;
+        }
       }
 
       .subcondition {
-          color: #909090;
-          text-decoration: none;
-          margin-left: 20px;
+        color: #909090;
+        text-decoration: none;
+        margin-left: 20px;
 
-          .subconditionDot{
-              color: #909090;
-              margin-right: 5px;
-              vertical-align: middle;
-              margin-bottom: 3px;
-              font-size: 7px;
-          }
+        .subconditionDot {
+          color: #909090;
+          margin-right: 5px;
+          vertical-align: middle;
+          margin-bottom: 3px;
+          font-size: 7px;
+        }
       }
     }
   }
@@ -53,7 +52,6 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-
 
     .li {
       border-top: 1px solid #ecf0f2;

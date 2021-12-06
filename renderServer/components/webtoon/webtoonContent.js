@@ -19,21 +19,27 @@ function WebtoonContent(props) {
                   <div className={styles.webtoonDiv_together}>
                     <span className={styles.rank_together}>{idx + 1}</span>
                     {togetherContent.same !== "" && (
-                        <span className={styles.same}>{togetherContent.same}</span>
-                    )}                    
+                      <span className={styles.same}>
+                        {togetherContent.same}
+                      </span>
+                    )}
                     <img
                       src={togetherContent.src}
                       className={styles.webtoonThumb_together}
                     />
                   </div>
                   <div className={styles.titles_together}>
-                    <div className={styles.titleBox_together}>{togetherContent.title}</div>
+                    <div className={styles.titleBox_together}>
+                      {togetherContent.title}
+                    </div>
                     <div className={styles.subtitleBox_together}>
-                        {togetherContent.sub_text}
+                      {togetherContent.sub_text}
                     </div>
                   </div>
-                  <hr class={styles.divideline}/>
-                  <div className={styles.preference}>{togetherContent.preference}</div>
+                  <hr className={styles.divideline} />
+                  <div className={styles.preference}>
+                    {togetherContent.preference}
+                  </div>
                 </a>
               </li>
             );
@@ -60,9 +66,11 @@ function WebtoonContent(props) {
                       className={styles.webtoonThumb}
                     />
                   </div>
-                  <div className={styles.titleBox}>{lifeContent.title}</div>
-                  <div className={styles.subtitleBox}>
-                    {lifeContent.sub_text}
+                  <div className={styles.titles}>
+                    <div className={styles.titleBox}>{lifeContent.title}</div>
+                    <div className={styles.subtitleBox}>
+                      {lifeContent.sub_text}
+                    </div>
                   </div>
                 </a>
               </li>
@@ -84,9 +92,11 @@ function WebtoonContent(props) {
                     <span className={styles.rank}>{idx + 1}</span>
                     <img src={newContent.src} className={styles.webtoonThumb} />
                   </div>
-                  <div className={styles.titleBox}>{newContent.title}</div>
-                  <div className={styles.subtitleBox}>
-                    {newContent.sub_text}
+                  <div className={styles.titles}>
+                    <div className={styles.titleBox}>{newContent.title}</div>
+                    <div className={styles.subtitleBox}>
+                      {newContent.sub_text}
+                    </div>
                   </div>
                 </a>
               </li>
@@ -111,9 +121,11 @@ function WebtoonContent(props) {
                       className={styles.webtoonThumb}
                     />
                   </div>
-                  <div className={styles.titleBox}>{weeklyContent.title}</div>
-                  <div className={styles.subtitleBox}>
-                    {weeklyContent.sub_text}
+                  <div className={styles.titles}>
+                    <div className={styles.titleBox}>{weeklyContent.title}</div>
+                    <div className={styles.subtitleBox}>
+                      {weeklyContent.sub_text}
+                    </div>
                   </div>
                 </a>
               </li>

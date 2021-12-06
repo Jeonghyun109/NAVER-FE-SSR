@@ -1417,6 +1417,11 @@ class PayloadSelector {
               sub_text: "보민",
             },
           ],
+          more: {
+            href: "https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bjQz&x_csa=%7B%22pkid%22%3A%20%2247%22%7D&pkid=47&qvt=0&query=%EC%9B%B9%ED%88%B0",
+            text1: "이어서",
+            text2: "더보기",
+          },
           text: "네이버 웹툰 2021-11-29",
         },
       },
@@ -1483,12 +1488,13 @@ class PayloadSelector {
       },
     },
     error: {
-        order: ["error", "content"],
-        content: {
-            title: "유효하지 않은 검색결과입니다.",
-            text1: "단어의 철자가 정확한지 확인해 주세요.",
-            text2: "'샴고양이', '경주 불국사', '독립일기 함께 많이보는 웹툰', 혹은 빈 검색어로 검색해 보세요.",     
-        },
+      order: ["error", "content"],
+      content: {
+        title: "유효하지 않은 검색결과입니다.",
+        text1: "단어의 철자가 정확한지 확인해 주세요.",
+        text2:
+          "'샴고양이', '경주 불국사', '독립일기 함께 많이보는 웹툰', 혹은 빈 검색어로 검색해 보세요.",
+      },
     },
   };
   static payloadKeys = Object.keys(this.payloadMap);

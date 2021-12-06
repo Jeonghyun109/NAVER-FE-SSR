@@ -11,7 +11,7 @@ function App(props) {
   return (
     <div className={styles.container}>
       <Header />
-      <div className={styles.bodybackground}>    
+      <div className={styles.bodybackground}>
         {props[0].order.map((section, idx) => {
           return (
             <div key={idx}>

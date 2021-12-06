@@ -1,7 +1,7 @@
 .commonContentArea {
   padding: 9px 0px 13px 15px;
   border: 1px solid #e8ebee;
-  margin: 20px 9px;
+  margin-top: 20px;
   background-color: white;
 
   .linkMiddleTitle {
@@ -36,63 +36,15 @@
       &::-webkit-scrollbar {
         display: none;
       }
-
       .webtoon {
         display: inline-block;
         border: 0.1px solid #e8ebee;
         border-radius: 6px;
         margin-right: 9px;
-
-        .linkWebtoon_together {
-          width: 105px;
-          height: 189px;
-          cursor: pointer;
-          text-decoration: none;
-
-          .webtoonDiv {
-            height: 84px;
-            position: relative;
-
-            .rank {
-              position: absolute;
-              display: block;
-              width: 24px;
-              height: 24px;
-              background-color: rgba(135, 142, 154, 0.9);
-              font-size: 14px;
-              color: #fff;
-              font-weight: bold;
-              text-align: center;
-              border-radius: 4px;
-            }
-
-            .webtoonThumb {
-              width: 105px;
-              height: 105px;
-              border-radius: 6px 6px 0 0;
-            }
-          }
-        }
-
-        .titleBox {
-          padding: 0px 15px 5px 11px; // top left bottom right
-          margin: 0;
-          font-size: 16px;
-          word-break: break-all;
-          color: #242424;
-        }
-        .subtitleBox {
-          padding: 3px 11px 5px 11px;
-          margin: 0;
-          margin-top: -5px;
-          font-size: 14px;
-          word-break: break-all;
-          color: #8f8f8f;
-        }
+        width: 105px;
+        height: 186.9px;
 
         .linkWebtoon {
-          width: 105px;
-          height: 186.9px;
           cursor: pointer;
           text-decoration: none;
 
@@ -120,20 +72,64 @@
             }
           }
 
-          .titleBox {
-            padding: 30px 15px 5px 11px; // top left bottom right
-            margin: 0;
-            font-size: 16px;
-            word-break: break-all;
-            color: #242424;
+          .titles {
+            height: 70px;
+
+            .titleBox {
+              padding-top: 30px;
+              padding-right: 11px;
+              padding-left: 11px;
+              font-size: 16px;
+              word-break: break-all;
+              color: #242424;
+            }
+            .subtitleBox {
+              padding-top: 3px;
+              padding-right: 11px;
+              padding-bottom: 9px;
+              padding-left: 11px;
+              font-size: 14px;
+              word-break: break-all;
+              color: #8f8f8f;
+            }
           }
-          .subtitleBox {
-            padding: 3px 11px 5px 11px;
-            margin: 0;
-            margin-top: -5px;
-            font-size: 14px;
-            word-break: break-all;
-            color: #8f8f8f;
+        }
+      }
+
+      .list_more {
+        display: inline-block;
+        position: relative;
+        width: 59px;
+        height: 186.9px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        margin-right: 20px;
+        padding-top: 45px;
+        padding-left: 5px;
+
+        .more {
+          text-decoration: none;
+
+          .inner_box {
+            color: #666;
+            width: 46px;
+            height: 84.8px;
+
+            .arrow {
+              margin: 5px;
+              padding: 7px;
+              width: 25px;
+              height: 25px;
+              border: 1px solid #e2e9ec;
+              font-weight: lighter;
+              font-size: 10px;
+              border-radius: 50%;
+            }
+
+            .inner_text {
+              font-size: 15px;
+            }
           }
         }
       }
@@ -143,15 +139,16 @@
   .daily {
     color: #8f8f8f;
     font-size: 14px;
-    .alert {
-        cursor: pointer;
-        margin-left: 5px;
-        vertical-align: middle;
-        margin-bottom: 3px;
 
-        // .popover {
-        //     open: true;
-        // }
-      }
+    // .button {
+    //   visibility: none;
+
+    .alert {
+      cursor: pointer;
+      margin-left: 5px;
+      vertical-align: middle;
+      margin-bottom: 3px;
+    }
+    // }
   }
 }
