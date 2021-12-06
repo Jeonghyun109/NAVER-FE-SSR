@@ -11,26 +11,26 @@ function WebtoonContent(props) {
         <ul className={styles.webtoonList}>
           {props.common.together.list.map((togetherContent, idx) => {
             return (
-              <li className={styles.webtoon} key={idx}>
+              <li className={styles.webtoon_together} key={idx}>
                 <a
                   href={togetherContent.href}
                   className={styles.linkWebtoon_together}
                 >
-                  <div className={styles.webtoonDiv}>
-                    <span className={styles.rank}>{idx + 1}</span>
+                  <div className={styles.webtoonDiv_together}>
+                    <span className={styles.rank_together}>{idx + 1}</span>
                     <img
                       src={togetherContent.src}
-                      className={styles.webtoonThumb}
+                      className={styles.webtoonThumb_together}
                     />
                   </div>
-                  <div className={styles.titleBox}>{togetherContent.title}</div>
-                  <div className={styles.subtitleBox}>
-                    {togetherContent.sub_text}
+                  <div className={styles.titles_together}>
+                    <div className={styles.titleBox_together}>{togetherContent.title}</div>
+                    <div className={styles.subtitleBox_together}>
+                        {togetherContent.sub_text}
+                    </div>
                   </div>
-                  <div className={styles.preference}>
-                    <span class={styles.divide_line}></span>
-                    {togetherContent.preference}
-                  </div>
+                  <hr class={styles.divideline}/>
+                  <div className={styles.preference}>{togetherContent.preference}</div>
                 </a>
               </li>
             );
