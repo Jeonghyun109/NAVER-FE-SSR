@@ -2,39 +2,6 @@ import React from "react";
 import styles from "./basicInfo.module.scss";
 
 function BasicInfo(props) {
-  function renderInformation(lst) {
-    var keys = Object.keys(lst);
-    var temp = [];
-    for (var i = 0; i < keys.length; i++) {
-      if (lst[keys[i]].link) {
-        temp.push(
-          <tr key={i}>
-            <td className={styles.infoHeading} key={"td" + i}>
-              {keys[i]}
-            </td>
-            <td key={"td" + i} className={styles.infoDetail}>
-              <a href={lst[keys[i]].url} className={styles.Link}>
-                {lst[keys[i]].detail}
-              </a>
-            </td>
-          </tr>
-        );
-      } else {
-        temp.push(
-          <tr key={i}>
-            <td className={styles.infoHeading} key={"td" + i}>
-              {keys[i]}
-            </td>
-            <td key={"td" + i} className={styles.infoDetail}>
-              {lst[keys[i]].detail}
-            </td>
-          </tr>
-        );
-      }
-    }
-    return temp;
-  }
-
   return (
     <div className={styles.infoArea}>
       <a href={props.common.descriptionURL} className={styles.linkMiddleTitle}>
@@ -45,7 +12,31 @@ function BasicInfo(props) {
       </a>
       <div className={styles.details}>
         <table className={styles.infoTable}>
-          <tbody>{renderInformation(props.common.information)}</tbody>
+          <tbody>
+            {Object.keys(props.common.information).map((info, idx) => (
+              <tr key={idx}>
+                <td className={styles.infoHeading} key={idx}>
+                  {info}
+                </td>
+                {props.common.information[info].link ? (
+                  <td key={"td" + idx} className={styles.infoDetail}>
+                    <a
+                      href={props.common.information[info].url}
+                      className={styles.Link}
+                    >
+                      {props.common.information[info].detail}
+                    </a>
+                  </td>
+                ) : (
+                  <>
+                    <td key={"td" + idx} className={styles.infoDetail}>
+                      {props.common.information[info].detail}
+                    </td>
+                  </>
+                )}
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
       <div style={{ fontSize: "12pt", color: "#424242" }}>

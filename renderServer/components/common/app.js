@@ -4,6 +4,7 @@ import Header from "./header/index";
 import MainCard from "./mainCard/index";
 import View from "../view/index";
 import News from "../news/index";
+import Influencer from "../influencer/index";
 import Error from "../error/index";
 
 function App(props) {
@@ -11,13 +12,20 @@ function App(props) {
     <div className={styles.container}>
       <Header />
       <div className={styles.bodybackground}>
-        <MainCard mainCard={props[0].mainCard} />
-        {props[0].mainCard.title.type !== "웹툰" && (
-          <View view={props[0].view} />
-        )}
-        {props[0].mainCard.title.type === "동물" && (
-          <News news={props[0].news} />
-        )}
+        {props[0].order.map((section, idx) => {
+          return (
+            <div key={idx}>
+              {section === "mainCard" && (
+                <MainCard mainCard={props[0].mainCard} />
+              )}
+              {section === "influencers" && (
+                <Influencer influencer={props[0].influencer} />
+              )}
+              {section === "view" && <View view={props[0].view} />}
+              {section === "news" && <News news={props[0].news} />}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

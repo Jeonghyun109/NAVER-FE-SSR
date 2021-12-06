@@ -45,12 +45,12 @@
 
         .linkWebtoon_together {
           width: 105px;
-          height: 224.9px;
+          height: 189px;
           cursor: pointer;
           text-decoration: none;
 
           .webtoonDiv {
-            height: 111.9px;
+            height: 84px;
             position: relative;
 
             .rank {
@@ -70,17 +70,6 @@
               width: 105px;
               height: 105px;
               border-radius: 6px 6px 0 0;
-            }
-
-            .preference {
-              padding-left: 11px;
-              padding-right: 12px;
-              padding-bottom: 5 px;
-              width: 83px;
-              height: 1px;
-              background-color: #f2f4f6;
-              font-size: 14px;
-              color: #6b707a;
             }
           }
         }
@@ -154,5 +143,11 @@
   .daily {
     color: #8f8f8f;
     font-size: 14px;
+    .alert {
+        cursor: pointer;
+        margin-left: 5px;
+        vertical-align: middle;
+        margin-bottom: 3px;
+      }
   }
 }

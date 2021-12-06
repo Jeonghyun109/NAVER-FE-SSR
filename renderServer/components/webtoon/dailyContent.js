@@ -1,6 +1,7 @@
 import React from "react";
 // import styles from "./webtoonContent.module.scss";
 import styles from "./dailyContent.module.scss";
+import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 
 function dailyContent(props) {
   return (
@@ -31,7 +32,13 @@ function dailyContent(props) {
           })}
         </ul>
       </div>
-      <div className={styles.daily}>네이버 웹툰 2021-11-30</div>
+      <div className={styles.daily}>
+        <span>네이버 웹툰 2021-11-30</span>
+        <ErrorOutlineIcon
+            className={styles.alert}
+            sx={{ color: "#0068c3", fontSize: "18px" }}
+        />
+      </div>
     </div>
   );
 }

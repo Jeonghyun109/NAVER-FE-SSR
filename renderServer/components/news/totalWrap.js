@@ -27,11 +27,9 @@ function TotalWrap(props) {
             {props.totalWrap.text.detail}
           </a>
         </div>
-        {props.totalWrap.text.src !== "" && (
-          <a href={props.totalWrap.text.href} className={styles.imageLink}>
+        <a href={props.totalWrap.text.href} className={styles.imageLink}>
             <img src={props.totalWrap.text.src} className={styles.image} />
-          </a>
-        )}
+        </a>
       </div>
     </div>
   );
