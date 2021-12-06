@@ -18,13 +18,34 @@
       position: absolute;
       top: 0;
       right: 18px;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 51px;
       text-align: right;
-    }
-    .Link {
-      color: #0068c3;
-      text-decoration: none;
+
+      .condition {
+          .conditionDot {
+              color: #06c755;
+              margin-right: 5px;
+              vertical-align: middle;
+              margin-bottom: 3px;
+              font-size: 7px;
+          }
+
+      }
+
+      .subcondition {
+          color: #909090;
+          text-decoration: none;
+          margin-left: 20px;
+
+          .subconditionDot{
+              color: #909090;
+              margin-right: 5px;
+              vertical-align: middle;
+              margin-bottom: 3px;
+              font-size: 7px;
+          }
+      }
     }
   }
 
@@ -33,16 +54,9 @@
     margin: 0;
     list-style-type: none;
 
-    .li {
-      .totalTagArea {
-        padding-bottom: 18px;
-      }
 
-      .totalLinkArea {
-        padding: 13px 0;
-        border-top: 1px solid #f4f6f7;
-        margin: 0 18px;
-      }
+    .li {
+      border-top: 1px solid #ecf0f2;
     }
   }
 

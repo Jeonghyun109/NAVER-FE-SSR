@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
 import TotalWrap from "./totalWrap";
+import CircleIcon from '@mui/icons-material/Circle';
 
 function News(props) {
   return (
@@ -10,8 +11,12 @@ function News(props) {
             {props.news.header.title}
         </h2>
         <div className={styles.subtitle}>
-          <span>{props.news.header.condition}</span>
-          <a href={props.news.header.subcondition.href}>
+          <span className={styles.condition}>
+              <CircleIcon className={styles.conditionDot}/>
+              {props.news.header.condition}
+          </span>
+          <a href={props.news.header.subcondition.href} className={styles.subcondition}>
+            <CircleIcon className={styles.subconditionDot}/>
             {props.news.header.subcondition.text}
           </a>
         </div>
