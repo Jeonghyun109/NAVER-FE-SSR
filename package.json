@@ -2,7 +2,8 @@
   "name": "naver-fe-ssr",
   "scripts": {
     "dev": "concurrently --kill-others \"webpack -w\" \"NODE_ENV=development nodemon --exec babel-node --presets @babel/env ./dist/renderServer.js\" \"NODE_ENV=development nodemon ./webServer/webServer.js\"",
-    "build": "webpack",
+    "webpack": "webpack",
+    "build": "concurrently --kill-others \"node ./dist/renderServer.js\" \"node ./webServer/webServer.js\"",
     "format": "prettier --write ."
   },
   "dependencies": {
