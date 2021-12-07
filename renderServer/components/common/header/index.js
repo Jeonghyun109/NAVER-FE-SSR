@@ -12,7 +12,7 @@ function Header(props) {
         <input
           className={styles.searchBox}
           placeholder="검색어를 입력해주세요."
-          defaultValue="불국사"
+          defaultValue={props.keyword}
         />
         <CancelIcon className={styles.Erase} sx={{ fontSize: 25 }} />
         <MicNoneIcon className={styles.voiceSearch} sx={{ fontSize: 40 }} />

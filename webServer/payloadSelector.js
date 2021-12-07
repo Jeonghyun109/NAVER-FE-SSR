@@ -1,6 +1,7 @@
 class PayloadSelector {
   static payloadMap = {
     bulguksa: {
+      keyword: "경주 불국사",
       order: ["mainCard", "influencers", "view", "news"],
       mainCard: {
         colorScheme: {
@@ -565,6 +566,7 @@ class PayloadSelector {
       },
     },
     sham: {
+      keyword: "샴고양이",
       order: ["mainCard", "influencers", "view", "news"],
       mainCard: {
         title: {
@@ -1126,6 +1128,7 @@ class PayloadSelector {
       },
     },
     diary: {
+      keyword: "독립일기 함께 많이보는 웹툰",
       order: ["mainCard", "view", "news"],
       mainCard: {
         colorScheme: {
