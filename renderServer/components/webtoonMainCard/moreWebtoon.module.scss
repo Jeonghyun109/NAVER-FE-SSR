@@ -1,0 +1,37 @@
+.list_more {
+  display: inline-block;
+  position: relative;
+  width: 59px;
+  height: 186.9px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 20px;
+  padding-top: 45px;
+  padding-left: 5px;
+
+  .more {
+    text-decoration: none;
+
+    .inner_box {
+      color: #666;
+      width: 46px;
+      height: 84.8px;
+
+      .arrow {
+        margin: 5px;
+        padding: 7px;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #e2e9ec;
+        font-weight: lighter;
+        font-size: 10px;
+        border-radius: 50%;
+      }
+
+      .inner_text {
+        font-size: 15px;
+      }
+    }
+  }
+}
