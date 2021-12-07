@@ -21,12 +21,15 @@ router.post("/", (req, res) => {
     <!DOCTYPE html>
     <html lang="ko">
         <head>
-            <link rel="stylesheet" href="style.css">
-            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-            <script
-            src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-            data-auto-a11y="true"
-            ></script>
+        <link rel="stylesheet" href="style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script
+          src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+          data-auto-a11y="true"
+        ></script>
         </head>
         <body>
             ${ReactDomServer.renderToString(App(req.body))}
