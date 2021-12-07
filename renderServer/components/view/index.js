@@ -1,16 +1,15 @@
 import React from "react";
-import styles from "./index.module.scss";
-import Blog from "./blog";
-import Body from "./body";
+import styles from "../common/others/index.module.scss";
+import Title from "../common/others/title";
+import Blog from "../common/others/blog";
+import Body from "../common/others/body";
 import Tags from "./tags";
 import Link from "./link";
 
 function View(props) {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
-        <h2 className={styles.h2}>VIEW</h2>
-      </div>
+      <Title titleInfo={props.view.header} />
 
       <ul className={styles.ul}>
         {props.view.list.map((element, idx) => {

@@ -1,15 +1,11 @@
 .imgDiv {
-  overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  overflow-y: hidden;
 
   .imgList {
     display: flex;
     padding: 3px 0 11px 0;
     margin: 0;
+    margin-bottom: -15px;
     list-style-type: none;
   }
   .imgFirst {

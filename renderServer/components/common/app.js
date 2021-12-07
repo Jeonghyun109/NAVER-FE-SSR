@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./app.module.scss";
 import Header from "./header/index";
 import MainCard from "./mainCard/index";
+import Influencer from "../influencer/index";
 import View from "../view/index";
 import News from "../news/index";
-import Influencer from "../influencer/index";
 import Error from "../error/index";
 
 function App(props) {
@@ -23,6 +23,7 @@ function App(props) {
               )}
               {section === "view" && <View view={props[0].view} />}
               {section === "news" && <News news={props[0].news} />}
+              {section === "error" && <Error error={props[0].content} />}
             </div>
           );
         })}

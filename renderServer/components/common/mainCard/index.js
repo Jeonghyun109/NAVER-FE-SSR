@@ -3,8 +3,8 @@ import styles from "./index.module.scss";
 import Title from "./title";
 import SubTap from "./subTap";
 import SimilarContent from "./similarContent";
-import WebtoonContent from "../../webtoon/webtoonContent";
-import DailyContent from "../../webtoon/dailyContent";
+import WebtoonMainCard from "../../webtoonMainCard/index";
+import DailyWebtoon from "../../webtoonMainCard/dailyWebtoon";
 import AnimalMainCard from "../../animalMainCard/index";
 import CultureMainCard from "../../cultureMainCard/index";
 
@@ -37,10 +37,10 @@ function MainCard(props) {
           <CultureMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "웹툰" && (
-          <WebtoonContent common={props.mainCard.common} />
+          <WebtoonMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "웹툰" && (
-          <DailyContent similar={props.mainCard.similar} />
+          <DailyWebtoon similar={props.mainCard.similar} />
         )}
         {props.mainCard.title.type !== "웹툰" && (
           <SimilarContent similar={props.mainCard.similar} />
