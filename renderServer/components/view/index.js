@@ -9,7 +9,7 @@ import Link from "./link";
 function View(props) {
   return (
     <div className={styles.container}>
-        <Title titleInfo={props.view.header}/>
+      <Title titleInfo={props.view.header} />
 
       <ul className={styles.ul}>
         {props.view.list.map((element, idx) => {

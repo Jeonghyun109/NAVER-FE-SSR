@@ -8,20 +8,20 @@ import More from "../common/others/more";
 function News(props) {
   return (
     <div className={styles.container}>
-        <Title titleInfo={props.news.header}/>
-        <ul className={styles.ul}>
-            {props.news.list.map((element, idx) => {
-            return (
-                <li className={styles.li} key={idx}>
-                    <div className={styles.content}>
-                        <Blog blog={element.blog} />
-                        <Body body={element.body} />
-                    </div>
-                </li>
-            );
-            })}
-        </ul>
-        <More more={props.news.newsLink} />
+      <Title titleInfo={props.news.header} />
+      <ul className={styles.ul}>
+        {props.news.list.map((element, idx) => {
+          return (
+            <li className={styles.li} key={idx}>
+              <div className={styles.content}>
+                <Blog blog={element.blog} />
+                <Body body={element.body} />
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+      <More more={props.news.newsLink} />
     </div>
   );
 }

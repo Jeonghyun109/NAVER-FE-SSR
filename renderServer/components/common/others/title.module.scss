@@ -1,69 +1,69 @@
 .title_area {
-    display: block;
-    position: relative;
-    height: 50.4px;
-    
-    .title {
-      margin: 0;
-      padding: 0 18px;
-      font-size: 18px;
-      line-height: 51px;
-      border-bottom: 0.5px solid #ecf0f2;
+  display: block;
+  position: relative;
+  height: 50.4px;
 
-      .alert {
-        cursor: pointer;
-        margin-left: 5px;
-        vertical-align: middle;
-        margin-bottom: 3px;
-      }
-    }
-    .subtitle {
-      position: absolute;
-      top: 0;
-      right: 18px;
-      font-size: 16px;
-      line-height: 51px;
-      text-align: right;
+  .title {
+    margin: 0;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 51px;
+    border-bottom: 0.5px solid #ecf0f2;
 
-      .condition {
-        .conditionDot {
-          color: #06c755;
-          margin-right: 5px;
-          vertical-align: middle;
-          margin-bottom: 3px;
-          font-size: 7px;
-        }
-      }
-      .Link {
-        color: #0068c3;
-        text-decoration: none;
-        }
-
-      .subcondition {
-        color: #909090;
-        text-decoration: none;
-        margin-left: 20px;
-
-        .subconditionDot {
-          color: #909090;
-          margin-right: 5px;
-          vertical-align: middle;
-          margin-bottom: 3px;
-          font-size: 7px;
-        }
-      }
-    }
-    .subtitle_influencer {
-        position: absolute;
-        top: 0;
-        right: 18px;
-        font-size: 15px;
-        line-height: 51px;
-        text-align: right;
-
-        .Link {
-        color: #0068c3;
-        text-decoration: none;
-        }
+    .alert {
+      cursor: pointer;
+      margin-left: 5px;
+      vertical-align: middle;
+      margin-bottom: 3px;
     }
   }
+  .subtitle {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: right;
+
+    .condition {
+      .conditionDot {
+        color: #06c755;
+        margin-right: 5px;
+        vertical-align: middle;
+        margin-bottom: 3px;
+        font-size: 7px;
+      }
+    }
+    .Link {
+      color: #0068c3;
+      text-decoration: none;
+    }
+
+    .subcondition {
+      color: #909090;
+      text-decoration: none;
+      margin-left: 20px;
+
+      .subconditionDot {
+        color: #909090;
+        margin-right: 5px;
+        vertical-align: middle;
+        margin-bottom: 3px;
+        font-size: 7px;
+      }
+    }
+  }
+  .subtitle_influencer {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    font-size: 15px;
+    line-height: 51px;
+    text-align: right;
+
+    .Link {
+      color: #0068c3;
+      text-decoration: none;
+    }
+  }
+}

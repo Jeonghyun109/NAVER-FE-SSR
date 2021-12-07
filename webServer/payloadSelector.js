@@ -1,7 +1,7 @@
 class PayloadSelector {
   static payloadMap = {
     bulguksa: {
-      order: ["mainCard", "influencers", "view"],
+      order: ["mainCard", "influencers", "view", "news"],
       mainCard: {
         colorScheme: {
           background: "rgb(236, 239, 243)",
@@ -194,7 +194,7 @@ class PayloadSelector {
       },
       view: {
         header: {
-            title: "VIEW",
+          title: "VIEW",
         },
         list: [
           {
@@ -252,12 +252,12 @@ class PayloadSelector {
           border: "rgba(61,146,255,.2)",
         },
         header: {
-            title: "인플루언서",
-            subtitle: {
-              href: "https://in.naver.com/",
-              text: "서비스 홈 바로가기",
-            },
+          title: "인플루언서",
+          subtitle: {
+            href: "https://in.naver.com/",
+            text: "서비스 홈 바로가기",
           },
+        },
         "tab-lists": [
           {
             title: "전체",
@@ -475,8 +475,92 @@ class PayloadSelector {
           },
         ],
         influencerLink: {
-            text: "인플루언서 더보기 ",
-            href: "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
+          text: "인플루언서 더보기 ",
+          href: "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
+        },
+      },
+      news: {
+        colorScheme: {
+          main: "#3d92ff",
+          border: "rgba(61,146,255,.2)",
+        },
+        header: {
+          title: "뉴스",
+          condition: "관련도순",
+          subcondition: {
+            href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_jum&query=%EA%B2%BD%EC%A3%BC+%EB%B6%88%EA%B5%AD%EC%82%AC#",
+            text: "최신순",
+          },
+        },
+        list: [
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=http%3A%2F%2Fwww.kbsm.net%2Ffavicon.ico&type=f54_54&expire=24&refresh=true",
+              title: "경북신문",
+              influencer: "false",
+              time: "1일 전",
+              href: "http://www.kbsm.net/",
+            },
+            body: {
+              title: "경주경찰서, 보이스피싱 예방 은행원에 감사장 수여",
+              detail:
+                "경주경찰서는 불국사농협 진현지점에서 보이스피싱 범죄 의심 신고를 통해 현금 2000만원의 피해를 예방한 은행원 A(39)씨에게 감사장을 수여했다고 6일 밝혔다.지난달 2일 오후 2시께 B(55)씨는 상환용 대출 보이스피싱에 속아 기존대출금 상환을 위한 돈을 빌려달라는 사위의 부탁을 받고...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5533%2F2021%2F12%2F06%2F152104.jpg&type=ofullfill174_174&expire=2&refresh=true",
+              href: "http://www.kbsm.net/default/index_view_page.php?idx=331475&part_idx=320",
+            },
+          },
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fmimgnews.pstatic.net%2Fimage%2Fupload%2Foffice_logo%2F032%2F2018%2F10%2F11%2Flogo_032_18_20181011174611.png&type=f54_54&expire=24&refresh=true",
+              title: "경향신문",
+              influencer: "false",
+              time: "2일 전",
+              href: "https://media.naver.com/press/032",
+            },
+            body: {
+              title: "경주 강변로 완전 개통···경주IC~천북교차로 총길이 10㎞",
+              detail:
+                "지금까지 금성삼거리와 황남주민센터 사거리 일대는 경주IC를 빠져나와 시외·고속버스 터미널로 운행하는 차량들과 첨성대·대릉원·오릉·보문단지·불국사 등 유적관광지로 운행하는 차량들이 뒤엉켜 상습 정체를 빚는 등 시민과 관광객의 교통불편이 컸다. 경주시는 강변로 완전...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F032%2F2021%2F12%2F05%2F3114323.jpg&type=ofullfill174_174&expire=2&refresh=true",
+              href: "https://m.news.naver.com/read?mode=LSD&mid=sec&sid1=102&oid=032&aid=0003114323",
+            },
+          },
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fmimgnews.pstatic.net%2Fimage%2Fupload%2Foffice_logo%2F022%2F2017%2F01%2F05%2Flogo_022_18_20170105111205.png&type=f54_54&expire=24&refresh=true",
+              title: "세계일보",
+              influencer: "false",
+              time: "2021.11.24.",
+              href: "https://media.naver.com/press/022",
+            },
+            body: {
+              title: "코로나19 이후 첫 외국인 단체 관광객, 경주 불국사 등 방문",
+              detail:
+                "싱가포르 관광객들이 경주 불국사 앞에서 기념촬영을 하고있다. 지난해 2월 코로나19 사태 이후 처음으로 외국인 단체 관광객이 경북을 방문해 눈길을 끌었다. 23일 경북도문화관광공사에 따르면 싱가포르 단체 관광객 약 20명이 지난 19일과 20일 이틀간 경주 대릉원, 첨성대, 석굴암, 불국사...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F022%2F2021%2F11%2F24%2F3640940.jpg&type=ofullfill174_174&expire=2&refresh=true",
+              href: "https://m.news.naver.com/read?mode=LSD&mid=sec&sid1=102&oid=022&aid=0003640940",
+            },
+          },
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fmimgnews.pstatic.net%2Fimage%2Fupload%2Foffice_logo%2F003%2F2019%2F02%2F19%2Flogo_003_18_20190219111719.jpg&type=f54_54&expire=24&refresh=true",
+              title: "뉴시스",
+              influencer: "false",
+              time: "2021.11.18.",
+              href: "https://media.naver.com/press/003",
+            },
+            body: {
+              title: "경북도, 중국인 유학생 초청 안동~경주 팸투어",
+              detail:
+                "이번 팸투어는 ▲경북도청 동락관의 경북도-허난성 국제미술교류전 참관 ▲안동 하회마을, 월영교 및 낙강물길 공원 방문 ▲경주 대릉원, 첨성대, 불국사 방문 및 경주빵 만들기 체험 등으로 이뤄졌다. 이번 팸투어 참가자는 경북대, 계명대, 대구보건대, 대구카톨릭대, 영진전문대에 재학 중인...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F003%2F2021%2F11%2F18%2F10840961.jpg&type=ofullfill174_174&expire=2&refresh=true",
+              href: "https://m.news.naver.com/read?mode=LSD&mid=sec&sid1=102&oid=003&aid=0010840961",
+            },
+          },
+        ],
+        newsLink: {
+          text: "뉴스 더보기 ",
+          href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_jum&query=%EA%B2%BD%EC%A3%BC+%EB%B6%88%EA%B5%AD%EC%82%AC",
         },
       },
     },
@@ -636,7 +720,7 @@ class PayloadSelector {
       },
       view: {
         header: {
-            title: "VIEW",
+          title: "VIEW",
         },
         list: [
           {
@@ -748,12 +832,12 @@ class PayloadSelector {
           border: "rgba(194,118,54,.2)",
         },
         header: {
-            title: "인플루언서",
-            subtitle: {
-              href: "https://in.naver.com/",
-              text: "서비스 홈 바로가기",
-            },
+          title: "인플루언서",
+          subtitle: {
+            href: "https://in.naver.com/",
+            text: "서비스 홈 바로가기",
           },
+        },
         "tab-lists": [
           {
             title: "전체",
@@ -951,8 +1035,8 @@ class PayloadSelector {
           },
         ],
         influencerLink: {
-            text: "인플루언서 더보기 ",
-            href: "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
+          text: "인플루언서 더보기 ",
+          href: "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
         },
       },
       news: {
@@ -971,68 +1055,68 @@ class PayloadSelector {
         list: [
           {
             blog: {
-            src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-            title: "노트펫",
-            influencer: "false",
-            time: "5일 전",
-            href: "http://www.notepet.co.kr/0",
+              src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+              title: "노트펫",
+              influencer: "false",
+              time: "5일 전",
+              href: "http://www.notepet.co.kr/0",
             },
             body: {
-            title: "한효주, 점심 식당에서 만난 고양이..'나 가야되는데...'",
-            detail:
+              title: "한효주, 점심 식당에서 만난 고양이..'나 가야되는데...'",
+              detail:
                 '한효주 인스타그램 배우 한효주가 점심 차 간 식당에서 고양이에게 찜(?)을 당했다. 한효주는 24일 인스타그램 스토리에 "점심으로 쌀국수를 먹으러 갔는데 고양이가 있어...."라며 식당에서 만난 고양이를 소개했다. 한효주 옆을 비추는 렌즈에는 샴으로 보이는 고양이가 핑크빛 방울을 달고 자리를...',
-            src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F24%2F70683.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-            href: "http://www.notepet.co.kr/news/article/article_view/?idx=24080&groupCode=AB800AD810",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F24%2F70683.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "http://www.notepet.co.kr/news/article/article_view/?idx=24080&groupCode=AB800AD810",
             },
           },
           {
             blog: {
-            src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-            title: "노트펫",
-            influencer: "false",
-            time: "2021.11.13.",
-            href: "http://www.notepet.co.kr/0",
+              src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+              title: "노트펫",
+              influencer: "false",
+              time: "2021.11.13.",
+              href: "http://www.notepet.co.kr/0",
             },
             body: {
-            title: "경남 거창 한국승강기대학 정문에서 샴 고양이 발견 보호",
-            detail:
+              title: "경남 거창 한국승강기대학 정문에서 샴 고양이 발견 보호",
+              detail:
                 "경남 거창 거창읍 송정리 700 한국승강기대학교에서 발견 구조한 암컷 샴 고양이가 12일 동물보호소에 들어왔다. 진갈색, 연갈색 샴은 몸무게 4Kg에 2019년생으로 추정된다. 온순함, 한국승강기대학 정문부근에서 발견됨, 2세 추정. 공고기한은 11월22일까지이고...",
-            src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F13%2F70010.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-            href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=152764",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F13%2F70010.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=152764",
             },
           },
           {
             blog: {
-            src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-            title: "헬스경향",
-            influencer: "false",
-            time: "2021.10.21.",
-            href: "http://www.k-health.com/",
+              src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+              title: "헬스경향",
+              influencer: "false",
+              time: "2021.10.21.",
+              href: "http://www.k-health.com/",
             },
             body: {
-            title:
+              title:
                 "[반려동물 건강이야기] 고양이 각막이 갈색으로 변했다? 각막괴사증 신호!",
-            detail:
+              detail:
                 "지금까지 추정되는 원인으로는 만성각막궤양, 안검내번 및 첩모로 인한 오랜 각막염, 안구건조증, 고양이 허피스바이러스(FHV-1)에 의한 각막염 등이다. 모든 품종에서 발생할 수 있는데 특히 페르시안, 버미즈, 히말라얀 및 샴(샤미즈)이 더욱 취약한 것으로 보인다. 진단은 각막염색법...",
-            src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5534%2F2021%2F12%2F01%2F16076.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-            href: "http://www.k-health.com/news/articleView.html?idxno=56795",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5534%2F2021%2F12%2F01%2F16076.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "http://www.k-health.com/news/articleView.html?idxno=56795",
             },
           },
           {
-              blog: {
-                src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-                title: "노트펫",
-                influencer: "false",
-                time: "2021.10.19.",
-                href: "http://www.notepet.co.kr/0",
-              },
-              body: {
-                title: "세종 조치원읍 조형아파트 인근에서 샴 고양이 발견 보호",
-                detail:
-                  "세종 조치원읍 신안리 244-1 조형아파트 인근에서 발견 구조한 암컷 샴 고양이가 18일 동물보호소에 들어왔다. 갈색 혼합 샴은 몸무게 3.12Kg에 2017년생으로 추정된다. . 공고기한은 10월25일까지이고, 세종유기동물보호센터(010-4435-3720)에서 보호하고 있다. 공고...",
-                src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F10%2F19%2F68007.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-                href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=147168",
-              },
+            blog: {
+              src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+              title: "노트펫",
+              influencer: "false",
+              time: "2021.10.19.",
+              href: "http://www.notepet.co.kr/0",
+            },
+            body: {
+              title: "세종 조치원읍 조형아파트 인근에서 샴 고양이 발견 보호",
+              detail:
+                "세종 조치원읍 신안리 244-1 조형아파트 인근에서 발견 구조한 암컷 샴 고양이가 18일 동물보호소에 들어왔다. 갈색 혼합 샴은 몸무게 3.12Kg에 2017년생으로 추정된다. . 공고기한은 10월25일까지이고, 세종유기동물보호센터(010-4435-3720)에서 보호하고 있다. 공고...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F10%2F19%2F68007.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=147168",
+            },
           },
         ],
         newsLink: {
@@ -1042,7 +1126,7 @@ class PayloadSelector {
       },
     },
     diary: {
-      order: ["mainCard", "view"],
+      order: ["mainCard", "view", "news"],
       mainCard: {
         colorScheme: {
           background: "rgb(236, 239, 243)",
@@ -1543,7 +1627,7 @@ class PayloadSelector {
       },
       view: {
         header: {
-            title: "VIEW",
+          title: "VIEW",
         },
         list: [
           {
@@ -1604,6 +1688,93 @@ class PayloadSelector {
             },
           },
         ],
+      },
+      news: {
+        colorScheme: {
+          main: "#3d92ff",
+          border: "rgba(61,146,255,.2)",
+        },
+        header: {
+          title: "뉴스",
+          condition: "관련도순",
+          subcondition: {
+            href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_jum&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0+%ED%95%A8%EA%BB%98+%EB%A7%8E%EC%9D%B4%EB%B3%B4%EB%8A%94+%EC%9B%B9%ED%88%B0#",
+            text: "최신순",
+          },
+        },
+        list: [
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fmonthly.chosun.com%2Fimages%2Ffavicon_img.png&type=f54_54&expire=24&refresh=true",
+              title: "월간조선",
+              influencer: "false",
+              time: "2021.11.15.",
+              href: "http://monthly.chosun.com/",
+            },
+            body: {
+              title:
+                "줄리아 보이드의 《히틀러 시대의 여행자들》 | 全體主義 독일을 찬양한 ‘쓸모 ...",
+              detail:
+                "운동선수, 웹툰 작가 등이 나와 온갖 잡담을 늘어놓는 TV 프로그램, BTS와 걸그룹에 환호하는 10대 등을 보면 그렇다는 얘기다. 코로나19 때문에 수천... 밤 일기에 이렇게 썼다. “영국 언론들은 최근에 독일에 대한 가짜 뉴스를 너무 많이 전하는 수치스러운 짓을 했다.” 1935년 다하우 강제수용소를...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5481%2F2021%2F11%2F15%2F16289.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "http://monthly.chosun.com/client/news/viw.asp?ctcd=I&nNewsNumb=202111100052",
+            },
+          },
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fbyline.network%2Fwp-content%2Fuploads%2F2018%2F10%2Fcropped-icon-192x192.png&type=f54_54&expire=24&refresh=true",
+              title: "바이라인네트워크",
+              influencer: "false",
+              time: "2019.11.12.",
+              href: "https://byline.network/",
+            },
+            body: {
+              title:
+                "[웹툰작가를 만나다] '최경아-이빈-단지', 여작가들 수다 인터뷰",
+              detail:
+                "그리는 입장에서는, 웹툰은 거의 연출 방식 자체가 고정되어 있잖아요, 컷이. 그런데 페이지 만화는 그 안에서 쪼갠단 말이에요. 그리는 사람 입장에서는, 그렇게 쪼개는 게 더 재밌어요. 이빈: 아마존 킨들로 전자책을 많이 보는데, E-book(전자책)은 스크롤 방식이 아니란 말이에요. 아직 넘겨서...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5704%2F2019%2F11%2F12%2F1404.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "https://byline.network/?p=41771",
+            },
+          },
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fcdnweb01.wikitree.co.kr%2Fwebdata%2Feditor%2F_common%2Ffavicon.png&type=f54_54&expire=24&refresh=true",
+              title: "위키트리",
+              influencer: "false",
+              time: "2017.02.02.",
+              href: "http://www.wikitree.co.kr/",
+            },
+            body: {
+              title: "고양이 집사 공감 웹툰, '뽀짜툰' 작가 인터뷰",
+              detail:
+                "작품을 시작한 계기가 있다면 2003년, 처음 뽀또와 짜구를 키우면서 자연스럽게 얻어지는 에피소드들이 재미있어서 그림일기 그리듯 가벼운... 웹툰을 많이 찾아볼 수 있다. 반려동물 웹툰이 많아지는 건 어떤 걸 의미하는 걸까? 아무래도 그만큼 동물과 함께 살아가는 인구가 많아지고 있다는...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5239%2F2017%2F02%2F02%2F94402.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "http://www.wikitree.co.kr/main/news_view.php?id=290570",
+            },
+          },
+          {
+            blog: {
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fm.asiatime.co.kr%2Fimg%2Ffavicon.png&type=f54_54&expire=24&refresh=true",
+              title: "아시아타임즈",
+              influencer: "false",
+              time: "2021.09.06.",
+              href: "http://www.asiatime.co.kr/",
+            },
+            body: {
+              title:
+                "[6일 안성시 소식] 코로나 상생 국민지원금 온라인 신청 적극 권장 등",
+              detail:
+                "그림책방, 독립출판물 전시실 및 제1기 책문화 프로그램을 운영 중이다. 제2기 책문화 프로그램은 이야기 구성부터 삽화 그리기까지 수강생이 직접 창작하는 ‘나만의 그림책 만들기’, 하루의 일과를 그림책으로 엮어보는 ‘그림일기 이야기책 만들기’, 태블릿을 활용한 ‘웹툰 기초반’등 총...",
+              src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5492%2F2021%2F09%2F06%2F186740.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+              href: "https://m.asiatime.co.kr/article/20210906500139",
+            },
+          },
+        ],
+        newsLink: {
+          text: "뉴스 더보기 ",
+          href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_jum&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0+%ED%95%A8%EA%BB%98+%EB%A7%8E%EC%9D%B4%EB%B3%B4%EB%8A%94+%EC%9B%B9%ED%88%B0",
+        },
       },
     },
     error: {
