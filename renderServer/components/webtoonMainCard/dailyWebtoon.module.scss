@@ -1,0 +1,18 @@
+.commonContentArea {
+  padding: 9px 0px 13px 15px;
+  border: 1px solid #e8ebee;
+  margin-top: 20px;
+  background-color: white;
+
+  .daily {
+    color: #8f8f8f;
+    font-size: 14px;
+
+    .alert {
+      cursor: pointer;
+      margin-left: 5px;
+      vertical-align: middle;
+      margin-bottom: 3px;
+    }
+  }
+}
