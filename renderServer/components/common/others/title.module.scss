@@ -1,18 +1,21 @@
-.container {
-  width: 768px;
-  border: 1px solid #e8ebee;
-  background-color: white;
-  margin: 0 auto;
-
-  .title_area {
+.title_area {
     display: block;
     position: relative;
     height: 50.4px;
+    
     .title {
       margin: 0;
       padding: 0 18px;
       font-size: 18px;
       line-height: 51px;
+      border-bottom: 0.5px solid #ecf0f2;
+
+      .alert {
+        cursor: pointer;
+        margin-left: 5px;
+        vertical-align: middle;
+        margin-bottom: 3px;
+      }
     }
     .subtitle {
       position: absolute;
@@ -31,6 +34,10 @@
           font-size: 7px;
         }
       }
+      .Link {
+        color: #0068c3;
+        text-decoration: none;
+        }
 
       .subcondition {
         color: #909090;
@@ -46,24 +53,17 @@
         }
       }
     }
-  }
+    .subtitle_influencer {
+        position: absolute;
+        top: 0;
+        right: 18px;
+        font-size: 15px;
+        line-height: 51px;
+        text-align: right;
 
-  .ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-
-    .li {
-      border-top: 1px solid #ecf0f2;
+        .Link {
+        color: #0068c3;
+        text-decoration: none;
+        }
     }
   }
-
-  .more {
-    background-color: #f4f7f8;
-    text-align: center;
-    color: #424242;
-    height: 50px;
-    line-height: 52px;
-    width: 100%;
-  }
-}

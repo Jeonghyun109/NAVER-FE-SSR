@@ -1,42 +1,27 @@
 import React from "react";
-import styles from "./index.module.scss";
-import TotalWrap from "./totalWrap";
-import CircleIcon from "@mui/icons-material/Circle";
+import styles from "../common/others/index.module.scss";
+import Title from "../common/others/title";
+import Blog from "../common/others/blog";
+import Body from "../common/others/body";
+import More from "../common/others/more";
 
 function News(props) {
   return (
     <div className={styles.container}>
-      <div className={styles.title_area}>
-        <h2 className={styles.title}>{props.news.header.title}</h2>
-        <div className={styles.subtitle}>
-          <span className={styles.condition}>
-            <CircleIcon className={styles.conditionDot} />
-            {props.news.header.condition}
-          </span>
-          <a
-            href={props.news.header.subcondition.href}
-            className={styles.subcondition}
-          >
-            <CircleIcon className={styles.subconditionDot} />
-            {props.news.header.subcondition.text}
-          </a>
-        </div>
-      </div>
-      <ul className={styles.ul}>
-        {props.news.list.map((element, idx) => {
-          return (
-            <li className={styles.li} key={idx}>
-              <TotalWrap totalWrap={element.totalWrap} />
-            </li>
-          );
-        })}
-      </ul>
-      <a href={props.news.newsLink.href} style={{ textDecoration: "None" }}>
-        <div className={styles.more}>
-          {props.news.newsLink.text}
-          <i className="fas fa-arrow-right"></i>
-        </div>
-      </a>
+        <Title titleInfo={props.news.header}/>
+        <ul className={styles.ul}>
+            {props.news.list.map((element, idx) => {
+            return (
+                <li className={styles.li} key={idx}>
+                    <div className={styles.content}>
+                        <Blog blog={element.blog} />
+                        <Body body={element.body} />
+                    </div>
+                </li>
+            );
+            })}
+        </ul>
+        <More more={props.news.newsLink} />
     </div>
   );
 }

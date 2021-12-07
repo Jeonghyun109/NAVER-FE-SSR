@@ -193,6 +193,9 @@ class PayloadSelector {
         },
       },
       view: {
+        header: {
+            title: "VIEW",
+        },
         list: [
           {
             blog: {
@@ -632,6 +635,9 @@ class PayloadSelector {
         },
       },
       view: {
+        header: {
+            title: "VIEW",
+        },
         list: [
           {
             blog: {
@@ -964,73 +970,69 @@ class PayloadSelector {
         },
         list: [
           {
-            totalWrap: {
-              article: {
-                src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-                title: "노트펫",
-                time: "5일 전",
-                href: "http://www.notepet.co.kr/0",
-              },
-              text: {
-                title: "한효주, 점심 식당에서 만난 고양이..'나 가야되는데...'",
-                detail:
-                  '한효주 인스타그램 배우 한효주가 점심 차 간 식당에서 고양이에게 찜(?)을 당했다. 한효주는 24일 인스타그램 스토리에 "점심으로 쌀국수를 먹으러 갔는데 고양이가 있어...."라며 식당에서 만난 고양이를 소개했다. 한효주 옆을 비추는 렌즈에는 샴으로 보이는 고양이가 핑크빛 방울을 달고 자리를...',
-                src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F24%2F70683.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-                href: "http://www.notepet.co.kr/news/article/article_view/?idx=24080&groupCode=AB800AD810",
-              },
+            blog: {
+            src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+            title: "노트펫",
+            influencer: "false",
+            time: "5일 전",
+            href: "http://www.notepet.co.kr/0",
+            },
+            body: {
+            title: "한효주, 점심 식당에서 만난 고양이..'나 가야되는데...'",
+            detail:
+                '한효주 인스타그램 배우 한효주가 점심 차 간 식당에서 고양이에게 찜(?)을 당했다. 한효주는 24일 인스타그램 스토리에 "점심으로 쌀국수를 먹으러 갔는데 고양이가 있어...."라며 식당에서 만난 고양이를 소개했다. 한효주 옆을 비추는 렌즈에는 샴으로 보이는 고양이가 핑크빛 방울을 달고 자리를...',
+            src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F24%2F70683.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+            href: "http://www.notepet.co.kr/news/article/article_view/?idx=24080&groupCode=AB800AD810",
             },
           },
           {
-            totalWrap: {
-              article: {
-                src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-                title: "노트펫",
-                time: "2021.11.13.",
-                href: "http://www.notepet.co.kr/0",
-              },
-              text: {
-                title: "경남 거창 한국승강기대학 정문에서 샴 고양이 발견 보호",
-                detail:
-                  "경남 거창 거창읍 송정리 700 한국승강기대학교에서 발견 구조한 암컷 샴 고양이가 12일 동물보호소에 들어왔다. 진갈색, 연갈색 샴은 몸무게 4Kg에 2019년생으로 추정된다. 온순함, 한국승강기대학 정문부근에서 발견됨, 2세 추정. 공고기한은 11월22일까지이고...",
-                src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F13%2F70010.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-                href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=152764",
-              },
+            blog: {
+            src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+            title: "노트펫",
+            influencer: "false",
+            time: "2021.11.13.",
+            href: "http://www.notepet.co.kr/0",
+            },
+            body: {
+            title: "경남 거창 한국승강기대학 정문에서 샴 고양이 발견 보호",
+            detail:
+                "경남 거창 거창읍 송정리 700 한국승강기대학교에서 발견 구조한 암컷 샴 고양이가 12일 동물보호소에 들어왔다. 진갈색, 연갈색 샴은 몸무게 4Kg에 2019년생으로 추정된다. 온순함, 한국승강기대학 정문부근에서 발견됨, 2세 추정. 공고기한은 11월22일까지이고...",
+            src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F11%2F13%2F70010.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+            href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=152764",
             },
           },
           {
-            totalWrap: {
-              article: {
-                src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
-                title: "헬스경향",
-                time: "2021.10.21.",
-                href: "http://www.k-health.com/",
-              },
-              text: {
-                title:
-                  "[반려동물 건강이야기] 고양이 각막이 갈색으로 변했다? 각막괴사증 신호!",
-                detail:
-                  "지금까지 추정되는 원인으로는 만성각막궤양, 안검내번 및 첩모로 인한 오랜 각막염, 안구건조증, 고양이 허피스바이러스(FHV-1)에 의한 각막염 등이다. 모든 품종에서 발생할 수 있는데 특히 페르시안, 버미즈, 히말라얀 및 샴(샤미즈)이 더욱 취약한 것으로 보인다. 진단은 각막염색법...",
-                src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5534%2F2021%2F12%2F01%2F16076.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
-                href: "http://www.k-health.com/news/articleView.html?idxno=56795",
-              },
+            blog: {
+            src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
+            title: "헬스경향",
+            influencer: "false",
+            time: "2021.10.21.",
+            href: "http://www.k-health.com/",
+            },
+            body: {
+            title:
+                "[반려동물 건강이야기] 고양이 각막이 갈색으로 변했다? 각막괴사증 신호!",
+            detail:
+                "지금까지 추정되는 원인으로는 만성각막궤양, 안검내번 및 첩모로 인한 오랜 각막염, 안구건조증, 고양이 허피스바이러스(FHV-1)에 의한 각막염 등이다. 모든 품종에서 발생할 수 있는데 특히 페르시안, 버미즈, 히말라얀 및 샴(샤미즈)이 더욱 취약한 것으로 보인다. 진단은 각막염색법...",
+            src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5534%2F2021%2F12%2F01%2F16076.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
+            href: "http://www.k-health.com/news/articleView.html?idxno=56795",
             },
           },
           {
-            totalWrap: {
-              article: {
+              blog: {
                 src: "https://ssl.pstatic.net/sstatic/search/mobile/img/bg_news_press_default.png",
                 title: "노트펫",
+                influencer: "false",
                 time: "2021.10.19.",
                 href: "http://www.notepet.co.kr/0",
               },
-              text: {
+              body: {
                 title: "세종 조치원읍 조형아파트 인근에서 샴 고양이 발견 보호",
                 detail:
                   "세종 조치원읍 신안리 244-1 조형아파트 인근에서 발견 구조한 암컷 샴 고양이가 18일 동물보호소에 들어왔다. 갈색 혼합 샴은 몸무게 3.12Kg에 2017년생으로 추정된다. . 공고기한은 10월25일까지이고, 세종유기동물보호센터(010-4435-3720)에서 보호하고 있다. 공고...",
                 src: "https://search.pstatic.net/common/?src=https%3A%2F%2Fimgnews.pstatic.net%2Fimage%2Forigin%2F5511%2F2021%2F10%2F19%2F68007.jpg&amp;type=ofullfill174_174&amp;expire=2&amp;refresh=true",
                 href: "https://www.notepet.co.kr/news/abandon/abandon_view/?idx=147168",
               },
-            },
           },
         ],
         newsLink: {
@@ -1540,6 +1542,9 @@ class PayloadSelector {
         },
       },
       view: {
+        header: {
+            title: "VIEW",
+        },
         list: [
           {
             blog: {
