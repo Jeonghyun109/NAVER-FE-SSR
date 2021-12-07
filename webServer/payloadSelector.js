@@ -1778,7 +1778,7 @@ class PayloadSelector {
       },
     },
     error: {
-      order: ["error", "content"],
+      order: ["error"],
       content: {
         title: "유효하지 않은 검색결과입니다.",
         text1: "단어의 철자가 정확한지 확인해 주세요.",
