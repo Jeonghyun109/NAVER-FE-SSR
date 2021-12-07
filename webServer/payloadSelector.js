@@ -488,7 +488,7 @@ class PayloadSelector {
           title: "뉴스",
           condition: "관련도순",
           subcondition: {
-            href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_jum&query=%EA%B2%BD%EC%A3%BC+%EB%B6%88%EA%B5%AD%EC%82%AC#",
+            href: "https://m.search.naver.com/search.naver?where=m_news&query=%EA%B2%BD%EC%A3%BC%20%EB%B6%88%EA%B5%AD%EC%82%AC&sm=mtb_opt&sort=1&photo=0&field=0&pd=0&ds=&de=&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so%3Add%2Cp%3Aall&is_sug_officeid=0",
             text: "최신순",
           },
         },
@@ -1698,7 +1698,7 @@ class PayloadSelector {
           title: "뉴스",
           condition: "관련도순",
           subcondition: {
-            href: "https://m.search.naver.com/search.naver?where=m_news&sm=mtb_jum&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0+%ED%95%A8%EA%BB%98+%EB%A7%8E%EC%9D%B4%EB%B3%B4%EB%8A%94+%EC%9B%B9%ED%88%B0#",
+            href: "https://m.search.naver.com/search.naver?where=m_news&query=%EB%8F%85%EB%A6%BD%EC%9D%BC%EA%B8%B0%20%ED%95%A8%EA%BB%98%20%EB%A7%8E%EC%9D%B4%EB%B3%B4%EB%8A%94%20%EC%9B%B9%ED%88%B0&sm=mtb_opt&sort=1&photo=0&field=0&pd=0&ds=&de=&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so%3Add%2Cp%3Aall&is_sug_officeid=0",
             text: "최신순",
           },
         },
