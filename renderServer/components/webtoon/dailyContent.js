@@ -2,7 +2,6 @@ import React from "react";
 // import styles from "./webtoonContent.module.scss";
 import styles from "./dailyContent.module.scss";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
-import Popover from "@mui/material/Popover";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 function dailyContent(props) {
@@ -70,20 +69,6 @@ function dailyContent(props) {
           className={styles.alert}
           sx={{ color: "#0068c3", fontSize: "18px" }}
         />
-        {/* <Popover
-          className={styles.popover}
-          id={id}
-          open={open}
-          anchorEl={anchorEl}
-          onClose={handleClose}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
-        >
-          본 정보는 네이버 웹툰 인기순 로직에 따라 제공되며, 데이터 보정 등의
-          사유로 변동/지연될 수 있습니다.
-        </Popover> */}
       </div>
     </div>
   );
