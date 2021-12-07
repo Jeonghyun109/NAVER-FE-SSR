@@ -248,6 +248,13 @@ class PayloadSelector {
           main: "#3d92ff",
           border: "rgba(61,146,255,.2)",
         },
+        header: {
+            title: "인플루언서",
+            subtitle: {
+              href: "https://in.naver.com/",
+              text: "서비스 홈 바로가기",
+            },
+          },
         "tab-lists": [
           {
             title: "전체",
@@ -464,8 +471,10 @@ class PayloadSelector {
             },
           },
         ],
-        influencerLink:
-          "https://m.search.naver.com/search.naver?query=%EA%B2%BD%EC%A3%BC+%EB%B6%88%EA%B5%AD%EC%82%AC&sm=mtb_nmr&where=m_influencer",
+        influencerLink: {
+            text: "인플루언서 더보기 ",
+            href: "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
+        },
       },
     },
     sham: {
@@ -732,6 +741,13 @@ class PayloadSelector {
           main: "#c27636",
           border: "rgba(194,118,54,.2)",
         },
+        header: {
+            title: "인플루언서",
+            subtitle: {
+              href: "https://in.naver.com/",
+              text: "서비스 홈 바로가기",
+            },
+          },
         "tab-lists": [
           {
             title: "전체",
@@ -928,8 +944,10 @@ class PayloadSelector {
             },
           },
         ],
-        influencerLink:
-          "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
+        influencerLink: {
+            text: "인플루언서 더보기 ",
+            href: "https://m.search.naver.com/search.naver?query=%EC%83%B4+%EA%B3%A0%EC%96%91%EC%9D%B4&sm=mtb_nmr&where=m_influencer",
+        },
       },
       news: {
         colorScheme: {

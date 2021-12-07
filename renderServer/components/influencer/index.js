@@ -9,15 +9,15 @@ function index(props) {
     <div className={styles.influencerBody}>
       <div className={styles.title_area}>
         <h2 className={styles.title}>
-          인플루언서
+          {props.influencer.header.title}
           <ErrorOutlineIcon
             className={styles.alert}
             sx={{ color: "#0068c3", fontSize: "18px" }}
           />
         </h2>
         <div className={styles.subtitle}>
-          <a href="https://in.naver.com/" className={styles.Link}>
-            서비스 홈 바로가기
+          <a href={props.influencer.header.subtitle.href} className={styles.Link}>
+          {props.influencer.header.subtitle.text}
           </a>
         </div>
       </div>
@@ -27,11 +27,11 @@ function index(props) {
         colorScheme={props.influencer.colorScheme}
       />
       <a
-        href={props.influencer.influencerLink}
+        href={props.influencer.influencerLink.href}
         style={{ textDecoration: "None" }}
       >
         <div className={styles.more}>
-          인플루언서 더보기 <i className="fas fa-arrow-right"></i>
+          {props.influencer.influencerLink.text} <i className="fas fa-arrow-right"></i>
         </div>
       </a>
     </div>
