@@ -14,9 +14,9 @@ function Header(props) {
           placeholder="검색어를 입력해주세요."
           defaultValue="불국사"
         />
-        <CancelIcon className={styles.Erase} sx={{ fontSize: 30 }} />
-        <MicNoneIcon className={styles.voiceSearch} sx={{ fontSize: 45 }} />
-        <SearchIcon className={styles.searchIcon} sx={{ fontSize: 45 }} />
+        <CancelIcon className={styles.Erase} sx={{ fontSize: 25 }} />
+        <MicNoneIcon className={styles.voiceSearch} sx={{ fontSize: 40 }} />
+        <SearchIcon className={styles.searchIcon} sx={{ fontSize: 40 }} />
       </div>
       <div className={styles.scrollMenu}>
         <a className={styles.menuhome} href="#home">
