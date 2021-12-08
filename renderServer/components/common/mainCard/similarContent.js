@@ -22,6 +22,13 @@ function SimilarContent(props) {
                   </div>
                   <div className={styles.titleBox}>{similarContent.title}</div>
                 </a>
+                {similarContent.sub_text ? (
+                  <div className={styles.subtitleBox}>
+                    {similarContent.sub_text}
+                  </div>
+                ) : (
+                  <></>
+                )}
               </li>
             );
           })}

@@ -38,44 +38,70 @@
 }
 
 .saveKeep {
-  position: absolute;
   width: 21px;
   height: 27px;
-  top: 18.5px;
-  right: 17px;
+  position: absolute;
+  top: 20px;
+  right: 18px;
 
-  .circlesLink {
-    display: block;
-    width: 38px;
-    height: 27px;
-    cursor: pointer;
-    &:hover > .circles {
-      background-color: #a68f74;
+  .hide {
+    .clickKeep {
+      width: 0;
+      height: 0;
+      margin: 0;
+      padding: 0;
     }
-
     .circles {
-      position: relative;
-      width: 4px;
-      height: 4px;
-      margin-left: 17px;
-      background-color: rgba(166, 143, 116, 0.5);
-      border-radius: 50%;
-
-      &:before,
-      &:after {
-        content: "";
-        position: absolute;
+      position: absolute;
+      cursor: pointer;
+    }
+    .keepMenu {
+      display: none;
+      font-size: 17px;
+      color: #424242;
+      .modalBg{
         width: 100%;
         height: 100%;
-        left: 0px;
-        background-color: inherit;
-        border-radius: inherit;
+        background-color: rgba(0,0,0,0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 3;
       }
-      &:before {
-        top: 7px;
+      .keepGo {
+        height: 49px;
+        line-height: 49px;
+        padding-left: 20px;
+        cursor: pointer;
+        .Right {
+          margin-left: 27px;
+          color: rgb(135, 142, 154);
+        }
       }
-      &:after {
-        top: 14px;
+      .keepSave {
+        height: 49px;
+        line-height: 49px;
+        padding-left: 20px;
+        border-bottom: 1px solid #ecf0f2;
+        cursor: pointer;
+        .Right {
+          margin-left: 40px;
+          color: rgb(135, 142, 154);
+        }
+      }
+    }
+    .clickKeep:checked {
+      + div.keepMenu {
+        display: block;
+        position: absolute;
+        width: 180px;
+        background-color: white;
+        border-radius: 5px;
+        right: 5px;
+        top: 40px;
+        height: 98px;
+        box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
       }
     }
   }

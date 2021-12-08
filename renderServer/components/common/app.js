@@ -27,6 +27,8 @@ function App(props) {
             </div>
           );
         })}
+        <br />
+        <br />
       </div>
     </div>
   );

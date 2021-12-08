@@ -1,7 +1,7 @@
 .searchBar {
   height: 57px;
   border-bottom: 1px solid #2cde86;
-  width: 100vw;
+  width: calc(100vw - 1px);
 
   .Logo {
     position: absolute;
