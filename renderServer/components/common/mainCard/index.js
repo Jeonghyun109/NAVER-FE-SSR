@@ -14,7 +14,10 @@ function MainCard(props) {
       className={styles.commonModule}
       style={{ backgroundColor: props.mainCard.colorScheme.background }}
     >
-      <div className={styles.topWrap} style = {{ backgroundColor: props.mainCard.colorScheme.background }}>
+      <div
+        className={styles.topWrap}
+        style={{ backgroundColor: props.mainCard.colorScheme.background }}
+      >
         <div
           className={styles.topBorder}
           style={{ backgroundColor: props.mainCard.colorScheme.topBorder }}
