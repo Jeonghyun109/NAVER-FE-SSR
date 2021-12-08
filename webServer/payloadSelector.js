@@ -199,6 +199,10 @@ class PayloadSelector {
         header: {
           title: "VIEW",
         },
+        colorScheme: {
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
+        },
         list: [
           {
             blog: {
@@ -486,6 +490,8 @@ class PayloadSelector {
         colorScheme: {
           main: "#3d92ff",
           border: "rgba(61,146,255,.2)",
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
         },
         header: {
           title: "뉴스",
@@ -727,6 +733,10 @@ class PayloadSelector {
       view: {
         header: {
           title: "VIEW",
+        },
+        colorScheme: {
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
         },
         list: [
           {
@@ -1049,6 +1059,8 @@ class PayloadSelector {
         colorScheme: {
           main: "#3d92ff",
           border: "rgba(61,146,255,.2)",
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
         },
         header: {
           title: "뉴스",
@@ -1638,6 +1650,10 @@ class PayloadSelector {
         header: {
           title: "VIEW",
         },
+        colorScheme: {
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
+        },
         list: [
           {
             blog: {
@@ -1702,6 +1718,8 @@ class PayloadSelector {
         colorScheme: {
           main: "#3d92ff",
           border: "rgba(61,146,255,.2)",
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
         },
         header: {
           title: "뉴스",

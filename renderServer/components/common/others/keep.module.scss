@@ -1,0 +1,70 @@
+.saveKeep {
+  width: 21px;
+  height: 27px;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+
+  .hide {
+    .clickKeep {
+      width: 0;
+      height: 0;
+      margin: 0;
+      padding: 0;
+
+      &:checked + div.keepMenu {
+        display: block;
+      }
+    }
+    .circles {
+      position: absolute;
+      top:0;
+      cursor: pointer;
+    }
+    .keepMenu {
+      display: none;
+
+      .modalBg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 3;
+      }
+      .keepContent{
+        z-index: 99;
+        pointer-events: auto;
+        position: absolute;
+        width: 180px;
+        background-color: white;
+        border-radius: 5px;
+        right: 5px;
+        top: 40px;
+        height: 98px;
+        box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+        .keepGo {
+          height: 49px;
+          line-height: 49px;
+          padding-left: 15px;
+          .Right {
+            margin-left: 25px;
+            color: rgb(135, 142, 154);
+          }
+        }
+        .keepSave {
+          height: 49px;
+          line-height: 49px;
+          padding-left: 15px;
+          border-bottom: 1px solid #ecf0f2;
+          .Right {
+            margin-left: 40px;
+            color: rgb(135, 142, 154);
+          }
+        }
+      }
+    }
+  }
+}
