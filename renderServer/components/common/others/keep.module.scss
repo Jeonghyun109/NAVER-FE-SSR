@@ -18,7 +18,7 @@
     }
     .circles {
       position: absolute;
-      top:0;
+      top: 0;
       cursor: pointer;
     }
     .keepMenu {
@@ -34,7 +34,7 @@
         display: block;
         z-index: 3;
       }
-      .keepContent{
+      .keepContent {
         z-index: 99;
         pointer-events: auto;
         position: absolute;

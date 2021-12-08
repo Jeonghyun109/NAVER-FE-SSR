@@ -21,18 +21,29 @@ router.post("/", (req, res) => {
     <!DOCTYPE html>
     <html lang="ko">
         <head>
-        <link rel="stylesheet" href="style.css">
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <script
-          src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-          data-auto-a11y="true"
-        ></script>
+          <link rel="stylesheet" href="style.css">
+          <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+          <script
+            src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+            data-auto-a11y="true"
+          ></script>
+          <script>
+            function share() {
+              var url = encodeURI(encodeURIComponent("${req.body[1]}"));
+              var title = encodeURI("공유하기");
+              var shareURL = "https://share.naver.com/web/shareView?url=" + url + "&title=" + title;
+              document.location = shareURL;
+            }
+          </script>
         </head>
         <body>
-            ${ReactDomServer.renderToString(App(req.body))}
+          ${ReactDomServer.renderToString(App(req.body))}
+          <script type="text/javascript">
+            document.getElementById("shareBtn").innerHTML = '<div onclick="share()"></div>';
+          </script>
         </body>
     </html>
 `);

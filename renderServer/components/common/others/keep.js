@@ -9,7 +9,7 @@ function Keep(props) {
         <input type="checkbox" className={styles.clickKeep} id={props.id} />
         <div className={styles.keepMenu}>
           <label for={props.id} className={styles.modalBg}></label>
-          <div className = {styles.keepContent}>
+          <div className={styles.keepContent}>
             <div className={styles.keepSave}>
               Keep에 저장 <i className={"far fa-bookmark " + styles.Right}></i>
             </div>

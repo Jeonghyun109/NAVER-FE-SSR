@@ -1,4 +1,3 @@
-import { SubtitlesOutlined } from "@mui/icons-material";
 import React from "react";
 import styles from "./basicInfo.module.scss";
 
@@ -57,13 +56,27 @@ function BasicInfo(props) {
           <input type="checkbox" id="modal" className={styles.modalbtn} />
           <div className={styles.modal}>
             <label for="modal" className={styles.modalBg}></label>
-            <div className = {styles.modalContent}>
-              <label for="modal" className={styles.closeModal}><i className="fas fa-times"></i></label>
-              <div className = {styles.modalTitle}>공유하기</div>
-              <div>URL 단축하기</div>
-              <form>
-                <input type="text" id="url" name="url" className = {styles.urlInput} defaultValue="http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=bulguksa"/>
-              </form>
+            <div className={styles.modalContent}>
+              <label for="modal" className={styles.closeModal}>
+                <i className="fas fa-times"></i>
+              </label>
+              <div className={styles.modalTitle}>공유하기</div>
+              <div id="shareBtn" className={styles.sharebutton}></div>
+              <div className={styles.sharebuttondesc}>블로그</div>
+              <div className={styles.roundBorder}>
+                <table className={styles.urlDiv}>
+                  <tbody>
+                    <tr>
+                      <td className={styles.url}>
+                        <a href={props.shortenUrl} className={styles.link}>
+                          {props.shortenUrl}
+                        </a>
+                      </td>
+                      <td className={styles.copy}>URL복사</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           <label for="modal" className={styles.shareBtn}>
