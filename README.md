@@ -24,20 +24,19 @@ URL parameter로 keys 값을 전송하게 되면 키워드에 맞는 화면만 �
 불국사: http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=bulguksa \
 독립일기: http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=diary \
 샴고양이: http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=sham \
-에러 페이지 (잘못된 키워드가 입력되었을때): http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=error 
-
+에러 페이지 (잘못된 키워드가 입력되었을때): http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=error
 
 ### Main Card
 
 ![image](https://user-images.githubusercontent.com/87184009/145201474-56302c5d-1170-4e81-ae0b-69803d08aff5.png)
 
-위 그림과 같이 세개의 키워드에 대하여 main card 를 작성하였고, 비슷한 부분들을 묶어 모듈화를 시켰습니다. 
+위 그림과 같이 세개의 키워드에 대하여 main card 를 작성하였고, 비슷한 부분들을 묶어 모듈화를 시켰습니다.
 모듈화된 코드는 "./renderServer/components/common/mainCard" 에 있습니다.
-그 외의 코드는 다음 repository 에서 찾을 수 있습니다. 
+그 외의 코드는 다음 repository 에서 찾을 수 있습니다.
 
 불국사: "./renderServer/components/cultureMainCard" \
 독립일기: "./renderServer/components/webtoonMainCard" \
-샴고양이: "./renderServer/components/animalMainCard" 
+샴고양이: "./renderServer/components/animalMainCard"
 
 ### Influencer
 
@@ -51,14 +50,13 @@ Influencer 섹션의 메인 코드는 "./renderServer/components/influencer" 에
 
 ![image](https://user-images.githubusercontent.com/87184009/145202743-164cfc7d-bf3a-471f-ad49-78e757403448.png)
 
-View 섹션 또한 개발 후 모듈화를 진행하였으며, 모듈화된 코드는 "./renderServer/components/common/others" 에, 메인 코드는  "./renderServer/components/view" 에서 찾을 수 있습니다.
-
+View 섹션 또한 개발 후 모듈화를 진행하였으며, 모듈화된 코드는 "./renderServer/components/common/others" 에, 메인 코드는 "./renderServer/components/view" 에서 찾을 수 있습니다.
 
 ### News
 
 ![image](https://user-images.githubusercontent.com/87184009/145203194-2e8c75f0-9a3e-43f8-bdc4-f5bb43fa83f3.png)
 
-News 섹션 또한 개발 후 모듈화를 진행하였으며, 모듈화된 코드는 "./renderServer/components/common/others" 에, 메인 코드는  "./renderServer/components/news" 에서 찾을 수 있습니다.
+News 섹션 또한 개발 후 모듈화를 진행하였으며, 모듈화된 코드는 "./renderServer/components/common/others" 에, 메인 코드는 "./renderServer/components/news" 에서 찾을 수 있습니다.
 
 ### API 서버 연동
 
@@ -73,6 +71,7 @@ API 서버 연동 또한 완료하였으며, 단축 URL 과 공유하기 API 를
 Web Server는 port 3000에서, Render Server는 port 4000에서 동작합니다. \
 git clone 이후 아래의 command를 실행시키고 http://localhost:3000/ 에 접속하면 됩니다. \
 추가적으로 npm package들을 local에 install 해야할 수도 있습니다.
+
 ```
 yarn dev
 ```
