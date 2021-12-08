@@ -53,15 +53,15 @@ function BasicInfo(props) {
             지도
           </span>
         </a>
-        <span className = {styles.map}>
-          <input type="checkbox" id = "modal" className={styles.modalbtn}/>
-          <div className = {styles.modal}>
+        <span className={styles.map}>
+          <input type="checkbox" id="modal" className={styles.modalbtn} />
+          <div className={styles.modal}>
             <label for="modal" className={styles.modalBg}></label>
-            <div className = {styles.modalContent}>
-            hi
-            </div>
+            <div className={styles.modalContent}>hi</div>
           </div>
-          <label for ="modal" className = {styles.shareBtn}><i className="fas fa-share-square"></i></label> 
+          <label for="modal" className={styles.shareBtn}>
+            <i className="fas fa-share-square"></i>
+          </label>
         </span>
       </div>
     </div>

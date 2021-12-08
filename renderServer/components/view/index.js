@@ -16,7 +16,11 @@ function View(props) {
           return (
             <li className={styles.li} key={idx}>
               <div className={styles.content}>
-                <Blog blog={element.blog} id = {"blog" + idx}/>
+                <Blog
+                  blog={element.blog}
+                  id={"blog" + idx}
+                  colorScheme={props.view.colorScheme}
+                />
                 <Body body={element.body} />
               </div>
               <Tags tags={element.tags} />

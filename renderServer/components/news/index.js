@@ -14,7 +14,11 @@ function News(props) {
           return (
             <li className={styles.li} key={idx}>
               <div className={styles.content}>
-                <Blog blog={element.blog} id={"news" + idx}/>
+                <Blog
+                  blog={element.blog}
+                  id={"news" + idx}
+                  colorScheme={props.news.colorScheme}
+                />
                 <Body body={element.body} />
               </div>
             </li>
