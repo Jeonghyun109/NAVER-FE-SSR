@@ -27,8 +27,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
-    "stream": "^0.0.2",
-    "webpack-node-externals": "^3.0.0"
+    "stream": "^0.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -47,7 +46,8 @@
     "sass-loader": "^12.3.0",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.4.0"
+    "webpack-dev-server": "^4.4.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "description": "1. git commit 전에 \"yarn format\" 실행",
   "version": "1.0.0",
