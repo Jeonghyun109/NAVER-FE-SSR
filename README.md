@@ -6,7 +6,7 @@ Naver-FE-SSR은 3가지 검색 키워드에 대한 검색 화면을 보여줍니
 
 ## Demo Link
 
-아래의 링크는 AWS를 이용해 배포한 링크입니다. 링크에 접속해 새로고침을 누르게 되면 다양한 키워드에 대해 화면이 로드됩니다. \
+아래의 링크는 AWS를 이용해 배포한 링크입니다. 링크에 접속해 새로고침을 누르게 되면 다양한 화면이 로드됩니다. \
 http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/
 
 ## System Design
@@ -40,3 +40,12 @@ URL parameter로 keys 값을 전송하게 되면 키워드에 맞는 화면만 �
 ### News
 
 ![image](https://user-images.githubusercontent.com/87184009/145203194-2e8c75f0-9a3e-43f8-bdc4-f5bb43fa83f3.png)
+
+## Getting Started
+
+Web Server는 port 3000에서, Render Server는 port 4000에서 동작합니다. \
+git clone 이후 아래의 command를 실행시키고 http://localhost:3000/ 에 접속하면 됩니다. \
+추가적으로 npm package들을 local에 install 해야할 수도 있습니다.
+```
+yarn dev
+```
