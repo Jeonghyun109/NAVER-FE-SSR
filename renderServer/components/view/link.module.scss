@@ -5,13 +5,18 @@
   margin: 0 18px;
 
   .innerLink {
-    display: block;
     height: 18px;
     padding-left: 11px;
     color: #0068c3;
     line-height: 18px;
     text-decoration: none;
     cursor: pointer;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+
     &:before {
       content: "";
       width: 2px;

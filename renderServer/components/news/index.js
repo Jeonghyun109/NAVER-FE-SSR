@@ -14,7 +14,7 @@ function News(props) {
           return (
             <li className={styles.li} key={idx}>
               <div className={styles.content}>
-                <Blog blog={element.blog} />
+                <Blog blog={element.blog} id={"news" + idx}/>
                 <Body body={element.body} />
               </div>
             </li>

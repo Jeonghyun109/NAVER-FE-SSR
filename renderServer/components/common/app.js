@@ -10,7 +10,7 @@ import Error from "../error/index";
 function App(props) {
   return (
     <div className={styles.container}>
-      <Header />
+      <Header keyword={props[0].keyword} />
       <div className={styles.bodybackground}>
         {props[0].order.map((section, idx) => {
           return (
@@ -27,6 +27,8 @@ function App(props) {
             </div>
           );
         })}
+        <br />
+        <br />
       </div>
     </div>
   );

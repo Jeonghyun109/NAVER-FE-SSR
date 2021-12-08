@@ -1,3 +1,4 @@
+import { SubtitlesOutlined } from "@mui/icons-material";
 import React from "react";
 import styles from "./basicInfo.module.scss";
 
@@ -52,8 +53,15 @@ function BasicInfo(props) {
             지도
           </span>
         </a>
-        <span className={styles.shareBtn}>
-          <i className="fas fa-share-square"></i>
+        <span className = {styles.map}>
+          <input type="checkbox" id = "modal" className={styles.modalbtn}/>
+          <div className = {styles.modal}>
+            <label for="modal" className={styles.modalBg}></label>
+            <div className = {styles.modalContent}>
+            hi
+            </div>
+          </div>
+          <label for ="modal" className = {styles.shareBtn}><i className="fas fa-share-square"></i></label> 
         </span>
       </div>
     </div>

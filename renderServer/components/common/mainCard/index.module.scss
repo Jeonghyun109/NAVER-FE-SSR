@@ -1,21 +1,27 @@
 .commonModule {
   position: relative;
-  width: 768px;
+  width: 100%;
+  max-width: 768px;
   border: 1px solid #e2e5e8;
   border-width: 0px 1px 1px 1px;
   border-radius: 6px 6px 0 0;
   margin: 9px auto 0 auto;
 
-  .topBorder {
-    content: "";
-    position: absolute;
+  .topWrap{
+    position: sticky;
     top: 0;
-    width: 768px;
-    height: 2px;
-    border-top: 1px solid #e8ebee;
-    border-radius: 6px 6px 0 0;
+    z-index: 1;
+    .topBorder {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 768px;
+      height: 2px;
+      border-top: 1px solid #e8ebee;
+      border-radius: 6px 6px 0 0;
+      z-index: 2;
+    }
   }
-
   .contentWrap {
     border: 0 1px 1px 1px;
   }
