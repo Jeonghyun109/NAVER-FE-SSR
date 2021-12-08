@@ -7,7 +7,7 @@ function CultureMainCard(props) {
   return (
     <div className={styles.bodyDiv}>
       <Images common={props.common} />
-      <BasicInfo common={props.common} />
+      <BasicInfo common={props.common} shortenUrl={props.shortenUrl} />
     </div>
   );
 }
