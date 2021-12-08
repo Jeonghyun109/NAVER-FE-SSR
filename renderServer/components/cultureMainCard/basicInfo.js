@@ -58,7 +58,12 @@ function BasicInfo(props) {
           <div className = {styles.modal}>
             <label for="modal" className={styles.modalBg}></label>
             <div className = {styles.modalContent}>
-            hi
+              <label for="modal" className={styles.closeModal}><i className="fas fa-times"></i></label>
+              <div className = {styles.modalTitle}>공유하기</div>
+              <div>URL 단축하기</div>
+              <form>
+                <input type="text" id="url" name="url" className = {styles.urlInput} defaultValue="http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/?keys=bulguksa"/>
+              </form>
             </div>
           </div>
           <label for ="modal" className = {styles.shareBtn}><i className="fas fa-share-square"></i></label> 

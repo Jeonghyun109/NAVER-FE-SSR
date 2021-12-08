@@ -122,11 +122,33 @@
           right: 0;
           bottom: 0;
           margin: auto;
-          width: 300px;
-          height: 300px;
+          width: 350px;
+          height: 379px;
           background-color: #fff;
           box-sizing: border-box;
           z-index: 9999;
+          border-radius: 10px;
+          .modalTitle{
+            text-align: center;
+            padding-top: 30px;
+            font-size: 22px;
+            font-weight: bold;
+          }
+          .closeModal{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color:#8f8f8f;
+            cursor: pointer;
+          }
+          .urlInput{
+            width: 60%;
+            margin-left: 10%;
+            height: 20px;
+            padding: 5px;
+
+          }
         }
       }
     }
