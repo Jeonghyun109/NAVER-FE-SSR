@@ -10,6 +10,8 @@ class PayloadSelector {
           subTitle: "rgba(107,112,122,0.8)",
           subTapColor: "#6b707a",
           subTapBar: "rgba(135,142,154,0.3)",
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
         },
         title: {
           name: "경주 불국사",
@@ -580,6 +582,8 @@ class PayloadSelector {
           subTitle: "rgba(145, 118, 89, 0.8)",
           subTapColor: "#9f8669",
           subTapBar: "rgba(166, 143, 116, 0.3)",
+          circleColor: "rgba(166, 143, 116, 0.5)",
+          circleHover: "#a68f74",
         },
         subTap: {
           mainTap: {
@@ -1137,6 +1141,8 @@ class PayloadSelector {
           subTitle: "rgba(107,112,122,0.8)",
           subTapColor: "#6b707a",
           subTapBar: "rgba(135,142,154,0.3)",
+          circleColor: "rgba(135,142,154,0.3)",
+          circleHover: "#9fa4aa",
         },
         title: {
           name: "독립일기",
