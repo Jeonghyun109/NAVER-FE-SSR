@@ -37,7 +37,10 @@ function MainCard(props) {
           <AnimalMainCard common={props.mainCard.common} />
         )}
         {props.mainCard.title.type === "문화재" && (
-          <CultureMainCard common={props.mainCard.common} />
+          <CultureMainCard
+            common={props.mainCard.common}
+            shortenUrl={props.shortenUrl}
+          />
         )}
         {props.mainCard.title.type === "웹툰" && (
           <WebtoonMainCard common={props.mainCard.common} />

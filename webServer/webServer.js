@@ -23,21 +23,30 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res, next) => {
   let keys = req.query.keys;
+  let url =
+    "http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000" +
+    req.originalUrl;
   if (keys !== undefined) {
     keys = keys.split(",");
   }
-
   payload = payloadSelector.select(keys);
 
-  const options = {
-    url: renderServerAddress,
-    method: "POST",
-    data: payload,
-  };
+  UrlShortener.do(url)
+    .then((axiosRes2) => {
+      let shortenedURL = axiosRes2.data.result.url;
+      payload.push(shortenedURL);
 
-  axios(options)
-    .then((axiosRes) => {
-      res.send(axiosRes.data);
+      const options = {
+        url: renderServerAddress,
+        method: "POST",
+        data: payload,
+      };
+
+      axios(options)
+        .then((axiosRes) => {
+          res.send(axiosRes.data);
+        })
+        .catch(next);
     })
     .catch(next);
 });

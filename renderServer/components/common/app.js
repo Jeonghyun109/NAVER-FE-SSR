@@ -16,7 +16,7 @@ function App(props) {
           return (
             <div key={idx}>
               {section === "mainCard" && (
-                <MainCard mainCard={props[0].mainCard} />
+                <MainCard mainCard={props[0].mainCard} shortenUrl={props[1]} />
               )}
               {section === "influencers" && (
                 <Influencer influencer={props[0].influencer} />

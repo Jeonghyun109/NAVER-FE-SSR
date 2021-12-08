@@ -14,25 +14,15 @@
 
       &:checked + div.keepMenu {
         display: block;
-        pointer-events: auto;
-        position: absolute;
-        width: 180px;
-        background-color: white;
-        border-radius: 5px;
-        right: 5px;
-        top: 40px;
-        height: 98px;
-        box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
       }
     }
     .circles {
       position: absolute;
+      top: 0;
       cursor: pointer;
     }
     .keepMenu {
       display: none;
-      font-size: 17px;
-      color: #424242;
 
       .modalBg {
         width: 100%;
@@ -44,29 +34,8 @@
         display: block;
         z-index: 3;
       }
-      .keepGo {
-        height: 49px;
-        line-height: 49px;
-        padding-left: 15px;
-        .Right {
-          margin-left: 25px;
-          color: rgb(135, 142, 154);
-        }
-      }
-      .keepSave {
-        height: 49px;
-        line-height: 49px;
-        padding-left: 15px;
-        border-bottom: 1px solid #ecf0f2;
-        .Right {
-          margin-left: 40px;
-          color: rgb(135, 142, 154);
-        }
-      }
-    }
-    .clickKeep:checked {
-      + div.keepMenu {
-        display: block;
+      .keepContent {
+        z-index: 99;
         pointer-events: auto;
         position: absolute;
         width: 180px;
@@ -76,6 +45,25 @@
         top: 40px;
         height: 98px;
         box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+        .keepGo {
+          height: 49px;
+          line-height: 49px;
+          padding-left: 15px;
+          .Right {
+            margin-left: 25px;
+            color: rgb(135, 142, 154);
+          }
+        }
+        .keepSave {
+          height: 49px;
+          line-height: 49px;
+          padding-left: 15px;
+          border-bottom: 1px solid #ecf0f2;
+          .Right {
+            margin-left: 40px;
+            color: rgb(135, 142, 154);
+          }
+        }
       }
     }
   }

@@ -132,8 +132,8 @@
         },
         E = "zqKn3ms1EpXpaqiFHl16",
         u = "i6FQaKGV1z6FfHYcGW71",
-        f = require("@mui/icons-material/MoreVert");
-      var d = t.n(f);
+        d = require("@mui/icons-material/MoreVert");
+      var f = t.n(d);
       const N = function (e) {
         return a().createElement(
           "span",
@@ -155,23 +155,28 @@
               }),
               a().createElement(
                 "div",
-                { className: "VB76yMq4Uo8uUSCO4WGN" },
-                "Keep에 저장 ",
-                a().createElement("i", { className: "far fa-bookmark " + u })
-              ),
-              a().createElement(
-                "div",
-                { className: "hmLRnenGO1Wn22eFVD3Q" },
-                "Keep 바로가기 ",
-                a().createElement("i", {
-                  className: "fas fa-chevron-right " + u,
-                })
+                { className: "QXCFTsbZ0G1AgjoCAsJk" },
+                a().createElement(
+                  "div",
+                  { className: "VB76yMq4Uo8uUSCO4WGN" },
+                  "Keep에 저장 ",
+                  a().createElement("i", { className: "far fa-bookmark " + u })
+                ),
+                a().createElement(
+                  "div",
+                  { className: "hmLRnenGO1Wn22eFVD3Q" },
+                  "Keep 바로가기",
+                  " ",
+                  a().createElement("i", {
+                    className: "fas fa-chevron-right " + u,
+                  })
+                )
               )
             ),
             a().createElement(
               "label",
               { for: e.id, className: "t90PJ1aT8fKkztqMNAHH" },
-              a().createElement(d(), {
+              a().createElement(f(), {
                 sx: {
                   fontSize: 30,
                   color: e.color.circleColor,
@@ -429,8 +434,8 @@
             )
           );
         },
-        T = require("@mui/icons-material/ArrowForward");
-      var I = t.n(T);
+        I = require("@mui/icons-material/ArrowForward");
+      var T = t.n(I);
       const F = function (e) {
           return a().createElement(
             "div",
@@ -444,7 +449,7 @@
                 a().createElement(
                   "span",
                   { className: "bk9xqTkPt_qdGP2SrzI_" },
-                  a().createElement(I(), { className: "MVD9gFMgWZVAw7TtakmA" }),
+                  a().createElement(T(), { className: "MVD9gFMgWZVAw7TtakmA" }),
                   a().createElement(
                     "span",
                     { className: "PY87YT3qkggZrDk9fNA9" },
@@ -457,7 +462,7 @@
             )
           );
         },
-        q = function (e) {
+        L = function (e) {
           return a().createElement(
             "div",
             { className: "YIDB6c1_0UceDa5lseVj" },
@@ -472,7 +477,7 @@
             )
           );
         },
-        L = function (e) {
+        q = function (e) {
           return a().createElement(
             "div",
             { className: "j9LNCKid3In_AbXFpTVJ" },
@@ -493,24 +498,24 @@
           return a().createElement(
             "div",
             { className: "s5orwz_4geOSDxrgcgfz" },
-            a().createElement(L, { titleInfo: e.common.together.header }),
-            a().createElement(q, { webtoon: e.common.together }),
-            a().createElement(L, { titleInfo: e.common.life.header }),
-            a().createElement(q, { webtoon: e.common.life }),
-            a().createElement(L, { titleInfo: e.common.new.header }),
-            a().createElement(q, { webtoon: e.common.new }),
-            a().createElement(L, { titleInfo: e.common.weekly.header }),
-            a().createElement(q, { webtoon: e.common.weekly })
+            a().createElement(q, { titleInfo: e.common.together.header }),
+            a().createElement(L, { webtoon: e.common.together }),
+            a().createElement(q, { titleInfo: e.common.life.header }),
+            a().createElement(L, { webtoon: e.common.life }),
+            a().createElement(q, { titleInfo: e.common.new.header }),
+            a().createElement(L, { webtoon: e.common.new }),
+            a().createElement(q, { titleInfo: e.common.weekly.header }),
+            a().createElement(L, { webtoon: e.common.weekly })
           );
         },
-        z = require("@mui/icons-material/ErrorOutline");
-      var K = t.n(z);
-      const M = function (e) {
+        U = require("@mui/icons-material/ErrorOutline");
+      var K = t.n(U);
+      const z = function (e) {
           return a().createElement(
             "div",
             { className: "ncFkgqRp3LFD2PLDEq2w" },
-            a().createElement(L, { titleInfo: e.similar.header }),
-            a().createElement(q, { webtoon: e.similar }),
+            a().createElement(q, { titleInfo: e.similar.header }),
+            a().createElement(L, { webtoon: e.similar }),
             a().createElement(
               "div",
               { className: "R1wNawsdO4nTrcBztfUo" },
@@ -522,7 +527,7 @@
             )
           );
         },
-        _ = function (e) {
+        M = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -563,7 +568,7 @@
             )
           );
         },
-        H = function (e) {
+        _ = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -604,18 +609,18 @@
             )
           );
         },
-        G = function (e) {
+        H = function (e) {
           return a().createElement(
             "div",
             { className: "mKVpa2NVZMsG58qsvqNp" },
-            a().createElement(_, {
+            a().createElement(M, {
               mainImage: e.common.mainImage,
               smallImage: e.common.smallImage,
             }),
-            a().createElement(H, { basicInfo: e.common.basicInfo })
+            a().createElement(_, { basicInfo: e.common.basicInfo })
           );
         },
-        U = function (e) {
+        B = function (e) {
           return a().createElement(
             "div",
             { className: "MqKms0lrf0CEULJlxiuz" },
@@ -646,12 +651,11 @@
             )
           );
         },
-        O = (require("@mui/icons-material"), "Ahrntx314hFVGwzHIUcc"),
-        P = "MJwqi1QXoetX0Rpc0VF4",
-        V = function (e) {
+        G = "MJwqi1QXoetX0Rpc0VF4",
+        O = function (e) {
           return a().createElement(
             "div",
-            { className: O },
+            { className: "Ahrntx314hFVGwzHIUcc" },
             a().createElement(
               "a",
               {
@@ -690,7 +694,7 @@
                       e.common.information[t].link
                         ? a().createElement(
                             "td",
-                            { key: "td" + l, className: P },
+                            { key: "td" + l, className: G },
                             a().createElement(
                               "a",
                               {
@@ -705,7 +709,7 @@
                             null,
                             a().createElement(
                               "td",
-                              { key: "td" + l, className: P },
+                              { key: "td" + l, className: G },
                               e.common.information[t].detail
                             )
                           )
@@ -754,7 +758,58 @@
                   a().createElement(
                     "div",
                     { className: "xjrzL9HSsX2fqN2lN5Sb" },
-                    "hi"
+                    a().createElement(
+                      "label",
+                      { for: "modal", className: "HX97eUF9mbFL8hzZYcax" },
+                      a().createElement("i", { className: "fas fa-times" })
+                    ),
+                    a().createElement(
+                      "div",
+                      { className: "y04NuSNEEGyW4kw1XrEN" },
+                      "공유하기"
+                    ),
+                    a().createElement("div", {
+                      id: "shareBtn",
+                      className: "CjvBQ0FZASd2cnPqd0JN",
+                    }),
+                    a().createElement(
+                      "div",
+                      { className: "JRAlToDJfonIFXDmIwg5" },
+                      "블로그"
+                    ),
+                    a().createElement(
+                      "div",
+                      { className: "sHq6MBi5D4eYK_jxYlSb" },
+                      a().createElement(
+                        "table",
+                        { className: "MOOFyQE0WxZj_KSxMhvD" },
+                        a().createElement(
+                          "tbody",
+                          null,
+                          a().createElement(
+                            "tr",
+                            null,
+                            a().createElement(
+                              "td",
+                              { className: "yu9UCn2yJKzxKmSYTFCr" },
+                              a().createElement(
+                                "a",
+                                {
+                                  href: e.shortenUrl,
+                                  className: "O360tU8nKf8gi9Axk4LA",
+                                },
+                                e.shortenUrl
+                              )
+                            ),
+                            a().createElement(
+                              "td",
+                              { className: "fT4QZ8mbd9F3yiJut2IQ" },
+                              "URL복사"
+                            )
+                          )
+                        )
+                      )
+                    )
                   )
                 ),
                 a().createElement(
@@ -766,12 +821,12 @@
             )
           );
         },
-        B = function (e) {
+        J = function (e) {
           return a().createElement(
             "div",
             { className: "AI2MWm_9lJfaJVeLEZU4" },
-            a().createElement(U, { common: e.common }),
-            a().createElement(V, { common: e.common })
+            a().createElement(B, { common: e.common }),
+            a().createElement(O, { common: e.common, shortenUrl: e.shortenUrl })
           );
         },
         Q = function (e) {
@@ -804,25 +859,28 @@
               "div",
               { className: "ug_K208GTX5ib2lFbVx3" },
               "동물" === e.mainCard.title.type &&
-                a().createElement(G, { common: e.mainCard.common }),
+                a().createElement(H, { common: e.mainCard.common }),
               "문화재" === e.mainCard.title.type &&
-                a().createElement(B, { common: e.mainCard.common }),
+                a().createElement(J, {
+                  common: e.mainCard.common,
+                  shortenUrl: e.shortenUrl,
+                }),
               "웹툰" === e.mainCard.title.type &&
                 a().createElement(R, { common: e.mainCard.common }),
               "웹툰" === e.mainCard.title.type &&
-                a().createElement(M, { similar: e.mainCard.similar }),
+                a().createElement(z, { similar: e.mainCard.similar }),
               "웹툰" !== e.mainCard.title.type &&
                 a().createElement(x, { similar: e.mainCard.similar })
             )
           );
         },
-        J = "iZOu4FsfVAomVvnBaKUq",
-        X = "i3SGqYLhgds4VhKasTwJ",
-        A = "Cz2azLu9sjBkLkQhXtvj",
-        W = "jJ_2XORafRmWfevJcACF",
-        Y = require("@mui/icons-material/Circle");
-      var j = t.n(Y);
-      const D = function (e) {
+        A = "iZOu4FsfVAomVvnBaKUq",
+        P = "i3SGqYLhgds4VhKasTwJ",
+        V = "Cz2azLu9sjBkLkQhXtvj",
+        X = "jJ_2XORafRmWfevJcACF",
+        W = require("@mui/icons-material/Circle");
+      var j = t.n(W);
+      const Y = function (e) {
           return a().createElement(
             "div",
             { className: "scBiIhLQvvVFaQZXo00W" },
@@ -872,7 +930,7 @@
           );
         },
         Z = "snSvrP_fhpixsUTCfpn_",
-        $ = function (e) {
+        D = function (e) {
           return a().createElement(
             "ul",
             { className: "c8f3vgqoRT5NdXV5PMQs" },
@@ -928,9 +986,9 @@
             })
           );
         },
-        ee = "f4xw5EevA5ZPLQC4I8ET",
-        ae = "SFyZOiehaHmsk_x43fu3",
-        te = function (e) {
+        $ = "f4xw5EevA5ZPLQC4I8ET",
+        ee = "SFyZOiehaHmsk_x43fu3",
+        ae = function (e) {
           return a().createElement(
             "div",
             { className: "wCF_q_km6bUDq0OehARF" },
@@ -943,14 +1001,14 @@
                   { href: e.influencer.thumbnail.url },
                   a().createElement("img", {
                     src: e.influencer.thumbnail.image,
-                    className: ee,
+                    className: $,
                     alt: "thumbnail",
                     style: { padding: "2px", border: "2px solid gold" },
                   })
                 ),
                 a().createElement(
                   "div",
-                  { className: ae, style: { backgroundColor: "gold" } },
+                  { className: ee, style: { backgroundColor: "gold" } },
                   a().createElement("i", { className: "fas fa-crown" })
                 )
               ),
@@ -963,14 +1021,14 @@
                   { href: e.influencer.thumbnail.url },
                   a().createElement("img", {
                     src: e.influencer.thumbnail.image,
-                    className: ee,
+                    className: $,
                     alt: "thumbnail",
                     style: { padding: "2px", border: "2px solid silver" },
                   })
                 ),
                 a().createElement(
                   "div",
-                  { className: ae, style: { backgroundColor: "silver" } },
+                  { className: ee, style: { backgroundColor: "silver" } },
                   a().createElement("i", { className: "fas fa-crown" })
                 )
               ),
@@ -983,14 +1041,14 @@
                   { href: e.influencer.thumbnail.url },
                   a().createElement("img", {
                     src: e.influencer.thumbnail.image,
-                    className: ee,
+                    className: $,
                     alt: "thumbnail",
                     style: { padding: "2px", border: "2px solid #CD7F32" },
                   })
                 ),
                 a().createElement(
                   "div",
-                  { className: ae, style: { backgroundColor: "#CD7F32" } },
+                  { className: ee, style: { backgroundColor: "#CD7F32" } },
                   a().createElement("i", { className: "fas fa-crown" })
                 )
               ),
@@ -1003,7 +1061,7 @@
                   { href: e.influencer.thumbnail.url },
                   a().createElement("img", {
                     src: e.influencer.thumbnail.image,
-                    className: ee,
+                    className: $,
                     alt: "thumbnail",
                     style: { padding: "2px", border: "2px solid white" },
                   })
@@ -1011,9 +1069,9 @@
               )
           );
         },
-        le = require("@mui/icons-material/FiberManualRecord");
-      var re = t.n(le);
-      const ne = function (e) {
+        te = require("@mui/icons-material/FiberManualRecord");
+      var le = t.n(te);
+      const re = function (e) {
           return a().createElement(
             "div",
             { className: "oc5_o8pxFLxI8Z8xJtqR" },
@@ -1047,7 +1105,7 @@
                             style: { marginRight: "5px" },
                           }),
                         a().createElement("b", null, t.title),
-                        a().createElement(re(), {
+                        a().createElement(le(), {
                           sx: {
                             color: e.colorScheme.border,
                             fontSize: "4pt",
@@ -1062,7 +1120,7 @@
                         null,
                         a().createElement("span", { key: l }, t.value),
                         l !== e.influencer.keywords.length - 1 &&
-                          a().createElement(re(), {
+                          a().createElement(le(), {
                             sx: {
                               color: e.colorScheme.border,
                               fontSize: "4pt",
@@ -1088,7 +1146,7 @@
             )
           );
         },
-        ce = function (e) {
+        ne = function (e) {
           return a().createElement(
             "div",
             { className: "zM0P8x37INmd5SMtTge8" },
@@ -1119,7 +1177,7 @@
             )
           );
         },
-        me = function (e) {
+        ce = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -1130,7 +1188,7 @@
                 a().createElement(
                   "div",
                   { className: "lozlf1dFAIxyOWj5ZAK0" },
-                  a().createElement(te, { influencer: t }),
+                  a().createElement(ae, { influencer: t }),
                   a().createElement(
                     "div",
                     {
@@ -1186,11 +1244,11 @@
                     )
                   )
                 ),
-                a().createElement(ne, {
+                a().createElement(re, {
                   colorScheme: e.colorScheme,
                   influencer: t,
                 }),
-                a().createElement(ce, { influencer: t, images: t.images }),
+                a().createElement(ne, { influencer: t, images: t.images }),
                 a().createElement(
                   "div",
                   { className: "qKy9gxKBT8iz6Zzlzytw" },
@@ -1238,7 +1296,7 @@
             })
           );
         },
-        se = function (e) {
+        me = function (e) {
           return a().createElement(
             "a",
             { href: e.more.href, style: { textDecoration: "None" } },
@@ -1250,21 +1308,21 @@
             )
           );
         },
-        ie = function (e) {
+        se = function (e) {
           return a().createElement(
             "div",
-            { className: J },
-            a().createElement(D, { titleInfo: e.influencer.header }),
-            a().createElement($, { tabList: e.influencer["tab-lists"] }),
-            a().createElement(me, {
+            { className: A },
+            a().createElement(Y, { titleInfo: e.influencer.header }),
+            a().createElement(D, { tabList: e.influencer["tab-lists"] }),
+            a().createElement(ce, {
               influencers: e.influencer.influencers,
               colorScheme: e.influencer.colorScheme,
             }),
-            a().createElement(se, { more: e.influencer.influencerLink })
+            a().createElement(me, { more: e.influencer.influencerLink })
           );
         },
-        oe = "Qg8uKGCj6t2KXt8WvrsS",
-        Ee = function (e) {
+        ie = "Qg8uKGCj6t2KXt8WvrsS",
+        oe = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -1284,14 +1342,14 @@
                 a().createElement(
                   a().Fragment,
                   null,
-                  a().createElement("div", { className: oe }),
+                  a().createElement("div", { className: ie }),
                   a().createElement(
                     "div",
                     { className: "kJIyp0_a83KeQLIHXwtI" },
                     "인플루언서"
                   )
                 ),
-              a().createElement("div", { className: oe }),
+              a().createElement("div", { className: ie }),
               a().createElement(
                 "div",
                 { className: "snlLOyL840Ztnf3pGU0c" },
@@ -1301,7 +1359,7 @@
             a().createElement(N, { color: e.colorScheme, id: e.id })
           );
         },
-        ue = function (e) {
+        Ee = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -1333,7 +1391,7 @@
             )
           );
         },
-        fe = function (e) {
+        ue = function (e) {
           return a().createElement(
             a().Fragment,
             null,
@@ -1368,64 +1426,64 @@
               )
           );
         },
-        Ne = function (e) {
+        fe = function (e) {
           return a().createElement(
             "div",
-            { className: J },
-            a().createElement(D, { titleInfo: e.view.header }),
+            { className: A },
+            a().createElement(Y, { titleInfo: e.view.header }),
             a().createElement(
               "ul",
-              { className: X },
+              { className: P },
               e.view.list.map(function (t, l) {
                 return a().createElement(
                   "li",
-                  { className: A, key: l },
+                  { className: V, key: l },
                   a().createElement(
                     "div",
-                    { className: W },
-                    a().createElement(Ee, {
+                    { className: X },
+                    a().createElement(oe, {
                       blog: t.blog,
                       id: "blog" + l,
                       colorScheme: e.view.colorScheme,
                     }),
-                    a().createElement(ue, { body: t.body })
+                    a().createElement(Ee, { body: t.body })
                   ),
-                  a().createElement(fe, { tags: t.tags }),
+                  a().createElement(ue, { tags: t.tags }),
                   a().createElement(de, { link: t.link })
                 );
               })
             )
           );
         },
-        he = function (e) {
+        Ne = function (e) {
           return a().createElement(
             "div",
-            { className: J },
-            a().createElement(D, { titleInfo: e.news.header }),
+            { className: A },
+            a().createElement(Y, { titleInfo: e.news.header }),
             a().createElement(
               "ul",
-              { className: X },
+              { className: P },
               e.news.list.map(function (t, l) {
                 return a().createElement(
                   "li",
-                  { className: A, key: l },
+                  { className: V, key: l },
                   a().createElement(
                     "div",
-                    { className: W },
-                    a().createElement(Ee, {
+                    { className: X },
+                    a().createElement(oe, {
                       blog: t.blog,
                       id: "news" + l,
                       colorScheme: e.news.colorScheme,
                     }),
-                    a().createElement(ue, { body: t.body })
+                    a().createElement(Ee, { body: t.body })
                   )
                 );
               })
             ),
-            a().createElement(se, { more: e.news.newsLink })
+            a().createElement(me, { more: e.news.newsLink })
           );
         },
-        pe = function (e) {
+        he = function (e) {
           return a().createElement(
             "div",
             { className: "VwKNETIQcuzxVQs6hKMl" },
@@ -1446,61 +1504,69 @@
             )
           );
         };
-      var be = t(860),
-        ge = t(986),
-        ve = (t(689), t(582)),
-        ye = t(771),
-        ke = t(684),
-        we = ye.get("serverAddress"),
-        xe = ye.get("renderServerPort"),
-        Se = be.Router(),
-        Ce = be();
-      Ce.use(ve()),
-        Ce.use(ge.urlencoded({ extended: !1 })),
-        Ce.use(ge.json()),
-        Ce.use("/", Se),
-        Se.post("/", function (e, t) {
+      var pe = t(860),
+        be = t(986),
+        ge = (t(689), t(582)),
+        ve = t(771),
+        ye = t(684),
+        ke = ve.get("serverAddress"),
+        we = ve.get("renderServerPort"),
+        xe = pe.Router(),
+        Se = pe();
+      Se.use(ge()),
+        Se.use(be.urlencoded({ extended: !1 })),
+        Se.use(be.json()),
+        Se.use("/", xe),
+        xe.post("/", function (e, t) {
           var l;
           t.send(
-            '\n    <!DOCTYPE html>\n    <html lang="ko">\n        <head>\n        <link rel="stylesheet" href="style.css">\n        <script src=\'https://kit.fontawesome.com/a076d05399.js\' crossorigin=\'anonymous\'></script>\n        <link rel="preconnect" href="https://fonts.googleapis.com">\n        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">\n        <script\n          src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"\n          data-auto-a11y="true"\n        ></script>\n        </head>\n        <body>\n            '.concat(
-              ke.renderToString(
-                ((l = e.body),
-                a().createElement(
-                  "div",
-                  { className: "hOkuBJSRIrHdsWQ4K9Zf" },
-                  a().createElement(o, { keyword: l[0].keyword }),
+            '\n    <!DOCTYPE html>\n    <html lang="ko">\n        <head>\n          <link rel="stylesheet" href="style.css">\n          <script src=\'https://kit.fontawesome.com/a076d05399.js\' crossorigin=\'anonymous\'></script>\n          <link rel="preconnect" href="https://fonts.googleapis.com">\n          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">\n          <script\n            src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"\n            data-auto-a11y="true"\n          ></script>\n          <script>\n            function share() {\n              var url = encodeURI(encodeURIComponent("'
+              .concat(
+                e.body[1],
+                '"));\n              var title = encodeURI("공유하기");\n              var shareURL = "https://share.naver.com/web/shareView?url=" + url + "&title=" + title;\n              document.location = shareURL;\n            }\n          </script>\n        </head>\n        <body>\n          '
+              )
+              .concat(
+                ye.renderToString(
+                  ((l = e.body),
                   a().createElement(
                     "div",
-                    { className: "lwMSkhbL51TI_MbpDTZQ" },
-                    l[0].order.map(function (e, t) {
-                      return a().createElement(
-                        "div",
-                        { key: t },
-                        "mainCard" === e &&
-                          a().createElement(Q, { mainCard: l[0].mainCard }),
-                        "influencers" === e &&
-                          a().createElement(ie, {
-                            influencer: l[0].influencer,
-                          }),
-                        "view" === e &&
-                          a().createElement(Ne, { view: l[0].view }),
-                        "news" === e &&
-                          a().createElement(he, { news: l[0].news }),
-                        "error" === e &&
-                          a().createElement(pe, { error: l[0].content })
-                      );
-                    }),
-                    a().createElement("br", null),
-                    a().createElement("br", null)
-                  )
-                ))
-              ),
-              "\n        </body>\n    </html>\n"
-            )
+                    { className: "hOkuBJSRIrHdsWQ4K9Zf" },
+                    a().createElement(o, { keyword: l[0].keyword }),
+                    a().createElement(
+                      "div",
+                      { className: "lwMSkhbL51TI_MbpDTZQ" },
+                      l[0].order.map(function (e, t) {
+                        return a().createElement(
+                          "div",
+                          { key: t },
+                          "mainCard" === e &&
+                            a().createElement(Q, {
+                              mainCard: l[0].mainCard,
+                              shortenUrl: l[1],
+                            }),
+                          "influencers" === e &&
+                            a().createElement(se, {
+                              influencer: l[0].influencer,
+                            }),
+                          "view" === e &&
+                            a().createElement(fe, { view: l[0].view }),
+                          "news" === e &&
+                            a().createElement(Ne, { news: l[0].news }),
+                          "error" === e &&
+                            a().createElement(he, { error: l[0].content })
+                        );
+                      }),
+                      a().createElement("br", null),
+                      a().createElement("br", null)
+                    )
+                  ))
+                ),
+                '\n          <script type="text/javascript">\n            document.getElementById("shareBtn").innerHTML = \'<div onclick="share()"></div>\';\n          </script>\n        </body>\n    </html>\n'
+              )
           );
         }),
-        Ce.listen(xe, function () {
-          console.log("Render Server listening at ".concat(we, ":").concat(xe));
+        Se.listen(we, function () {
+          console.log("Render Server listening at ".concat(ke, ":").concat(we));
         });
     })();
 })();
