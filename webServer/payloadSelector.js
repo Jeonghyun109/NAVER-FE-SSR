@@ -1786,7 +1786,9 @@ class PayloadSelector {
         },
       },
     },
-    error: {
+  };
+  static payloadKeys = Object.keys(this.payloadMap);
+  static errorPayload = {
       order: ["error"],
       content: {
         title: "유효하지 않은 검색결과입니다.",
@@ -1794,9 +1796,7 @@ class PayloadSelector {
         text2:
           "'샴고양이', '경주 불국사', '독립일기 함께 많이보는 웹툰', 혹은 빈 검색어로 검색해 보세요.",
       },
-    },
-  };
-  static payloadKeys = Object.keys(this.payloadMap);
+    }
 
   constructor() {}
 
@@ -1807,16 +1807,22 @@ class PayloadSelector {
   }
 
   selectByKeys(keys) {
-    return keys.map((key) => this.payloadMap.get(key));
+    return keys.map(this.selectByKey)
+  }
+
+  selectByKey(key) {
+    let payload = PayloadSelector.payloadMap[key]
+    if (!payload) {
+      payload = PayloadSelector.errorPayload
+    }
+    return payload
   }
 
   select(keys) {
     if (!keys || (Array.isArray(keys) && !keys.length)) {
       keys = [this.randomKey()];
     }
-    return keys
-      .map((key) => this.constructor.payloadMap[key])
-      .filter((o) => !!o);
+    return this.selectByKeys(keys)
   }
 }
 
