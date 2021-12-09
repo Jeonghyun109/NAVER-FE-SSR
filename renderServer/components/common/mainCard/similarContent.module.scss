@@ -56,15 +56,13 @@
         border-radius: 6px;
         margin-right: 9px;
         min-height: 145px;
+        box-shadow: 0 0 3px 0 rgb(0 0 0 / 10%);
 
         .linkPhoto {
           width: 87px;
           height: 141px;
           cursor: pointer;
           text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
 
           .photoDiv {
             height: 87px;
