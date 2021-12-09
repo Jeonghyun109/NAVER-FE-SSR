@@ -13,8 +13,10 @@ http://ec2-3-17-186-117.us-east-2.compute.amazonaws.com:3000/
 
 유저로부터 Web Server가 검색키워드를 받게 되면 아래 링크처럼 JSON 데이터를 생성해 Render Server로 보내주게 됩니다.
 https://github.com/Jeonghyun109/NAVER-FE-SSR/wiki/JSON \
-Render Server는 Web Server로부터 데이터를 받아 아래 링크처럼 HTML 코드를 생성후 Web Server한테...
-https://github.com/Jeonghyun109/NAVER-FE-SSR/wiki (작업중)
+
+Render Server는 Web Server로부터 데이터를 받아 HTML 코드를 생성후 Web Server한테 다시 보내주게 됩니다. \
+Render Server에서 UI를 만들 때 공통적으로 자주 사용되는 부분은 아래 링크와 같이 라이브러리화된 코드를 가져와서 렌더링하게 됩니다. \
+https://github.com/Jeonghyun109/NAVER-FE-SSR/wiki/UI-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%ED%99%94
 
 ![image](https://user-images.githubusercontent.com/87184009/145199863-3b15798c-fb44-437e-ac49-37de14f38eb9.png)
 
